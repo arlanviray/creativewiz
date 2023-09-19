@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">   <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">   <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">   <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">   <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Folli Follie</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+	<meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=640, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Folli Follie">
+   	<link rel="shortcut icon" sizes="16x16" href="images/mobile/icon-16x16.png">
+	<link rel="shortcut icon" sizes="196x196" href="images/mobile/icon-196x196.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/mobile/icon-152x152.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/mobile/icon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/mobile/icon-120x120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/mobile/icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/mobile/icon-76x76.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/mobile/icon-72x72.png">
+	<link type="text/css" href="css/reset.css" rel="stylesheet" />
+	<link type="text/css" href="css/addtohomescreen.css" rel="stylesheet" />
+	<link type="text/css" href="css/general.css" rel="stylesheet" />
+	<link type="text/css" href="css/m.styles.css" rel="stylesheet" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js"></script>
+	<!script type="text/javascript" src="js/jquery.batchImageLoad.js"></script>
+	<script type="text/javascript" src="js/base64_encode.js"></script>
+	<script type="text/javascript" src="js/base64_decode.js"></script>
+	<script type="text/javascript" src="js/addtohomescreen.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// alert(navigator.userAgent);
+			if(/(iPhone|iPod|iPad)/i.test(navigator.userAgent)){
+				if(/OS [1-6](.*) like Mac OS X/i.test(navigator.userAgent)) {
+					//iOS version is <= 6.
+					addToHomescreen({modal:true, mandatory:true, lifespan:86400, displayPace:0});
+					var styles = '';
+					styles+= '<style type="text/css">';
+						styles+= '.row-main .imgholder .col { height:200px; }';
+					styles+= '</style>';
+					$('html head').append(styles);
+				} else {
+					//iOS version is > 6.
+				}
+			}
+			if(navigator.userAgent.match(/Windows Phone/i)){
+				if(/Lumia/i.test(navigator.userAgent)) {
+					var styles = '';
+					styles+= '<style type="text/css">';
+						styles+= '#background { background-size:cover; background-size:'+ $(window).width() +'px '+ $(window).height() +'px; }';
+						styles+= '.row-main .intro { margin:14% 10% 0 14%; }';
+						styles+= '.row-main .intro .copy { bottom:40%; }';
+						styles+= '.row-main .intro .btnPlaynow { bottom:30%; left:34%; }';
+						styles+= '.row-main .arrows { bottom:30%; }';
+						styles+= '.row-main .arrows .back { margin-left:10%; }';
+						styles+= '.row-main .arrows .next { margin-right:10%; }';
+						styles+= '.row-main .moodboard { margin:0 10% 0 14%; }';
+						styles+= '.row-main #scroller { margin:0 6%; }';
+						styles+= '.row-navigation .circle.btnWin { left:32%; }';
+						styles+= '.row-navigation .circle.btnShare { right:32%; }';
+					styles+= '</style>';
+					$('html head').append(styles);
+				}
+			}
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="background"></div>
+		<div id="contents">
+			<div class="row row-main"></div>
+			<div class="row row-progressbar"></div>
+			<div class="btnBack"></div>
+		</div>
+	</div>
+	<div class="row row-navigation"></div>
+	<div class="row row-footer"></div>
+	<div id="landscapeMessage"></div>
+	<script type="text/javascript" src="js/m.data.js"></script>
+	<script type="text/javascript" src="js/m.script.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).resize(function(){
+				var wwidth = $(window).width(); 
+				var wheight = $(window).height();
+				if(wwidth > wheight) {
+					$('#landscapeMessage').show();
+				} else {
+					$('#landscapeMessage').hide();
+				}
+			}).resize();
+		});
+	</script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-17791824-1']);//
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['pmTracker._setAccount', 'UA-50455300-2']);//
+  		_gaq.push(['pmTracker._trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>

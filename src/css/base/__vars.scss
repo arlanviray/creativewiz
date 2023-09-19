@@ -1,0 +1,70 @@
+// -------------------------------
+// ----- Breakpoints -------------
+// -------------------------------
+$pb-xl:         1200px;
+$pb-lg:         1024px;
+$pb-mdlg:       900px;
+$pb-md:         768px;
+$pb-sm:         640px;
+$pb-xs:         460px;
+$pb-xxs:        321px;
+
+// -------------------------------
+// ----- Colour ------------------
+// -------------------------------
+$dark:        #121212;
+$black:       #000;
+$white:       #fff;
+$red:         #ef3b3a;
+$blue:        #0091d4;
+$green:       #8bb738;
+
+$light1:      #fafafa;
+$light2:      #f0f0f0;
+$light3:      #e6e6e6;
+$light4:      #dcdcdc;
+$light5:      #d3d3d3;
+$light6:      #c9c9c9;
+$light7:      #bfbfbf;
+$light8:      #b5b5b5;
+$light9:      #ababab;
+$light10:     #a2a2a2;
+$light11:     #989898;
+$light12:     #8e8e8e;
+$light13:     #848484;
+
+$dark1:       #7a7a7a;
+$dark2:       #717171;
+$dark3:       #676767;
+$dark4:       #5d5d5d;
+$dark5:       #535353;
+$dark6:       #494949;
+$dark7:       #3f3f3f;
+$dark8:       #363636;
+$dark9:       #2c2c2c;
+$dark10:      #222222;
+$dark11:      #181818;
+$dark12:      #0e0e0e;
+$dark13:      #050505;
+
+// -------------------------------
+// ----- Structure ---------------
+// -------------------------------
+$max-width:     1024px;
+$max-width-md:  512px;
+$header-height: 70px;
+$footer-height: 40px;
+
+// -------------------------------
+// ----- Margin/Padding ----------
+// -------------------------------
+@function spacer($num: null) {
+    $spacer: 20px;
+    
+    @if $num != null {
+        @return $spacer * $num;
+    } 
+    @else {
+        @return $spacer;
+    }
+}

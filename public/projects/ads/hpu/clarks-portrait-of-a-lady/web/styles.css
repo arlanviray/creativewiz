@@ -1,0 +1,111 @@
+/*@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=95562e0d-22e5-4f03-8ad5-100e92ecc23f");
+@font-face{
+	font-family:"HelveNeuBolCon";
+	src:url("http://ads.pictela.net/rm/ads/32512/HelveNeuBolCon_1390905882.eot?#iefix");
+	src:url("http://ads.pictela.net/rm/ads/32512/HelveNeuBolCon_1390905882.eot?#iefix") format("eot"),
+	url("http://ads.pictela.net/rm/ads/32512/HelveNeuBolCon_1390905882.woff") format("woff"),
+	url("http://ads.pictela.net/rm/ads/32512/HelveNeuBolCon_1390905882.ttf") format("truetype"),
+	url("http://ads.pictela.net/rm/ads/32512/HelveNeuBolCon_1390905882.svg#HelveNeuBolCon_1390905882") format("svg");
+}*/
+@import "https://www.projects.creativewiz.net/fonts/HelveticaNeu/styles.css";
+
+body {
+	font-family:"HelveNeuBolCon";
+	font-size:14px;
+	line-height:18px;
+}
+a {
+	color:#fff;
+	text-decoration:none;
+}
+.clr {
+	clear:both;
+}
+#wrapper, #contents {
+	overflow:hidden;
+	height:600px;
+}
+#wrapper {
+	position:relative;
+	width:600px;
+}
+
+#contents, 
+.picContainer, 
+.btnContainer, 
+.btnVideo, 
+.btnClose,
+.videoContainer {
+	position:absolute;
+}
+
+#contents {
+	top:0;
+	right:0;
+	width:300px;
+	background:url('img_bg.jpg') no-repeat center 0px;
+}
+
+.picContainer {
+	top:166px;
+	width:600px;
+}
+.picContainer .pic {
+	float:left;
+	width:200px;
+	height:339px;
+}
+.picContainer .pic1 {
+	width:150px;
+	background:url('img_1.jpg') no-repeat center 0px;
+}
+.picContainer .pic2 {
+	width:150px;
+	background:url('img_2.jpg') no-repeat center 0px;
+}
+.picContainer .pic3 {
+	background:url('img_3.jpg') no-repeat center 0px;
+}
+
+.btnContainer {
+	top:534px;
+	width:100%;
+	text-align:center;
+}
+.btnContainer .btnGetthelook {
+	width:180px;
+	background-color:#2d313c;
+	margin:0 auto;
+}
+.btnContainer .btnGetthelook a {
+	display:block;
+	padding:8px 0;
+}
+
+.btnVideo {
+	width:100%;
+	height:100%;
+	background:url('img_btn_video.png') no-repeat center 166px;
+	cursor:pointer;
+}
+
+.btnClose {
+	display:none;
+	top:12px;
+	right:16px;
+}
+.btnClose img {
+	cursor:pointer;
+}
+
+.videoContainer {
+	display:none;
+	top:166px;
+}
+.videoContainer, 
+.videoContainer .video {
+	width:600px;
+	height:339px;
+}
+
+

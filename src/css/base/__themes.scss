@@ -1,0 +1,156 @@
+$themeColors: ($red, $blue, $green);
+@for $i from 1 through length($themeColors) {
+    $color: nth($themeColors, $i);
+
+    .theme#{$i} {
+        .theme {
+            &-color {
+                color: $color;
+            }
+            &-bg {
+                background-color: $color;
+            }
+        }
+
+        .App::after {
+            background-color: $color;
+        }
+
+        footer {
+            color: $color;
+            &::before {
+                background-color: $color;
+            }
+        }
+
+        .btn {
+            &.active, &:hover {
+                background-color: $color;
+            }
+        }
+
+        .btn-button {
+            background-color: $color;
+        }
+
+        .btn-card {
+            &::before {
+                background-color: $color;
+            }
+        }
+
+        .btn-nav.active {
+            color: $color;
+            &::before {
+                background-color: $color;
+            }
+        }
+
+        .btn-subcat.active {
+            color: $color;
+            border-color: $color;
+        }
+        
+        .input-wrapper {
+            &::before {
+                border-color: $color !important;
+            }
+        }
+
+        .form-input {
+            &:focus ~ .form-label, 
+            &:not(:placeholder-shown) ~ .form-label {
+                color: $color;
+            }
+        }
+
+        &.dark-mode {
+            header .content .navigation {
+                .type-mode-switcher {
+                    background-color: $color;
+                    &::after {
+                        border-color: $color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dark-mode {
+    background-color: $dark;
+
+    &, a {
+        color: $white;
+    }
+    
+    header, footer {
+        background-color: $black;
+    }
+
+    header {
+        .content {
+            .navigation {
+                .type-mode-switcher {
+                    &::after {
+                        left: 50%;
+                    }
+                }
+
+                @include mediaQuery($pb-sm, max) {
+                    background-color: $dark;
+                }
+            }
+
+            .hamburger {
+                .hamburger-inner {
+                    &, &::before, &::after {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        &::before {
+            display: none;
+        }
+    }
+
+    .btn {
+        color: $dark;
+        background-color: $white;
+        &.active, &:hover {
+            color: $white;
+        }
+    }
+
+    .btn-subcat {
+        border-color: $white;
+    }
+
+    .form-input {
+        &:focus ~ .form-label, 
+        &:not(:placeholder-shown) ~ .form-label {
+            background-color: $dark !important;
+        }
+    }
+
+    .form-label {
+        color: $dark;
+    }
+
+    .workscard-container {
+        .workscard {
+            background-color: $dark13;
+            border: 1px solid $white;
+        }
+    }
+
+    .work-details {
+        .info {
+            background-color: $dark !important;
+        }
+    }
+}

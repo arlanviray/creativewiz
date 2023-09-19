@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteBase /
+
+# Prevent viewing of .htaccess
+<FilesMatch .htaccess>
+	Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow fonts from all domains
+<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>
+
+# URL rewrites
+RewriteRule ^index\.php/?$ / [L,R=301,NC]
+RewriteRule ^([^/.]+)/?$ /?type=$1 [L]
+# RewriteRule ^([^/.]+)/([^/.]+)/?$ /?type=$1&subtype=$2 [L]
+# RewriteRule ^([^/.]+)/([^/.]+)/([^/.]+)/?$ /?type=$1&subtype=$2&title=$3 [L]
+RewriteRule ^([^/.]+)/([^/.]+)/([^/.]+)/([^/.]+)/?$ /?type=$1&subtype=$2&title=$3&index=$4 [L]

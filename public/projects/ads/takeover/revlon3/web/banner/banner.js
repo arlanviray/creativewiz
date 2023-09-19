@@ -1,0 +1,7 @@
+/**
+ * @author: Arlan Viray
+ * @email: arlanv555@gmail.com
+ */
+$(document).ready(function(){// localStorage feature detect
+function e(){return"undefined"!=typeof Storage}function o(){null!=localStorage.getItem(c)&&(a=parseInt(localStorage.getItem(c)),a!=r&&($(".products .prod").removeClass("active"),TweenMax.to($(".products .prod"),.5,{css:{top:-82}}),TweenMax.to($(".products .prod"+a),.5,{css:{top:-100},onComplete:function(){$(".products .prod"+a).addClass("active")}}),l?l=!1:($(".backgrounds .color").fadeOut(),$(".backgrounds .color").eq(a-1).fadeIn()),t(a),r=a))}function t(e){switch(e){case 2:ADTECH.event("Banner display colour emerald green");break;case 3:ADTECH.event("Banner display colour raspberry");break;case 4:ADTECH.event("Banner display colour red");break;case 5:ADTECH.event("Banner display colour velvet");break;default:ADTECH.event("Banner display colour blue")}}var a,r,n=100,c="adTakeoverID-Revlon",l=!0;if(e()){// init
+$.each($(".products .prod"),function(e,t){TweenMax.from($(t),.5,{css:{top:100},delay:e/4,ease:Back.easeOut,onComplete:function(){e+1==$(".products .prod").length&&(null==localStorage.getItem(c)&&localStorage.setItem(c,1),setInterval(o,n))}}),$(t).click(function(){localStorage.setItem(c,parseInt($(this).index()+1))})});var s=0;null!=localStorage.getItem(c)&&(s=parseInt(localStorage.getItem(c)-1)),$(".backgrounds .color").not(":eq("+s+")").hide()}});

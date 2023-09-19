@@ -1,0 +1,63 @@
+body {}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+.clear-fix, .clr {
+	clear: both;
+}
+#wrapper, #contents {
+	overflow: hidden;
+}
+#wrapper {
+	position: relative;
+}
+#wrapper, #contents, .button a {
+	width: 970px;
+	height: 250px;
+}
+#contents, img, .button {
+	position: absolute;
+}
+#contents {
+	background: url('img_bg.jpg') no-repeat;
+}
+#contents .images {
+	overflow: hidden;
+	position: relative;
+	width: 970px;
+	height: 220px;
+}
+
+.gp1.txt1 {
+	top: 16px;
+	left: 20px;
+}
+.gp1.txt2 {
+	top: 95px;
+	left: 20px;
+}
+.gp1.txt3 {
+	top: 176px;
+	left: 20px;
+}
+.gp2.txt1 {
+	top: 22px;
+	left: 20px;
+}
+.gp2.txt2 {
+	top: 93px;
+	left: 20px;
+}
+.gp2.txt3 {
+	top: 162px;
+	left: 20px;
+}
+
+.button {
+	top: 0;
+}
+.button a {
+	display: block;
+}
+

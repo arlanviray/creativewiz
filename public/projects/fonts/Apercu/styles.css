@@ -1,0 +1,16 @@
+@font-face{
+	font-family:"ApercuBold";
+	src:url("bold/Apercu-Bold.eot?#iefix");
+	src:url("bold/Apercu-Bold.eot?#iefix") format("eot"),
+	url("bold/Apercu-Bold.woff") format("woff"),
+	url("bold/Apercu-Bold.ttf") format("truetype"),
+	url("bold/Apercu-Bold.svg#Apercu-Bold") format("svg");
+}
+@font-face{
+	font-family:"ApercuMedium";
+	src:url("medium/Apercu-Medium.eot?#iefix");
+	src:url("medium/Apercu-Medium.eot?#iefix") format("eot"),
+	url("medium/Apercu-Medium.woff") format("woff"),
+	url("medium/Apercu-Medium.ttf") format("truetype"),
+	url("medium/Apercu-Medium.svg#Apercu-Medium") format("svg");
+}

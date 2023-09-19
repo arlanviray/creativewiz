@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- canvasSize:300x600 -->
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">   <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">   <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">   <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">   <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link type="text/css" href="reset.css" rel="stylesheet" />
+	<link type="text/css" href="styles.css" rel="stylesheet" />
+	<!-- <script type="text/javascript" src="https://canvas.adtech.com/ads/jsapi/ADTECH.js"></script> -->
+  	<script type="text/javascript" src="https://www.projects.creativewiz.net/js/adtech.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js"></script>
+	<script type="text/javascript" src="https://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+  		<div id="contents">
+  			<div class="backgrounds">
+				<div class="color color1"></div>
+				<div class="color color2"></div>
+				<div class="color color3"></div>
+				<div class="color color4"></div>
+			</div>
+			<div class="bgImage"></div>
+			<div class="carousel">
+				<div class="pics">
+					<ul>
+						<li><img src="img_hpu_pic1.jpg" /></li>
+						<li><img src="img_hpu_pic2.jpg" /></li>
+						<li><img src="img_hpu_pic3.jpg" /></li>
+						<li><img src="img_hpu_pic4.jpg" /></li>
+					</ul>
+				</div>
+				<div class="arrows">
+					<div class="arrow left"></div>
+					<div class="arrow right"></div>
+				</div>
+				<div id="video" class="absolute"></div>
+			</div>
+			<div class="btnExit absolute"><a href="#" onclick="ADTECH.click('Exit ElleFashionCupboard')"></a></div>
+			<div class="btn btnVideo absolute"><div class="line absolute"></div></div>
+			<div class="btn btnGallery absolute"><div class="line absolute"></div></div>
+  		</div>
+	</div>
+	<script type="text/javascript" src="hpu.js"></script>
+</body>
+</html>

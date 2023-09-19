@@ -1,0 +1,94 @@
+/*@font-face{
+	font-family:"ApercuBold";
+	src:url("http://ads.pictela.net/rm/ads/39247/apercu-bold-webfont_1394712576.eot?#iefix");
+	src:url("http://ads.pictela.net/rm/ads/39247/apercu-bold-webfont_1394712576.eot?#iefix") format("eot"),
+	url("http://ads.pictela.net/rm/ads/39247/apercu-bold-webfont_1394712576.woff") format("woff"),
+	url("http://ads.pictela.net/rm/ads/39247/apercu-bold-webfont_1394712576.ttf") format("truetype"),
+	url("http://ads.pictela.net/rm/ads/39247/apercu-bold-webfont_1394712576.svg#apercu-bold-webfont") format("svg");
+}
+@font-face{
+	font-family:"ApercuMedium";
+	src:url("http://ads.pictela.net/rm/ads/39247/apercu-medium-webfont_1394712576.eot?#iefix");
+	src:url("http://ads.pictela.net/rm/ads/39247/apercu-medium-webfont_1394712576.eot?#iefix") format("eot"),
+	url("http://ads.pictela.net/rm/ads/39247/apercu-medium-webfont_1394712577.woff") format("woff"),
+	url("http://ads.pictela.net/rm/ads/39247/apercu-medium-webfont_1394712577.ttf") format("truetype"),
+	url("http://ads.pictela.net/rm/ads/39247/apercu-medium-webfont_1394712577.svg#apercu-medium-webfont") format("svg");
+}*/
+@import "https://www.projects.creativewiz.net/fonts/Apercu/styles.css";
+
+body {
+	font-family:"ApercuMedium";
+	font-size:22px;
+	line-height:26px;
+	color:#fff;
+}
+a {
+	color:#fff;
+	text-decoration:none;
+}
+.clear-fix, .clr {
+	clear:both;
+}
+#wrapper, #contents {
+	overflow:hidden;
+}
+#wrapper {
+	position:relative;
+}
+
+#contents,
+.pics, 
+.pics img,  
+.copies, 
+.copies .copy, 
+.logo, 
+.button {
+	position:absolute;
+}
+#wrapper, 
+#contents, 
+.pics,  
+.button, 
+.button a {
+	width:970px;
+	height:250px;
+}
+.copies {
+	top:0;
+	right:42px;
+	width:200px;
+	height:250px;
+}
+.copies .copy {
+	text-transform:uppercase;
+	text-align:left;
+	filter:alpha(opacity=0);
+	opacity:0;
+}
+.copies .copy span, 
+.copies .copy p {
+	font-style:italic;
+}
+.copies .copy p {
+	font-size:16px;
+	text-decoration:underline;
+	color:#e24848;
+	margin:20px 0 0 0;
+}
+.copies .copy1 {
+	top:54px;
+}
+.copies .copy2 {
+	top:50px;
+}
+.copies .copy3 {
+	top:50px;
+}
+.logo {
+	top:76px;
+	left:68px;
+}
+.button a {
+	display:block;
+}
+

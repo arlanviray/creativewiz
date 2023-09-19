@@ -1,0 +1,337 @@
+/*@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=95562e0d-22e5-4f03-8ad5-100e92ecc23f");
+@font-face{
+  font-family:"TradeGothicW01-BoldCn20 675334";
+  src:url("http://testftp.hearstdigital.co.uk/selfridges-beauty/257c802f-349c-4b4d-aefa-546d5de15ec6.eot?#iefix");
+  src:url("http://testftp.hearstdigital.co.uk/selfridges-beauty/257c802f-349c-4b4d-aefa-546d5de15ec6.eot?#iefix") format("eot"),
+  url("http://testftp.hearstdigital.co.uk/selfridges-beauty/5fdc935e-9e30-442a-bbe9-8d887b858471.woff") format("woff"),
+  url("http://testftp.hearstdigital.co.uk/selfridges-beauty/616c4c87-a077-43f4-a9f4-f01267c13818.ttf") format("truetype"),
+  url("http://testftp.hearstdigital.co.uk/selfridges-beauty/c901ad5f-a842-4549-a1f4-583a97f7e169.svg#http://testftp.hearstdigital.co.uk/selfridges-beauty/c901ad5f-a842-4549-a1f4-583a97f7e169") format("svg");
+}
+@font-face{
+  font-family:"Trade Gothic W01 Cn 18";
+  src:url("http://testftp.hearstdigital.co.uk/selfridges-beauty/087e5c21-3358-4cf3-9d2c-289a03a48292.eot?#iefix");
+  src:url("http://testftp.hearstdigital.co.uk/selfridges-beauty/087e5c21-3358-4cf3-9d2c-289a03a48292.eot?#iefix") format("eot"),
+  url("http://testftp.hearstdigital.co.uk/selfridges-beauty/fb754dec-aa8f-444c-be48-868464c47ab0.woff") format("woff"),
+  url("http://testftp.hearstdigital.co.uk/selfridges-beauty/295ff20c-2b48-4fa6-be92-a53bbf9bbbb4.ttf") format("truetype"),
+  url("http://testftp.hearstdigital.co.uk/selfridges-beauty/c573d9d0-0726-4b95-aeee-fb621a299563.svg#http://testftp.hearstdigital.co.uk/selfridges-beauty/c573d9d0-0726-4b95-aeee-fb621a299563") format("svg");
+}*/
+@import "https://www.projects.creativewiz.net/fonts/TradeGothic/styles.css";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Default styles */
+body {
+  font-family:"Times";
+  font-size:15px;
+  line-height:18px;
+  color:#9d9589;
+  background:none;
+}
+em {
+  font-family:"Trade Gothic W01 Cn 18";
+  font-style:normal;
+  letter-spacing:1px;
+}
+span {
+  font-family:"TradeGothicW01-BoldCn20 675334";
+  color:#e96417;
+  letter-spacing:2px;
+}
+.clr {
+  clear:both;
+}
+
+#mainWrapper, .header, .contents, .footer {
+  position:relative;
+  overflow:hidden;
+}
+#mainWrapper {
+  width:600px;
+  height:1200px;
+}
+#holderContents {
+  float:right;
+  width:300px;
+  height:600px;
+  background-color:#e8e6e3;
+}
+
+.header {
+  height:146px;
+  border-bottom:7px solid #ffde00;
+  text-align:center;
+}
+
+.contents {
+  background-color:#fff;
+}
+.contents .introcopy {
+  position:relative;
+  overflow:hidden;
+}
+.contents .intro {
+  height:354px;
+}
+.contents .intro img {
+  position:absolute;
+  top:0;
+  left:0;
+}
+.contents .intro img:nth-child(2) {
+  z-index:1;
+}
+.contents .copy {
+  position:absolute;
+  top:40px;
+  right:0;
+  width:110px;
+  height:174px;
+  background-color:#e9e6e3;
+  z-index:2;
+}
+.contents .copy .ctext1 {
+  font-family:"TradeGothicW01-BoldCn20 675334";
+  font-size:19px;
+  color:#e96417;
+  letter-spacing:2px;
+  padding:10px 0 6px 0;
+}
+.contents .copy .ctext1 p {
+  margin:16px 0 16px 20px;
+}
+.contents .copy .ctext2 {
+  position:absolute;
+  top:80px;
+  font-size:18px;
+  text-align:center;
+  padding:0 50px;
+}
+.contents .copy .ctext2 p {
+  line-height:26px;
+}
+
+.footer .ftext {
+  font-size:19px;
+  text-align:center;
+  width:295px;
+  height:93px;
+  border-left:5px solid #ffde00;
+  cursor:pointer;
+}
+.footer .ftext div {
+  margin:4px 0 0 0;
+}
+.footer .ftext p {
+  padding:16px 0 0 0;
+}
+.footer .fcarousel {
+  position:absolute;
+  overflow:hidden;
+  width:100%;
+  border-top:18px solid #ffde00;
+}
+.footer .fcarousel .title {
+  font-size:16px;
+  text-align:center;
+  margin:20px 0;
+}
+.footer .fcarousel .title div {
+  padding:0 0 2px 0;
+}
+.footer .fcarousel .title span {
+  font-size:24px;
+}
+
+#btnOverlay {
+  position:absolute; 
+  top:0; 
+  right:0; 
+  z-index:10; 
+  cursor:pointer; 
+  width:300px; 
+  height:600px;
+}
+#btnClose {
+  position:absolute;
+  top:0;
+  right:0;
+  cursor:pointer;
+  display:none;
+}
+#btnRoundel {
+  position:absolute;
+  bottom:428px;
+  left:344px;
+}
+#arrowShopNow {
+  margin:0 0 0 4px;
+}
+#arrowDown {
+  cursor:pointer;
+}
+
+/*
+ * carousels
+ */
+.contents #carouselMainContainer {
+  position:relative;
+  overflow:hidden;
+  height:710px;
+}
+.contents #carouselMain {
+  position:absolute;
+  top:0;
+  z-index:3;
+}
+.footer .fcarousel #carouselThumbs {}
+.footer .fcarousel #carouselThumbs img {
+  float:left;
+  cursor:pointer;
+  margin:0 5px;
+}
+.footer .fcarousel #carouselThumbs img {
+  padding:0 0 6px 0;
+}
+
+.contents #carouselMainArrows,
+.footer .fcarousel #carouselThumbsArrows {
+  position:absolute;
+  width:600px;
+  pointer-events:none;
+}
+
+.contents #carouselMainArrows {
+  top:330px;
+  z-index:4;
+}
+.footer .fcarousel #carouselThumbsArrows {
+  top:130px;
+}
+
+.contents #carouselMainArrows img,
+.footer .fcarousel #carouselThumbsArrows img {
+  cursor:pointer;
+  pointer-events:auto;
+}
+
+.contents #carouselMainArrows .arrowLeft,
+.footer .fcarousel #carouselThumbsArrows .arrowLeft {
+  float:left;
+}
+
+.contents #carouselMainArrows .arrowRight,
+.footer .fcarousel #carouselThumbsArrows .arrowRight {
+  float:right;
+}
+
+.contents #carouselMain .carouselImage {
+  float:left;
+  position:relative;
+  top:0;
+  left:0;
+}
+.contents #carouselMain .carouselImage .carouselText {
+  position:absolute;
+  bottom:0;
+  width:600px;
+  margin:0 0 40px 0;
+}
+.contents #carouselMain .carouselImage .carouselText div {
+  text-align:center;
+  padding:4px 130px;
+}
+.contents #carouselMain .carouselImage .carouselText div.title {
+  font-size:26px;
+}
+.contents #carouselMain .carouselImage .carouselText div a {
+  text-decoration:none;
+}
+.contents #carouselMain .carouselImage .carouselText div span {
+  font-size:18px;
+}
+.contents #carouselMain .carouselImage .carouselInfo {
+  position:absolute;
+  width:270px;
+  min-height:150px;
+  pointer-events:none;
+}
+.contents #carouselMain .carouselImage .carouselInfo .carouselInfoHolder {
+  position:relative;
+}
+.contents #carouselMain .carouselImage .carouselInfo .carouselInfoHolder .infoCopy {
+  position:absolute;
+  top:17px;
+  background-color:rgba(2555, 2555, 2555, 0.8);
+  padding:24px 20px 24px 30px;
+  pointer-events:auto;
+}
+.contents #carouselMain .carouselImage .carouselInfo .carouselInfoHolder .infoCopy a {
+  text-decoration:none;
+}
+.contents #carouselMain .carouselImage .carouselInfo .carouselInfoHolder .infoCopy p {
+  font-size:18px;
+  text-align:center;
+  margin:10px 0 0 0;
+}
+.contents #carouselMain .carouselImage .carouselInfo .carouselInfoHolder .infoCopyLeft {
+  margin:0 0 0 17px;
+}
+.contents #carouselMain .carouselImage .carouselInfo .carouselInfoHolder .infoCopyRight {
+  margin:0 17px 0 0;
+}
+.contents #carouselMain .carouselImage .carouselInfo .carouselInfoHolder .infoBtn {
+  position:absolute;
+  top:0;
+  cursor:pointer;
+  pointer-events:auto;
+}
+.contents #carouselMain .carouselImage .carouselInfo .carouselInfoHolder .infoBtnRight {
+  right:0;
+}
+

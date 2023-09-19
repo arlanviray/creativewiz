@@ -1,0 +1,16 @@
+@font-face{
+	font-family:"Copernicus Book";
+	src:url("book/Copernicus-Book.eot?#iefix");
+	src:url("book/Copernicus-Book.eot?#iefix") format("eot"),
+	url("book/Copernicus-Bookwoff") format("woff"),
+	url("book/Copernicus-Book.ttf") format("truetype"),
+	url("book/Copernicus-Book.svg#Copernicus-Book") format("svg");
+}
+@font-face{
+	font-family:"Copernicus BookItalic";
+	src:url("bookitalic/Copernicus-BookItalic.eot?#iefix");
+	src:url("bookitalic/Copernicus-BookItalic.eot?#iefix") format("eot"),
+	url("bookitalic/Copernicus-BookItalic.woff") format("woff"),
+	url("bookitalic/Copernicus-BookItalic.ttf") format("truetype"),
+	url("bookitalic/Copernicus-BookItalic.svg#Copernicus-BookItalic") format("svg");
+}

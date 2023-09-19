@@ -1,0 +1,81 @@
+<!doctype html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">   <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">   <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">   <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">   <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body style="margin: 0; padding: 0; text-align: center;">
+	<script type="text/javascript">
+		// do not include this function...
+		function calculatePositionAndMoveAd(){}
+		// end...
+	</script>
+	
+	<literal class="html">
+		<style type="text/css">
+			.component-elle-promotions-container {
+				display:none;
+			}
+			#iframe {
+				margin-left:-20px;
+			}
+			#col-main-adverts {
+				display:none;
+			}
+			#src-ad1 {
+				top:0px !important;
+			}
+		</style>
+	</literal>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var isMobile = {
+				Android: function() {
+					return navigator.userAgent.match(/Android/i);
+				},
+				BlackBerry: function() {
+					return navigator.userAgent.match(/BlackBerry/i);
+				},
+				iOS: function() {
+					return navigator.userAgent.match(/iPhone|iPod/i);
+				},
+				iPad: function() {
+					return navigator.userAgent.match(/iPad/i);
+				},
+				Opera: function() {
+					return navigator.userAgent.match(/Opera Mini/i);
+				},
+				Windows: function() {
+					return navigator.userAgent.match(/IEMobile/i);
+				},
+				any: function() {
+					return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+				}
+			};
+			if(isMobile.any()){
+				if(window.location.hash !== '')
+					window.location.href = 'iframe.v3.comp.closed/mobile.html'+ window.location.hash;
+				else
+					window.location.href = 'iframe.v3.comp.closed/mobile.html';
+			} else if(isMobile.iPad()){
+				if(window.location.hash !== '')
+					window.location.href = 'iframe.v3.comp.closed/desktop.html'+ window.location.hash;
+				else 
+					window.location.href = 'iframe.v3.comp.closed/desktop.html';
+			} else {
+				$(window).resize(function(){ 
+					calculatePositionAndMoveAd('ad1');
+				});
+				calculatePositionAndMoveAd('ad1');
+			}
+		});
+	</script>
+	<iframe id="follifollie-iframe" src="iframe.v3.comp.closed/desktop.html" width="950" height="788" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border:0;"></iframe>
+</body>
+</html>

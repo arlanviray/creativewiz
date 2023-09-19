@@ -1,0 +1,16 @@
+@font-face{
+	font-family:"Century Gothic W01 Bold";
+	src:url("bold/CenturyGothic-W01-Bold.eot?#iefix");
+	src:url("bold/CenturyGothic-W01-Bold.eot?#iefix") format("eot"),
+	url("bold/CenturyGothic-W01-Bold.woff") format("woff"),
+	url("bold/CenturyGothic-W01-Bold.ttf") format("truetype"),
+	url("bold/CenturyGothic-W01-Bold.svg#CenturyGothic-W01-Bold") format("svg");
+}
+@font-face{
+	font-family:"Century Gothic W01";
+	src:url("regular/CenturyGothic-W01.eot?#iefix");
+	src:url("regular/CenturyGothic-W01.eot?#iefix") format("eot"),
+	url("regular/CenturyGothic-W01.woff") format("woff"),
+	url("regular/CenturyGothic-W01.ttf") format("truetype"),
+	url("regular/CenturyGothic-W01.svg#CenturyGothic-W01") format("svg");
+}

@@ -1,0 +1,57 @@
+body {}
+a {
+	text-decoration:none;
+}
+.clr, .clear-fix {
+	clear:both;
+}
+#wrapper, #contents {
+	overflow:hidden;
+	position:relative;
+}
+#wrapper, #contents {
+	width:728px;
+	height:90px;
+}
+#contents {
+	background:url('img_bg.jpg') no-repeat;
+}
+
+
+.char .anim, 
+.button {
+	position:absolute;
+}
+
+
+.char {
+	position:relative;
+	top:0;
+	width:728px;
+	height:90px;
+}
+.char .txt1 {
+	top:26px;
+	left:32px;
+}
+.char .txt2 {
+	top:47px;
+	left:165px;
+}
+.char .head {
+	top:7px;
+	left:247px;
+}
+
+
+.button {
+	top:0;
+	left:0;
+}
+.button a {
+	display:block;
+	width:728px;
+	height:90px;
+}
+
+

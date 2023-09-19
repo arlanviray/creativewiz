@@ -1,0 +1,446 @@
+/*@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=34cb41d1-3745-4861-aac6-3231340e2ba7");
+@font-face{
+	font-family:"Century Gothic W01 Bold";
+	src:url("http://ads.pictela.net/rm/ads/28932/b247e158-e647-4a3d-9637-944de5124043_1385567176.eot?#iefix");
+	src:url("http://ads.pictela.net/rm/ads/28932/b247e158-e647-4a3d-9637-944de5124043_1385567176.eot?#iefix") format("eot"),
+	url("http://ads.pictela.net/rm/ads/28932/2ef5ecda-1772-45e2-843f-a13f5d76ed3a_1385567175.woff") format("woff"),
+	url("http://ads.pictela.net/rm/ads/28932/33cf10ca-a6bb-4888-a320-d38720c9847b_1385567176.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/adidas/fonts/3428a0e6-cb4d-408a-8331-cc78554ab49c.svg#3428a0e6-cb4d-408a-8331-cc78554ab49c") format("svg");
+}
+@font-face{
+	font-family:"Century Gothic W01";
+	src:url("http://ads.pictela.net/rm/ads/28932/bd45538f-4200-4946-b177-02de8337032d_1385567176.eot?#iefix");
+	src:url("http://ads.pictela.net/rm/ads/28932/bd45538f-4200-4946-b177-02de8337032d_1385567176.eot?#iefix") format("eot"),
+	url("http://ads.pictela.net/rm/ads/28932/9908cdad-7524-4206-819e-4f345a666324_1385567176.woff") format("woff"),
+	url("http://ads.pictela.net/rm/ads/28932/b710c26a-f1ae-4fb8-a9fe-570fd829cbf1_1385567176.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/adidas/fonts/c9e387df-c0d3-42e1-8de6-78c41f68594c.svg#c9e387df-c0d3-42e1-8de6-78c41f68594c") format("svg");
+}*/
+@import "https://www.projects.creativewiz.net/fonts/CenturyGothic/styles.css";
+
+body {
+	font-family:"Century Gothic W01";
+	font-size:12px;
+	line-height:16px;
+	color:#343434;
+	letter-spacing:0.1em;
+}
+a {
+	color:#9b9c9c;
+	text-decoration:none;
+}
+.clr {
+	clear:both;
+}
+
+
+#wrapper {
+	position:relative;
+	width:980px;
+	background-color:#fff;
+}
+
+
+#contents {
+	overflow:hidden;
+	position:relative;
+	height:96px;
+}
+#contents .logo,
+#contents .contracted, 
+#contents .expanded {
+	position:absolute;
+}
+
+
+#contents .logo {
+	top:0;
+	left:18px;
+	width:300px;
+	height:96px;
+}
+#contents .logo img {
+	position:absolute;
+}
+#contents .logo img.caption {
+	top:6px;
+	left:90px;
+}
+
+
+#contents .contracted {
+	width:100%;
+	height:96px;
+	background:url('img_bg_contracted.png') no-repeat;
+}
+#contents .contracted .btnExpand {
+	float:right;
+	font-family:"Century Gothic W01 Bold";
+	font-size:17px;
+	color:#5600da;
+	margin:26px 88px 0 0;
+	padding:12px 30px;
+	background-color:#fff;
+	border:1px solid #5600da;
+	-webkit-box-shadow: 4px 0px 10px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    4px 0px 10px rgba(50, 50, 50, 0.3);
+	box-shadow:         4px 0px 10px rgba(50, 50, 50, 0.3);
+	cursor:pointer;
+}
+#contents .contracted .btnExpand .text {
+	padding:0 20px 0 0;
+	background:url('img_arrow_down.png') right center no-repeat;
+}
+#contents .contracted .btnExpand:hover {
+	color:#fff;
+	background-color:#5600da;
+}
+#contents .contracted .btnExpand:hover .text {
+	background:url('img_arrow_down_white.png') right center no-repeat;
+}
+
+
+#contents .expanded {
+	width:100%;
+	height:606px;
+}
+#contents .expanded .col {
+	overflow:hidden;
+	position:absolute;
+	width:490px;
+	height:467px;
+}
+#contents .expanded .colleft {
+	left:0;
+}
+#contents .expanded .colright {
+	right:0;
+}
+#contents .expanded .products img, 
+#contents .expanded .products .copies,
+#contents .expanded .products .infos, 
+#contents .expanded .products .infos .overlay, 
+#contents .expanded .products .infos .text {
+	position:absolute;
+}
+
+#contents .expanded .vc-holder,
+#contents .expanded .landing {
+	overflow:hidden;
+	position:absolute;
+	top:139px;
+	left:0;
+	width:980px;
+	height:467px;
+	background-color:#ececec;
+}
+#contents .expanded .vc-holder {
+	display:none;
+}
+#contents .expanded .vc-holder .vc-contents {
+	position:absolute;
+	top:0;
+	left:0;
+	height:934px;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder,
+#contents .expanded .vc-holder .vc-contents .carousel {
+	overflow:hidden;
+	position:relative;
+	width:980px;
+	height:467px;
+}
+
+
+#contents .expanded .landing {}
+#contents .expanded .landing .col {
+	cursor:pointer;
+}
+#contents .expanded .landing .col img {
+	filter:alpha(opacity=1);
+	opacity:1;
+}
+#contents .expanded .landing .colleft {
+	padding:0;
+}
+#contents .expanded .landing .colleft .vicon {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-66px 0 0 -66px;
+}
+#contents .expanded .landing .colright {
+	padding:0;
+}
+#contents .expanded .landing .col .copies {
+	position:absolute;
+	bottom:12px;
+	left:50%;
+	margin:0 0 0 -155px;
+	width:270px;
+	text-align:center;
+	background-color:#fff;
+	border:1px solid #5600da;
+	padding:20px;
+}
+#contents .expanded .landing .col .copies h5 {
+	font-family:"Century Gothic W01 Bold";
+	font-size:17px;
+	color:#5600da;
+	margin:0 0 6px 0;
+}
+#contents .expanded .landing .col .copies div {
+	/*margin:14px 180px;
+	border-bottom:1px solid #fff;*/
+}
+#contents .expanded .landing .col .copies p {
+	font-size:12px;
+	line-height:18px;
+	color:#343434;
+}
+
+
+#contents .expanded .buttons {
+	position:relative;
+	top:96px;
+	text-align:center;
+	height:44px;
+	background-color:#ececec;
+	color:#9b9c9c;
+}
+#contents .expanded .buttons .navigation {
+	position:absolute;
+	top:14px;
+	left:430px;
+	font-size:13px;
+}
+#contents .expanded .buttons .navigation a.active {
+	font-family:"Century Gothic W01 Bold";
+	color:#000;
+}
+#contents .expanded .buttons .navigation span {
+	margin:0 6px;
+	color:#5600da;
+}
+#contents .expanded .buttons .btnClose {
+	position:absolute;
+	top:14px;
+	right:20px;
+	cursor:pointer;
+}
+#contents .expanded .buttons .btnClose:hover {
+	font-family:"Century Gothic W01 Bold";
+	color:#000;
+}
+
+
+#contents .expanded .arrows {
+	display:none;
+	position:absolute;
+	top:320px;
+	width:100%;
+}
+#contents .expanded .arrows img {
+	cursor:pointer;
+}
+#contents .expanded .arrows .btnArrowLeft {
+	float:left;
+	margin:0 0 0 10px;
+}
+#contents .expanded .arrows .btnArrowRight {
+	float:right;
+	margin:0 2px 0 0;
+}
+
+
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption,
+#contents .expanded .vc-holder .vc-contents .videoholder .video {
+	float:left;
+	height:434px;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption {
+	text-align:center;
+	width:189px;
+	padding:80px 10px 0 10px;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption h5 {
+	font-family:"Century Gothic W01 Bold";
+	font-size:17px;
+	color:#5600da;
+	margin:0 0 6px 0;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption p {
+	font-size:12px;
+	line-height:18px;
+	color:#343434;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .video {
+	width:771px;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout {
+	font-family:"Century Gothic W01 Bold";
+	font-size:17px;
+	text-align:center;
+	color:#5600da;
+	padding:12px 0;
+	margin:40px 10px 0 10px;
+	/*background:url('img_arrow_right.png') right center no-repeat;*/
+	background-color:#fff;
+	border:1px solid #5600da;
+	-webkit-box-shadow: 4px 0px 10px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    4px 0px 10px rgba(50, 50, 50, 0.3);
+	box-shadow:         4px 0px 10px rgba(50, 50, 50, 0.3);
+	cursor:pointer;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout a {
+	display:block;
+	color:#5600da;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout:hover {
+	background-color:#5600da;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout:hover a {
+	color:#fff;
+}
+
+
+#contents .expanded .vc-holder .vc-contents .carousel .products-container {
+	position:absolute;
+	left:0;
+	width:9999999px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products {
+	overflow:hidden;
+	position:relative;
+	float:left;
+	width:980px;
+	height:434px;
+	background-color:#fff;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main1 {
+	top:30px;
+	left:90px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main2 {
+	top:20px;
+	left:198px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main3 {
+	top:36px;
+	left:100px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main4 {
+	top:20px;
+	left:198px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main5 {
+	top:20px;
+	left:104px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main6 {
+	top:70px;
+	left:60px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main7 {
+	top:20px;
+	left:156px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main8 {
+	top:26px;
+	left:82px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main9 {
+	top:90px;
+	left:68px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .circle {
+	position:absolute;
+	top:30px;
+	left:664px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos,
+#contents .expanded .vc-holder .vc-contents .carousel .infos .overlay {
+	width:350px;
+	height:230px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos {
+	top:200px;
+	right:66px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .overlay {
+	/*background-color:#000;
+	filter:alpha(opacity=70);
+	opacity:0.7;*/
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text {
+	text-align:center;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header {
+	font-family:"Century Gothic W01 Bold";
+	font-size:25px;
+	line-height:28px;
+	color:#5600da;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header .active {
+	background:url('img_arrow_info_up.png') right 3px no-repeat;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header .title {}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header .btnDetails {
+	/*font-size:10px;
+	margin:2px 0 0 0;
+	padding:0 14px 0 0;
+	background:url('img_arrow_info_down.png') right 3px no-repeat;
+	cursor:pointer;*/
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text p {
+	font-size:15px;
+	line-height:22px;
+	margin:10px 0 20px 0;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow {
+	font-family:"Century Gothic W01 Bold";
+	font-size:17px;
+	color:#5600da;
+	margin:0 76px;
+	padding:12px 30px;
+	background:url('img_arrow_right.png') 166px center no-repeat;
+	background-color:#fff;
+	border:1px solid #5600da;
+	-webkit-box-shadow: 4px 0px 10px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    4px 0px 10px rgba(50, 50, 50, 0.3);
+	box-shadow:         4px 0px 10px rgba(50, 50, 50, 0.3);
+	cursor:pointer;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow a {
+	display:block;
+	color:#5600da;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow:hover {
+	background:url('img_arrow_right_white.png') 166px center no-repeat;
+	background-color:#5600da;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow:hover a {
+	color:#fff;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation {
+	position:absolute;
+	bottom:0;
+	width:980px;
+	height:33px;
+	text-align:center;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation ul {
+	width:240px;
+	margin:6px auto 0 auto;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation ul li {
+	float:left;
+	width:24px;
+	height:20px;
+	background:url('img_product_nav_n.png') center center no-repeat;
+	cursor:pointer;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation ul li.active {
+	background:url('img_product_nav_a.png') center center no-repeat;
+}
+
+

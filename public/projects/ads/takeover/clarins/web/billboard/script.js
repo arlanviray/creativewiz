@@ -1,0 +1,6 @@
+/**
+ * @author: Arlan Viray
+ * @email: arlanv555@gmail.com
+ */
+!function(n,e,i){function r(){TweenMax.from(".prod1",a,{css:{bottom:-250},delay:.5}),TweenMax.from(".prod2",a,{css:{bottom:-250},delay:1}),// TweenMax.from('.logo img', 4, {css:{'right':970, 'opacity':0}, ease:Bounce.easeOut});
+n(".volume").click(function(){n(this).hasClass("inactive")?(n(this).removeClass("inactive"),BCL.videoPlayer.setVolume(1)):(n(this).addClass("inactive"),BCL.videoPlayer.setVolume(0))}),o.any()&&n(".volume").hide(),o.noneIOS()&&n(".videoholder .video").addClass("android")}var o={Android:function(){return navigator.userAgent.match(/Android/i)},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i)},iOS:function(){return navigator.userAgent.match(/iPhone|iPod/i)},iPad:function(){return navigator.userAgent.match(/iPad/i)},Opera:function(){return navigator.userAgent.match(/Opera Mini/i)},Windows:function(){return navigator.userAgent.match(/IEMobile/i)},noneIOS:function(){return o.Android()||o.BlackBerry()||o.Opera()||o.Windows()},any:function(){return o.Android()||o.BlackBerry()||o.iOS()||o.iPad()||o.Opera()||o.Windows()}},t=!1,a=.5,d=.25,u=new TimelineMax({paused:!0,onReverseComplete:function(){},onComplete:function(){}});n(r)}(jQuery,window);

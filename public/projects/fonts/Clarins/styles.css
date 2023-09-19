@@ -1,0 +1,16 @@
+@font-face{
+	font-family:"Clarins Italic";
+	src:url("italic/clarinsita-webfont.eot?#iefix");
+	src:url("italic/clarinsita-webfont.eot?#iefix") format("eot"),
+	url("italic/clarinsita-webfont.woff") format("woff"),
+	url("italic/clarinsita-webfont.ttf") format("truetype"),
+	url("italic/clarinsita-webfont.svg#clarinsita-webfont") format("svg");
+}
+@font-face{
+	font-family:"Clarins Regular";
+	src:url("regular/clarinsreg-webfont.eot?#iefix");
+	src:url("regular/clarinsreg-webfont.eot?#iefix") format("eot"),
+	url("regular/clarinsreg-webfont.woff") format("woff"),
+	url("regular/clarinsreg-webfont.ttf") format("truetype"),
+	url("regular/clarinsreg-webfont.svg#clarinsreg-webfont") format("svg");
+}

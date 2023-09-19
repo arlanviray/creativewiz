@@ -1,0 +1,78 @@
+<!doctype html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">   <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">   <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">   <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">   <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body style="margin:0; padding:0;">
+	<script type="text/javascript">
+		// do not include this function...
+		function calculatePositionAndMoveAd(){}
+		// end...
+	</script>
+	
+	<literal class="html">
+		<style type="text/css">
+			.component-elle-promotions-container {
+				display:none;
+			}
+			#iframe {
+				margin-left:-20px;
+			}
+			#col-main-adverts {
+				display:none;
+			}
+			#src-ad1 {
+				top:0px !important;
+			}
+		</style>
+	</literal>
+	<script type="text/javascript">
+		$(window).resize(function(){ 
+			calculatePositionAndMoveAd('ad1');
+		});
+		$(document).ready(function(){
+			calculatePositionAndMoveAd('ad1');
+			
+			// To avoid cross domain errors and for this to work.
+			// All files has to be in the same location of the parent website.
+			var _thisCurrHashChannel, 
+				_thisPrevHashChannel, 
+				_thisIntervalID,
+				_thisSections = ['home', 'levis-revel-studios', 'outfit-builder', 'the-art-of-denim', 'gallery'];
+				
+			clearInterval(_thisIntervalID);
+			
+			_thisIntervalID = setInterval(function(){
+				_thisCurrHashChannel = window.location.hash;
+				$.each(_thisSections, function(i, obj){
+					if(_thisCurrHashChannel === ('#'+ obj) && _thisPrevHashChannel !== ('#'+ obj)){
+						AVScrollUp();
+					}
+				});
+				_thisPrevHashChannel = _thisCurrHashChannel;
+			}, 1000);
+			
+			function AVScrollUp(){
+				$('html, body').animate({scrollTop:0}, 500);
+			}
+			function AVReceiveMessage(e)
+			{
+				if(e.data !== 'AVLevisRevelScrollUp'){
+					return;
+				}
+				AVScrollUp();
+			}
+			window.addEventListener('message', AVReceiveMessage, false);
+		});
+	</script>
+	<iframe id="levisrevel-iframe" src="iframe/index.html" width="980" height="1400" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border:0;"></iframe>
+	
+</body>
+</html>

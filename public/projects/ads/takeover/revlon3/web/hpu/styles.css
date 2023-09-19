@@ -1,0 +1,144 @@
+body {}
+.clr {
+	clear: both;
+}
+.absolute {
+	position: absolute;
+}
+
+#wrapper, #contents {
+	position: relative;
+}
+
+#wrapper, #contents, 
+.backgrounds, .backgrounds .color, 
+.bgImage {
+	width: 300px;
+	height: 600px;
+}
+
+.backgrounds, .backgrounds .color {
+	position: absolute;
+}
+.backgrounds .color.color1 {
+	background-color: #034385;
+}
+.backgrounds .color.color2 {
+	background-color: #164d3c;
+}
+.backgrounds .color.color3 {
+	background-color: #a80e5b;
+}
+.backgrounds .color.color4 {
+	background-color: #bb0a22;
+}
+.backgrounds .color.color5 {
+	background-color: #740a14;
+}
+
+.carousel {
+	position: absolute;
+	top: 185px;
+	left: 20px;
+}
+.carousel, 
+.carousel .pics {
+	width: 261px;
+	height: 326px;
+}
+.carousel .pics {
+	overflow: hidden;
+	position: absolute;
+}
+.carousel .pics ul {
+	position: relative;
+	left: -261px;
+	width: 99999px;
+}
+.carousel .pics ul li {
+	float: left;
+}
+.carousel .arrows {
+	position: absolute;
+	top: 140px;
+	width: 100%;
+	height: 40px;
+}
+.carousel .arrows .arrow {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.carousel .arrows .arrow.left {
+	float: left;
+	background: url('img_slider_arrows.png') 0px 0px no-repeat;
+}
+.carousel .arrows .arrow.left:hover {
+	background: url('img_slider_arrows.png') 0px -40px no-repeat;
+}
+.carousel .arrows .arrow.right {
+	float: right;
+	background: url('img_slider_arrows.png') -40px 0px no-repeat;
+}
+.carousel .arrows .arrow.right:hover {
+	background: url('img_slider_arrows.png') -40px -40px no-repeat;
+}
+
+.bgImage {
+	position: absolute;
+	background: url('img_hpu_bg.png') no-repeat;
+}
+.bgImage a {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 300px;
+	height: 176px;
+}
+
+.btnExit {
+	top: 526px;
+	left: 72px;
+}
+.btnExit, .btnExit a {
+	width: 156px;
+	height: 20px;
+	display: block;
+}
+.btnVideo {
+	top: 554px;
+	left: 38px;
+	width: 74px;
+	height: 24px;
+	cursor: pointer;
+}
+.btnVideo.inactive {
+	pointer-events: none;
+}
+.btnVideo .line {
+	display: none;
+	top: 23px;
+	left: 33px;
+	width: 38px;
+	height: 2px;
+	background-color: #fff;
+}
+.btnGallery {
+	top: 554px;
+	left: 138px;
+	width: 126px;
+	height: 24px;
+	cursor: pointer;
+}
+.btnGallery.inactive {
+	pointer-events: none;
+}
+.btnGallery .line {
+	top: 23px;
+	left: 35px;
+	width: 87px;
+	height: 2px;
+	background-color: #fff;
+}
+
+

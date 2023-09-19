@@ -1,0 +1,104 @@
+body {}
+.clr {
+	clear: both;
+}
+.absolute {
+	position: absolute;
+}
+
+#wrapper, #contents, .col {
+	position: relative;
+}
+
+#wrapper, #contents {
+	width: 1560px;
+	height: 2500px;
+}
+
+.col, 
+.backgrounds, .backgrounds .color, 
+.clickevent, .clickevent a {
+	width: 291px;
+	height: 2500px;
+}
+.col.col1 {
+	overflow: hidden;
+	float: left;
+}
+.col.col2 {
+	overflow: hidden;
+	float: right;
+}
+
+.backgrounds, .backgrounds .color {
+	position: absolute;
+}
+.backgrounds .color.color1 {
+	background-color: #009256;
+}
+.backgrounds .color.color2 {
+	background-color: #1f245c;
+}
+.backgrounds .color.color3 {
+	background-color: #db3b38;
+}
+.backgrounds .color.color4 {
+	background-color: #212121;
+}
+
+.col .logo {
+	top: 10px;
+}
+.col.col1 .logo {
+	right: 10px;
+}
+.col.col2 .logo {
+	left: 10px;
+}
+
+.col .pics, .col .pics img {
+	position: absolute;
+}
+.col .pics {
+	overflow: hidden;
+	top: 126px;
+	width: 304px;
+	height: 312px;
+}
+.col.col1 .pics {
+	left: 304px;
+}
+.col.col2 .pics {
+	right: 304px;
+}
+
+.col .cta {
+	top: 456px;
+}
+.col.col1 .cta {
+	right: 6px;
+}
+.col.col2 .cta {
+	left: 6px;
+}
+
+.col .products, .col .products img {
+	position: absolute;
+}
+.col .products {
+	top: 696px;
+	width: 150px;
+	height: 240px;
+}
+.col.col1 .products {
+	right: 10px;
+}
+.col.col2 .products {
+	left: 10px;
+}
+
+.clickevent a {
+	display: block;
+}
+
+

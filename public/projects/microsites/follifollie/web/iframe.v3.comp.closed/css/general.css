@@ -1,0 +1,53 @@
+@font-face{
+	font-family:"DomaineDisplayRegularItalic";
+	src:url("fonts/Domaine_Display_Regular_Italic.eot?#iefix");
+	src:url("fonts/Domaine_Display_Regular_Italic.eot?#iefix") format("eot"),
+	url("fonts/Domaine_Display_Regular_Italic.woff") format("woff"),
+	url("fonts/Domaine_Display_Regular_Italic.ttf") format("truetype"),
+	url("fonts/Domaine_Display_Regular_Italic.svg#Domaine_Display_Regular_Italic") format("svg");
+}
+@font-face{
+	font-family:"TaguscondLight";
+	src:url("fonts/Taguscond-light.eot?#iefix");
+	src:url("fonts/Taguscond-light.eot?#iefix") format("eot"),
+	url("fonts/Taguscond-light.woff") format("woff"),
+	url("fonts/Taguscond-light.ttf") format("truetype"),
+	url("fonts/Taguscond-light.svg#Taguscond-light") format("svg");
+}
+
+body {
+	font-family:Georgia, serif;
+	font-size:14px;
+	line-height:18px;
+	color:#fff;
+	letter-spacing:0.1em;
+}
+a {
+	color:#FFF;
+	text-decoration:none;
+}
+strong {
+	font-weight:bold;
+}
+.absolute {
+	position:absolute;
+}
+.cursor {
+	cursor:pointer;
+}
+.left, .col {
+	float:left;
+}
+.right {
+	float:right;
+}
+.clear-fix, .clr {
+	clear:both;
+}
+.unselectable {
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}

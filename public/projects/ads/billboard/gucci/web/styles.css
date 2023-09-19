@@ -1,0 +1,310 @@
+/*@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=4d421369-9985-4f22-a417-a221cdee9977");
+@font-face{
+	font-family:"GeorgiaProW02-Light";
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/24402/c1e3c479-2b5b-44c1-bdaa-21537cb97eb6_1380641628.eot?#iefix");
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/24402/c1e3c479-2b5b-44c1-bdaa-21537cb97eb6_1380641628.eot?#iefix") format("eot"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/24402/a1511ca9-6b07-4f59-ae5e-8ac21bc4f7f2_1380641625.woff") format("woff"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/24402/2f29c594-ab53-4a64-b115-c576886856c1_1380641620.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/gucci_fonts/dbb35f99-ad0b-4a86-a38f-1fcdd53c9d79.svg#dbb35f99-ad0b-4a86-a38f-1fcdd53c9d79") format("svg");
+}
+@font-face{
+	font-family:"GeorgiaProW02-LightItal";
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/24402/1628f776-e61b-4351-96ef-bac1e7a7c3f9_1380641624.eot?#iefix");
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/24402/1628f776-e61b-4351-96ef-bac1e7a7c3f9_1380641624.eot?#iefix") format("eot"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/24402/b4771eb9-1153-4b3f-a0a7-d441636d8cab_1380641627.woff") format("woff"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/24402/639ca559-9976-41d9-bf31-9b5a44acaa0b_1380641622.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/gucci_fonts/1033bb63-dffc-43b5-8e26-b363494ba7a3.svg#1033bb63-dffc-43b5-8e26-b363494ba7a3") format("svg");
+}
+@font-face{
+	font-family:"Proxima N W01 Light";
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/24402/93cc6d34-798e-42c8-87d2-fd6391801b63_1380628666.eot?#iefix");
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/24402/93cc6d34-798e-42c8-87d2-fd6391801b63_1380628666.eot?#iefix") format("eot"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/24402/2fa30669-9bbd-4ced-912f-db94a367ed6c_1380628664.woff") format("woff"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/24402/c12b3ebb-3771-483f-a84a-ac63d615c28e_1380628668.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/gucci_fonts/2a961063-ea56-4a4b-8cea-bdae32edb0e2.svg#2a961063-ea56-4a4b-8cea-bdae32edb0e2") format("svg");
+}
+@font-face{
+	font-family:"Proxima N W01 Reg";
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/24402/7e90123f-e4a7-4689-b41f-6bcfe331c00a_1380628665.eot?#iefix");
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/24402/7e90123f-e4a7-4689-b41f-6bcfe331c00a_1380628665.eot?#iefix") format("eot"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/24402/e56ecb6d-da41-4bd9-982d-2d295bec9ab0_1380628675.woff") format("woff"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/24402/2aff4f81-3e97-4a83-9e6c-45e33c024796_1380628663.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/gucci_fonts/ab9cd062-380f-4b53-b1a7-c0bec7402235.svg#ab9cd062-380f-4b53-b1a7-c0bec7402235") format("svg");
+}
+@font-face{
+	font-family:"Proxima N W01 Thin Reg";
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/24402/37994fca-b67e-41db-94b3-44077c62810a_1380724313.eot?#iefix");
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/24402/37994fca-b67e-41db-94b3-44077c62810a_1380724313.eot?#iefix") format("eot"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/24402/da176885-bee9-49f7-88f0-d7ad9229ddd7_1380724315.woff") format("woff"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/24402/1861a7b7-09a5-4efd-b681-5214784ded39_1380724311.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/gucci_fonts/610147b3-ad15-4b4b-a0fb-25244238ab3d.svg#610147b3-ad15-4b4b-a0fb-25244238ab3d") format("svg");
+}*/
+@import "https://www.projects.creativewiz.net/fonts/GeorgiaPro/styles.css";
+@import "https://www.projects.creativewiz.net/fonts/ProximaNova/styles.css";
+
+body {
+	font-family:"Proxima N W01 Thin Reg";
+	font-size:15px;
+	line-height:18px;
+	color:#fff;
+	letter-spacing:0.1em;
+}
+.clr {
+	clear:both;
+}
+
+#wrapper {
+	overflow:hidden;
+	position:relative;
+	background:url('product_bg.jpg') no-repeat #000;
+}
+#wrapper, .intro, 
+.contents, 
+.contents .gallery .groups,
+#videoholder {
+	width:970px;
+	height:250px;
+}
+
+
+.intro, 
+.intro img, 
+.contents, 
+.contents .left, 
+.contents .left img, 
+.contents .left .overlaytxt, 
+.contents .right, 
+.contents .right img, 
+.contents .right .overlaytxt, 
+.contents .gallery, 
+.contents .info, 
+.contents #arrowleft, 
+.contents #arrowright, 
+.logotop, 
+.logobottom, 
+.navigation, 
+#videoholder,
+#videoholder .info, 
+#videoholder #video {
+	position:absolute;
+}
+
+
+.intro {
+	background-color:#000;
+}
+
+
+.contents {
+	display:none;
+}
+.contents .left, 
+.contents .right {
+	width:485px;
+	height:250px;
+	background-color:#000;
+}
+.contents .right {
+	left:485px;
+}
+.contents .left img, 
+.contents .right img {
+	cursor:pointer;
+}
+.contents .left .overlaytxt, 
+.contents .right .overlaytxt {
+	position:absolute;
+	top:88px;
+	width:485px;
+	cursor:none;
+	pointer-events:none;
+}
+.contents .left .overlaytxt h1, 
+.contents .right .overlaytxt h1 {
+	font-size:31px;
+	text-align:center;
+	margin:0 0 10px 0;
+}
+.contents .left .overlaytxt p, 
+.contents .right .overlaytxt p {
+	font-family:"GeorgiaProW02-LightItal";
+	font-size:23px;
+	font-weight:normal;
+	text-align:center;
+}
+.contents .left .overlaytxt p span, 
+.contents .right .overlaytxt p span {
+	font-family:"GeorgiaProW02-Light";
+}
+
+
+.contents .gallery {
+	left:0px;
+	width:99999px;
+	height:250px;
+}
+.contents .gallery .groups {
+	position:relative;
+	float:left;
+}
+.contents .gallery .groups img {
+	position:absolute;
+	top:20px;
+	cursor:pointer;
+}
+.contents .gallery .groups img.prod1 {
+	left:70px;
+}
+.contents .gallery .groups img.prod2 {
+	left:280px;
+}
+.contents .gallery .groups img.prod3 {
+	left:490px;
+}
+.contents .gallery .groups img.prod4 {
+	left:720px;
+}
+.contents .gallery .groups img#p1 {
+	top:30px;
+}
+.contents .gallery .groups img#p2 {
+	top:30px;
+}
+.contents .gallery .groups img#p3 {
+	top:40px;
+}
+.contents .gallery .groups img#p4 {
+	top:38px;
+}
+.contents .gallery .groups img#p5 {
+	top:30px;
+}
+.contents .gallery .groups img#p6 {
+	top:30px;
+}
+.contents .gallery .groups img#p7 {
+	top:30px;
+}
+.contents .gallery .groups img#p8 {
+	top:32px;
+}
+.contents .gallery .groups img#p9 {
+	top:30px;
+	left:100px;
+}
+.contents .gallery .groups img#p10 {
+	top:30px;
+	left:340px;
+}
+.contents .gallery .groups img#p11 {
+	left:550px;
+}
+.contents .gallery .groups img#p12 {
+	top:38px;
+}
+
+
+.contents .arrow {
+	top:100px;
+	cursor:pointer;
+}
+.contents #arrowleft {
+	left:24px;
+}
+.contents #arrowright {
+	right:24px;
+}
+
+
+.contents .info {
+	top:64px;
+	left:320px;
+	width:550px;
+}
+
+
+#videoholder {
+	overflow:hidden;
+	top:-250px;
+}
+#videoholder .info {
+	top:72px;
+	left:-420px;
+	width:380px;
+}
+.contents .info h2,
+#videoholder .info h2 {
+	font-size:20px;
+	line-height:26px;
+	margin:0 0 6px 0;
+	text-transform:uppercase;
+}
+.contents .info p,
+#videoholder .info p {
+	font-family:"GeorgiaProW02-Light";
+	font-size:14px;
+	line-height:18px;
+}
+#videoholder #video {
+	top:10px;
+	left:460px;
+}
+
+
+.logotop {
+	top:-40px;
+	width:970px;
+	height:40px;
+}
+.logotop img {
+	margin:12px 0 0 24px;
+}
+.logotop .txt {
+	float:right;
+	height:20px;
+	text-align:right;
+	white-space:nowrap;
+	margin:12px 24px 0 0;
+	cursor:pointer;
+}
+.logobottom, .navigation {
+	top:250px;
+	width:970px;
+	height:40px;
+	background-color:rgba(0, 0, 0, 0.5);
+	text-align:center;
+}
+.logobottom img {
+	margin:8px 0 0 0;
+}
+.navigation {
+	overflow:hidden;
+	width:1420px;
+}
+.navigation .nav {
+	float:left;
+	background-color:#636366;
+	padding:12px 30px 12px 30px;
+	text-align:left;
+	cursor:pointer;
+}
+.navigation .nav:hover {
+	background-color:#312929;
+}
+.navigation .active {
+	background-color:#312929;
+}
+.navigation .nav3 {
+	width:420px;
+}
+
+
+#shopnow {
+	margin:6px 0 0 0;
+}
+#shopnow a {
+	font-size:14px;
+	color:#fff;
+	text-decoration:none;
+}
+

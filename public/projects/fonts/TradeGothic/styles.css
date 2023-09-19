@@ -1,0 +1,112 @@
+@font-face{
+	font-family:"Trade Gothic W01 Bold";
+	src:url("bold/TradeGothic-W01-Bold.eot?#iefix");
+	src:url("bold/TradeGothic-W01-Bold.eot?#iefix") format("eot"),
+	url("bold/TradeGothic-W01-Bold.woff") format("woff"),
+	url("bold/TradeGothic-W01-Bold.ttf") format("truetype"),
+	url("bold/TradeGothic-W01-Bold.svg#TradeGothic-W01-Bold") format("svg");
+}
+@font-face{
+	font-family:"Trade Gothic W01 Bold 2";
+	src:url("bold2/TradeGothic-W01-Bold2.eot?#iefix");
+	src:url("bold2/TradeGothic-W01-Bold2.eot?#iefix") format("eot"),
+	url("bold2/TradeGothic-W01-Bold2.woff") format("woff"),
+	url("bold2/TradeGothic-W01-Bold2.ttf") format("truetype"),
+	url("bold2/TradeGothic-W01-Bold2.svg#TradeGothic-W01-Bold2") format("svg");
+}
+@font-face{
+	font-family:"TradeGothicW01-Bold2Obl";
+	src:url("bold2Obl/TradeGothicW01-Bold2Obl.eot?#iefix");
+	src:url("bold2Obl/TradeGothicW01-Bold2Obl.eot?#iefix") format("eot"),
+	url("bold2Obl/TradeGothicW01-Bold2Obl.woff") format("woff"),
+	url("bold2Obl/TradeGothicW01-Bold2Obl.ttf") format("truetype"),
+	url("bold2Obl/TradeGothicW01-Bold2Obl.svg#TradeGothicW01-Bold2Obl") format("svg");
+}
+@font-face{
+	font-family:"TradeGothicW01-BoldCn20 675334";
+	src:url("boldCn20675334/TradeGothicW01-BoldCn20-675334.eot?#iefix");
+	src:url("boldCn20675334/TradeGothicW01-BoldCn20-675334.eot?#iefix") format("eot"),
+	url("boldCn20675334/TradeGothicW01-BoldCn20-675334.woff") format("woff"),
+	url("boldCn20675334/TradeGothicW01-BoldCn20-675334.ttf") format("truetype"),
+	url("boldCn20675334/TradeGothicW01-BoldCn20-675334.svg#TradeGothicW01-BoldCn20-675334") format("svg");
+}
+@font-face{
+	font-family:"TradeGothicW01-BoldCn20 675337";
+	src:url("boldCn20675337/TradeGothicW01-BoldCn20-675337.eot?#iefix");
+	src:url("boldCn20675337/TradeGothicW01-BoldCn20-675337.eot?#iefix") format("eot"),
+	url("boldCn20675337/TradeGothicW01-BoldCn20-675337.woff") format("woff"),
+	url("boldCn20675337/TradeGothicW01-BoldCn20-675337.ttf") format("truetype"),
+	url("boldCn20675337/TradeGothicW01-BoldCn20-675337.svg#TradeGothicW01-BoldCn20-675337") format("svg");
+}
+@font-face{
+	font-family:"TradeGothicW01-BoldObl";
+	src:url("boldObl/TradeGothicW01-BoldObl.eot?#iefix");
+	src:url("boldObl/TradeGothicW01-BoldObl.eot?#iefix") format("eot"),
+	url("boldObl/TradeGothicW01-BoldObl.woff") format("woff"),
+	url("boldObl/TradeGothicW01-BoldObl.ttf") format("truetype"),
+	url("boldObl/TradeGothicW01-BoldObl.svg#TradeGothicW01-BoldObl") format("svg");
+}
+@font-face{
+	font-family:"Trade Gothic W01 Cn 18";
+	src:url("cn18/TradeGothic-W01-Cn18.eot?#iefix");
+	src:url("cn18/TradeGothic-W01-Cn18.eot?#iefix") format("eot"),
+	url("cn18/TradeGothic-W01-Cn18.woff") format("woff"),
+	url("cn18/TradeGothic-W01-Cn18.ttf") format("truetype"),
+	url("cn18/TradeGothic-W01-Cn18.svg#TradeGothic-W01-Cn18") format("svg");
+}
+@font-face{
+	font-family:"TradeGothicW01-Cn18Obl";
+	src:url("cn18Obl/TradeGothicW01-Cn18Obl.eot?#iefix");
+	src:url("cn18Obl/TradeGothicW01-Cn18Obl.eot?#iefix") format("eot"),
+	url("cn18Obl/TradeGothicW01-Cn18Obl.woff") format("woff"),
+	url("cn18Obl/TradeGothicW01-Cn18Obl.ttf") format("truetype"),
+	url("cn18Obl/TradeGothicW01-Cn18Obl.svg#TradeGothicW01-Cn18Obl") format("svg");
+}
+@font-face{
+	font-family:"TradeGothicW01-Extended";
+	src:url("ext/TradeGothicW01-Extended.eot?#iefix");
+	src:url("ext/TradeGothicW01-Extended.eot?#iefix") format("eot"),
+	url("ext/TradeGothicW01-Extended.woff") format("woff"),
+	url("ext/TradeGothicW01-Extended.ttf") format("truetype"),
+	url("ext/TradeGothicW01-Extended.svg#TradeGothicW01-Extended") format("svg");
+}
+@font-face{
+	font-family:"TradeGothicW01-BoldExte";
+	src:url("extBold/TradeGothicW01-BoldExte.eot?#iefix");
+	src:url("extBold/TradeGothicW01-BoldExte.eot?#iefix") format("eot"),
+	url("extBold/TradeGothicW01-BoldExte.woff") format("woff"),
+	url("extBold/TradeGothicW01-BoldExte.ttf") format("truetype"),
+	url("extBold/TradeGothicW01-BoldExte.svg#TradeGothicW01-BoldExte") format("svg");
+}
+@font-face{
+	font-family:"Trade Gothic W01 Light";
+	src:url("light/TradeGothic-W01-Light.eot?#iefix");
+	src:url("light/TradeGothic-W01-Light.eot?#iefix") format("eot"),
+	url("light/TradeGothic-W01-Light.woff") format("woff"),
+	url("light/TradeGothic-W01-Light.ttf") format("truetype"),
+	url("light/TradeGothic-W01-Light.svg#TradeGothic-W01-Light") format("svg");
+}
+@font-face{
+	font-family:"TradeGothicW01-LightObl";
+	src:url("lightObl/TradeGothicW01-LightObl.eot?#iefix");
+	src:url("lightObl/TradeGothicW01-LightObl.eot?#iefix") format("eot"),
+	url("lightObl/TradeGothicW01-LightObl.woff") format("woff"),
+	url("lightObl/TradeGothicW01-LightObl.ttf") format("truetype"),
+	url("lightObl/TradeGothicW01-LightObl.svg#TradeGothicW01-LightObl") format("svg");
+}
+@font-face{
+	font-family:"Trade Gothic W01 Obl";
+	src:url("obl/TradeGothic-W01-Obl.eot?#iefix");
+	src:url("obl/TradeGothic-W01-Obl.eot?#iefix") format("eot"),
+	url("obl/TradeGothic-W01-Obl.woff") format("woff"),
+	url("obl/TradeGothic-W01-Obl.ttf") format("truetype"),
+	url("obl/TradeGothic-W01-Obl.svg#TradeGothic-W01-Obl") format("svg");
+}
+@font-face{
+	font-family:"Trade Gothic W01 Roman";
+	src:url("roman/TradeGothic-W01-Roman.eot?#iefix");
+	src:url("roman/TradeGothic-W01-Roman.eot?#iefix") format("eot"),
+	url("roman/TradeGothic-W01-Roman.woff") format("woff"),
+	url("roman/TradeGothic-W01-Roman.ttf") format("truetype"),
+	url("roman/TradeGothic-W01-Roman.svg#TradeGothic-W01-Roman") format("svg");
+}

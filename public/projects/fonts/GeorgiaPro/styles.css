@@ -1,0 +1,16 @@
+@font-face{
+	font-family:"GeorgiaProW02-Light";
+	src:url("light/GeorgiaProW02-Light.eot?#iefix");
+	src:url("light/GeorgiaProW02-Light.eot?#iefix") format("eot"),
+	url("light/GeorgiaProW02-Light.woff") format("woff"),
+	url("light/GeorgiaProW02-Light.ttf") format("truetype"),
+	url("light/GeorgiaProW02-Light.svg#GeorgiaProW02-Light") format("svg");
+}
+@font-face{
+	font-family:"GeorgiaProW02-LightItal";
+	src:url("lightitalic/GeorgiaProW02-LightItal.eot?#iefix");
+	src:url("lightitalic/GeorgiaProW02-LightItal.eot?#iefix") format("eot"),
+	url("lightitalic/GeorgiaProW02-LightItal.woff") format("woff"),
+	url("lightitalic/GeorgiaProW02-LightItal.ttf") format("truetype"),
+	url("lightitalic/GeorgiaProW02-LightItal.svg#GeorgiaProW02-LightItal") format("svg");
+}

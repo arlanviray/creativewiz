@@ -1,0 +1,75 @@
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:17px;
+	letter-spacing:0.05em;
+	color:#fff;
+}
+.clr {
+	clear:both;
+}
+
+#wrapper {
+	position:relative;
+	width:300px;
+	height:600px;
+}
+
+.image, .copies, .video {
+	position:relative;
+	height:216px;
+}
+
+.image {
+	
+}
+.image img {
+	position:absolute;
+	zoom:1;
+	filter:alpha(opacity=0);
+	opacity:0;
+}
+
+.copies {
+	height:176px;
+	background:url('hpu_copy_bg.jpg') repeat-x;
+	padding:20px;
+}
+.copies .txtholder {
+	overflow:hidden;
+	position:relative;
+	height:148px;
+}
+.copies .txtholder .txt {
+	position:absolute;
+	height:148px;
+}
+.copies .txtholder .txt h2 {
+	padding:0 10px 0 0;
+}
+.copies .txtholder .txt h3 {
+	font-size:21px;
+	margin:10px 0;
+}
+.copies .txtholder .txt ul {
+	list-style-type:disc;
+	margin:0 0 0 14px;
+}
+.copies .txtholder .txt ul li {
+	font-size:11px;
+	line-height:14px;
+}
+.copies .buttons {
+	position:relative;
+}
+.copies .buttons .shopnow {
+	float:left;
+	cursor:pointer;
+}
+.copies .buttons .logo {
+	float:right;
+}
+
+.video {
+	height:168px;
+}

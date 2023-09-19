@@ -1,0 +1,6 @@
+/**
+ * @author: Arlan Viray
+ * @email: arlanv555@gmail.com
+ */
+!function(e,o,a){function n(){t(),c(),s();for(var o=1;10>=o;o++)r(e(".flash"+o));// mouse events
+e("#contents").click(function(){ADTECH.click("STYLE AWARDS 2014")})}function t(){TweenMax.to(".photographers",0,{scaleX:.7,scaleY:.7}),f.add(TweenMax.to(".box2",u,{css:{width:728}})),f.add(TweenMax.from(".copy1",u,{css:{top:-90},ease:Bounce.easeOut})),f.add(TweenMax.to(".copy1",u,{css:{top:90},delay:2})),f.add(TweenMax.from(".copy2",u,{css:{top:-90},ease:Bounce.easeOut}))}function c(){2>i?i++:i=1,e(".polaroid").hide(),e(".polaroid"+i).show(),TweenMax.to(".photographers",2,{autoAlpha:1}),TweenMax.delayedCall(.5,function(){TweenMax.to(".photographers",3,{css:{left:1==i?-144:-280},ease:Linear.easeNone,onComplete:function(){f.play(),s()}})})}function s(){TweenMax.to(".photographers",0,{autoAlpha:0})}function l(){TweenMax.delayedCall(4,function(){f.reverse()})}function r(e){TweenMax.from(e,d,{opacity:0,scaleX:.5,scaleY:.5,delay:p(.5,1.5),ease:Bounce.easeOut,onComplete:r,onCompleteParams:[e]})}function p(e,o){var a=Math.floor(Math.random()*(1+o-e)+e);return a}var i=1,u=.5,d=.25,f=new TimelineMax({paused:!0,onReverseComplete:c,onComplete:l}),h=!1;e(n)}(jQuery,window);

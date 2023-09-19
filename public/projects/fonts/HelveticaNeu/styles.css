@@ -1,0 +1,32 @@
+@font-face{
+	font-family:"HelveNeuBolCon";
+	src:url("boldCon/HelveNeu-BolCon.eot?#iefix");
+	src:url("boldCon/HelveNeu-BolCon.eot?#iefix") format("eot"),
+	url("boldCon/HelveNeu-BolCon.woff") format("woff"),
+	url("boldCon/HelveNeu-BolCon.ttf") format("truetype"),
+	url("boldCon/HelveNeu-BolCon.svg#HelveNeu-BolCon") format("svg");
+}
+@font-face{
+	font-family:"HelveNeuLig";
+	src:url("light/HelveNeuLig.eot?#iefix");
+	src:url("light/HelveNeuLig.eot?#iefix") format("eot"),
+	url("light/HelveNeuLig.woff") format("woff"),
+	url("light/HelveNeuLig.ttf") format("truetype"),
+	url("light/HelveNeuLig.svg#HelveNeuLig") format("svg");
+}
+@font-face{
+	font-family:"HelveNeuUltraLight";
+	src:url("ultraLight/HelveNeu-Ultra-Light.eot?#iefix");
+	src:url("ultraLight/HelveNeu-Ultra-Light.eot?#iefix") format("eot"),
+	url("ultraLight/HelveNeu-Ultra-Light.woff") format("woff"),
+	url("ultraLight/HelveNeu-Ultra-Light.ttf") format("truetype"),
+	url("ultraLight/HelveNeu-Ultra-Light.svg#HelveNeu-Ultra-Light") format("svg");
+}
+@font-face{
+	font-family:"HelveNeuUltraMedium";
+	src:url("ultraMed/HelveNeu-Ultra-Med.eot?#iefix");
+	src:url("ultraMed/HelveNeu-Ultra-Med.eot?#iefix") format("eot"),
+	url("ultraMed/HelveNeu-Ultra-Med.woff") format("woff"),
+	url("ultraMed/HelveNeu-Ultra-Med.ttf") format("truetype"),
+	url("ultraMed/HelveNeu-Ultra-Med.svg#HelveNeu-Ultra-Med") format("svg");
+}

@@ -1,0 +1,24 @@
+@font-face{
+	font-family:"TSTARPRO Bold";
+	src:url("bold/tstarpro-bold.eot?#iefix");
+	src:url("bold/tstarpro-bold.eot?#iefix") format("eot"),
+	url("bold/tstarpro-bold.woff") format("woff"),
+	url("bold/tstarpro-bold.ttf") format("truetype"),
+	url("bold/tstarpro-bold.svg#tstarpro-bold") format("svg");
+}
+@font-face{
+	font-family:"TSTARPRO Headline";
+	src:url("headline/tstarpro-headline.eot?#iefix");
+	src:url("headline/tstarpro-headline.eot?#iefix") format("eot"),
+	url("headline/tstarpro-headline.woff") format("woff"),
+	url("headline/tstarpro-headline.ttf") format("truetype"),
+	url("headline/tstarpro-headline.svg#tstarpro-headline") format("svg");
+}
+@font-face{
+	font-family:"TSTARPRO Regular";
+	src:url("regular/tstarpro-regular.eot?#iefix");
+	src:url("regular/tstarpro-regular.eot?#iefix") format("eot"),
+	url("regular/tstarpro-regular.woff") format("woff"),
+	url("regular/tstarpro-regular.ttf") format("truetype"),
+	url("regular/tstarpro-regular.svg#tstarpro-regular") format("svg");
+}

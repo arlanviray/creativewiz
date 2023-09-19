@@ -1,0 +1,443 @@
+/*@font-face{
+	font-family: "Clarins Italic";
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/clarins/clarinsita-webfont.eot?#iefix");
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/clarins/clarinsita-webfont.eot?#iefix") format("eot"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/clarins/clarinsita-webfont.woff") format("woff"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/clarins/clarinsita-webfont.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/clarins/clarinsita-webfont.svg#clarinsita-webfont") format("svg");
+}
+@font-face{
+	font-family: "Clarins Regular";
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/clarins/clarinsreg-webfont.eot?#iefix");
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/clarins/clarinsreg-webfont.eot?#iefix") format("eot"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/clarins/clarinsreg-webfont.woff") format("woff"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/clarins/clarinsreg-webfont.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/clarins/clarinsreg-webfont.svg#clarinsreg-webfont") format("svg");
+}*/
+@import "https://www.projects.creativewiz.net/fonts/Clarins/styles.css";
+
+body {
+	font-family: "Clarins Regular";
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	color: #212121;
+}
+a {
+	text-decoration: none;
+}
+*:focus {
+    outline: 0;
+}
+strong, .bold {
+	font-weight: bold;
+}
+.cursor {
+	cursor: pointer;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.absolute {
+	position: absolute;
+}
+h2 {
+	font-size: 32px;
+	line-height: 34px;
+	color: #cf043c;
+}
+h2.small {
+	font-size: 23px;
+	line-height: 27px;
+}
+h3 {
+	font-size: 28px;
+	line-height: 32px;
+}
+h4 {
+	font-size: 20px;
+	line-height: 24px;
+	color: #6d6d6d;
+	font-family: "Clarins Italic";
+}
+
+
+#wrapper, #contents {
+	position: relative;
+}
+#contents {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 600px;
+	background-color: #fff;
+}
+#wrapper, .expand {
+	width: 900px;
+	height: 800px;
+}
+.clock, 
+.clock .hand, 
+.clock .central {
+	width: 200px;
+	height: 200px;
+}
+.clock {
+	background: url('img_clock_bg.png') center center no-repeat;
+}
+.clock .hand {
+	background: url('img_clock_hand.png') center center no-repeat;
+}
+.clock .central {
+	background: url('img_clock_central.png') center center no-repeat;
+}
+.clock.black {
+	background: url('img_clock_bg_black.png') center center no-repeat;
+}
+.clock.black .hand {
+	background: url('img_clock_hand_black.png') center center no-repeat;
+}
+.clock.black .central {
+	background: url('img_clock_central_black.png') center center no-repeat;
+}
+.ccontainer .clock, 
+.ccontainer .clock .hand, 
+.ccontainer .clock .central {
+	width: 84px;
+	height: 84px;
+	background-size: 100% 100%;
+}
+
+
+.contract {
+	right: 0;
+	width: 300px;
+	height: 600px;
+}
+.contract .row {
+	overflow: hidden;
+	top: 54px;
+	width: 300px;
+	height: 546px;
+	background-color: #fff;
+}
+.contract .row .copy {
+	top: 16px;
+	left: 10px;
+}
+.contract .row .clock {
+	top: 160px;
+	left: -60px;
+}
+.contract .row .prod {
+	bottom: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.contract .btnExpand {
+	width: 298px;
+	height: 598px;
+	border: 1px solid #ccc;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0);
+}
+
+
+.expand {
+	overflow: hidden;
+	top: 0;
+	right: 0;
+}
+.expand .row {
+	position: relative;
+}
+
+
+.expand .row.row1 {
+	height: 26px;
+	margin-top: 28px;
+	background-color: #cf043c;
+}
+.expand .row.row1 .btnContract {
+	color: #fff;
+	margin: 6px 0 0 44px;
+}
+.expand .row.row1 .btnContract img {
+	margin-right: 8px;
+}
+.expand .row.row1 .logo {
+	margin-right: 16px;
+}
+
+
+.expand .row.row2 {
+	overflow: hidden;
+	height: 714px;
+}
+.expand .row.row2 .midcontents {
+	overflow: hidden;
+	position: relative;
+	width: 812px;
+	height: 714px;
+	margin: 0 auto;
+}
+.expand .row.row2 .midcontents .girls {
+	height: 542px;
+}
+.expand .row.row2 .midcontents .girls .girl {
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.expand .row.row2 .midcontents .girls .girl0 {
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.expand .row.row2 .midcontents .slidercontainer {
+	top: 542px;
+	width: 100%;
+	border-top: 1px solid #cf043c;
+}
+.expand .row.row2 .midcontents .slidercontainer #slider {
+	left: 50px;
+	width: 536px;
+}
+.expand .row.row2 .midcontents .slidercontainer #slider.ui-slider .ui-slider-handle {
+	position: absolute;
+	top: -16px;
+	width: 28px;
+	height: 32px;
+	background: url('img_expand_slider.png') center center no-repeat;
+}
+.expand .row.row2 .midcontents .clocks {
+	position: relative;
+	font-size: 12px;
+	text-align: center;
+	height: 172px;
+}
+.expand .row.row2 .midcontents .clocks .ccontainer {
+	top: 38px;
+	width: 100px;
+	height: 134px;
+}
+.expand .row.row2 .midcontents .clocks .ccontainer .clock {
+	margin: 0 0 12px 8px;
+	pointer-events: none;
+}
+.expand .row.row2 .midcontents .clocks .ccontainer .clock.black {
+	pointer-events: auto;
+}
+.expand .row.row2 .midcontents .clocks .ccontainer p {
+	color: #cf043c;
+}
+.expand .row.row2 .midcontents .clocks .ccontainer p.black {
+	color: #212121;
+}
+.expand .row.row2 .midcontents .clocks .ccontainer.ccontainer1 {
+	left: 152px;
+}
+.expand .row.row2 .midcontents .clocks .ccontainer.ccontainer2 {
+	left: 356px;
+}
+.expand .row.row2 .midcontents .clocks .ccontainer.ccontainer3 {
+	left: 550px;
+}
+.expand .row.row2 .midcontents .clocks .zeromin {
+	top: 26px;
+	left: 10px;
+}
+.expand .row.row2 .midcontents .clocks .zeromin span {
+	position: relative;
+	top: -3px;
+}
+.expand .row.row2 .midcontents .clocks .zeromin .asleft {
+	margin-right: 10px;
+}
+.expand .row.row2 .midcontents .clocks .zeromin .asright {
+	margin-left: 10px;
+}
+
+.expand .row.row2 .infos, 
+.expand .row.row2 .products {
+	top: 0;
+	width: 240px;
+	height: 542px;
+}
+.expand .row.row2 .infos {
+	left: 0;
+}
+.expand .row.row2 .infos h3 {
+	color: #cf043c;
+	margin-bottom: 20px;
+}
+.expand .row.row2 .infos .info {
+	visibility: hidden;
+	position: absolute;
+	padding-top: 60px;
+}
+.expand .row.row2 .infos .info p {
+	margin-bottom: 20px;
+}
+.expand .row.row2 .infos .info.info0 {
+	visibility: inherit;
+	padding-top: 140px;
+}
+.expand .row.row2 .products {
+	width: 190px;
+	right: 0;
+}
+.expand .row.row2 .products .product {
+	visibility: hidden;
+	position: absolute;
+}
+.expand .row.row2 .products .product.product0 {
+	visibility: inherit;
+	padding-top: 210px;
+}
+.expand .row.row2 .products .product.product1 {
+	padding-top: 40px;
+}
+.expand .row.row2 .products .product.product1 .carousel {
+	overflow: hidden;
+	width: 190px;
+	height: 320px;
+}
+.expand .row.row2 .products .product.product1 .carousel ul {
+	position: relative;
+	height: 99999px;
+}
+.expand .row.row2 .products .product.product1 .carousel ul li {
+	padding-right: 40px;
+}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod {
+	position: relative;
+	height: 80px;
+	cursor: pointer;
+}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod1 {background: url('img_expand_right_c_grp1_prod1.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod2 {background: url('img_expand_right_c_grp1_prod2.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod3 {background: url('img_expand_right_c_grp1_prod3.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod4 {background: url('img_expand_right_c_grp1_prod4.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod5 {background: url('img_expand_right_c_grp2_prod1.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod6 {background: url('img_expand_right_c_grp2_prod2.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod7 {background: url('img_expand_right_c_grp2_prod3.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod8 {background: url('img_expand_right_c_grp2_prod4.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod9 {background: url('img_expand_right_c_grp3_prod1.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod10 {background: url('img_expand_right_c_grp3_prod2.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod11 {background: url('img_expand_right_c_grp3_prod3.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod12 {background: url('img_expand_right_c_grp3_prod4.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod13 {background: url('img_expand_right_c_grp4_prod1.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.prod14 {background: url('img_expand_right_c_grp4_prod2.png') right center no-repeat;}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod .circle {
+	position: absolute;
+	top: 50%;
+	right: -40px;
+	margin: -8px 0 0 0;
+	width: 16px;
+	height: 16px;
+	background: url('img_expand_right_c_circle1.png') no-repeat;
+}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod:hover .circle, 
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.active .circle {
+	background: url('img_expand_right_c_circle2.png') no-repeat;
+}
+.expand .row.row2 .products .product.product1 .carousel ul li .prod.active {
+	pointer-events: none;
+}
+.expand .row.row2 .products .product.product1 .arrow {
+	position: absolute;
+	bottom: -60px;
+	right: 0;
+	cursor: pointer;
+}
+.expand .row.row2 .products .product.product1 .arrow.up {
+	right: 60px;
+}
+.expand .row.row2 .products .product.product1 .arrow.inactive {
+	pointer-events: none;
+	filter: alpha(opacity=25);
+	opacity: 0.25;
+}
+.expand .row.row2 .midinfo {
+	top: 86px;
+	left: -650px;
+	width: 624px;
+	height: 412px;
+	background-color: #fff;
+	-webkit-box-shadow: 4px 4px 14px 0px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow:    4px 4px 14px 0px rgba(50, 50, 50, 0.35);
+	box-shadow:         4px 4px 14px 0px rgba(50, 50, 50, 0.35);
+}
+.expand .row.row2 .midinfo .image, 
+.expand .row.row2 .midinfo .data {
+	float: left;
+	height: 234px;
+	margin-top: 70px;
+}
+.expand .row.row2 .midinfo .image {
+	width: 320px;
+}
+.expand .row.row2 .midinfo .image.prod1 {background: url('img_product1.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod2 {background: url('img_product2.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod3 {background: url('img_product3.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod4 {background: url('img_product4.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod5 {background: url('img_product5.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod6 {background: url('img_product6.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod7 {background: url('img_product7.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod8 {background: url('img_product8.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod9 {background: url('img_product9.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod10 {background: url('img_product10.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod11 {background: url('img_product11.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod12 {background: url('img_product12.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod13 {background: url('img_product13.png') center center no-repeat;}
+.expand .row.row2 .midinfo .image.prod14 {background: url('img_product14.png') center center no-repeat;}
+.expand .row.row2 .midinfo .data {
+	width: 276px;
+}
+.expand .row.row2 .midinfo .data .title {
+	font-size: 17px;
+	line-height: 21px;
+	color: #cf043c;
+	margin-bottom: 10px;
+}
+.expand .row.row2 .midinfo .data .bodycopy {
+	border-bottom: 2px solid #e0e0e0;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.expand .row.row2 .midinfo .data .price {
+	color: #cf043c;
+}
+.expand .row.row2 .midinfo .data .btnShopthelook {
+	width: 110px;
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	background-color: #000;
+	margin: 20px 0 40px 0;
+	padding: 8px 20px 4px 20px;
+	cursor: pointer;
+}
+.expand .row.row2 .midinfo .btnClose {
+	top: 16px;
+	right: 16px;
+}
+
+
+.expand .row.row3 {
+	height: 32px;
+	text-align: right;
+	background-color: #cf043c;
+}
+.expand .row.row3 p {
+	padding: 8px 16px 0 0;
+}
+.expand .row.row3 p a {
+	color: #fff;
+}
+
+

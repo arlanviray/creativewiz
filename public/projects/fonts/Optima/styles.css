@@ -1,0 +1,16 @@
+@font-face{
+	font-family:"Optima Italic";
+	src:url("italic/optimabq-italic.eot?#iefix");
+	src:url("italic/optimabq-italic.eot?#iefix") format("eot"),
+	url("italic/optimabq-italic.woff") format("woff"),
+	url("italic/optimabq-italic.ttf") format("truetype"),
+	url("italic/optimabq-italic.svg#optimabq-italic") format("svg");
+}
+@font-face{
+	font-family:"Optima Roman";
+	src:url("roman/optimabq-roman.eot?#iefix");
+	src:url("roman/optimabq-roman.eot?#iefix") format("eot"),
+	url("roman/optimabq-roman.woff") format("woff"),
+	url("roman/optimabq-roman.ttf") format("truetype"),
+	url("roman/optimabq-roman.svg#optimabq-roman") format("svg");
+}

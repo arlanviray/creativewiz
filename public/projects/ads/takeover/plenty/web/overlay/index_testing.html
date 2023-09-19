@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- canvasSize:1200x900 -->
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">   <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">   <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">   <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">   <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link type="text/css" href="reset.css" rel="stylesheet" />
+	<link type="text/css" href="styles.css" rel="stylesheet" />
+	<script type="text/javascript" src="http://canvas.adtech.com/ads/jsapi/ADTECH.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+	<script>
+	$(document).ready(function(){       
+		setTimeout(function() {$("#contents").fadeOut("slow"); console.log('fadedout');}, 5000);   
+		setTimeout(function() {ADTECH.close();console.log('close swf');}, 6000);  
+	});
+    </script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="contents" onClick="ADTECH.close();" style="cursor:pointer;"></div>
+	</div>
+</body>
+</html>
+

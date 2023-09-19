@@ -1,0 +1,70 @@
+body {}
+.clr {
+	clear: both;
+}
+.absolute {
+	position: absolute;
+}
+
+#wrapper, #contents {
+	position: relative;
+}
+
+#wrapper, #contents, 
+.backgrounds, .backgrounds .color, 
+.products {
+	width: 980px;
+	height: 90px;
+}
+
+.backgrounds, .backgrounds .color {
+	position: absolute;
+}
+.backgrounds .color.color1 {
+	background-color: #009256;
+}
+.backgrounds .color.color2 {
+	background-color: #1f245c;
+}
+.backgrounds .color.color3 {
+	background-color: #db3b38;
+}
+.backgrounds .color.color4 {
+	background-color: #212121;
+}
+
+.products {
+	overflow: hidden;
+	position: absolute;
+}
+.products .prod.prod {
+	position: absolute;
+	top: -80px;
+	cursor: pointer;
+}
+.products .prod.prod1 {
+	left: 240px;
+}
+.products .prod.prod2 {
+	left: 350px;
+}
+.products .prod.prod3 {
+	left: 460px;
+}
+.products .prod.prod4 {
+	left: 570px;
+}
+.products .prod.active {
+	pointer-events: none;
+	background: url('img_banner_prodglow.png') top center no-repeat;
+}
+.products .title {
+	top: 24px;
+	right: 2px;
+}
+.products .logo {
+	top: 9px;
+	left: 2px;
+}
+
+

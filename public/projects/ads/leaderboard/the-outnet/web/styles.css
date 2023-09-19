@@ -1,0 +1,545 @@
+/*@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=7cc07624-61f8-4555-87b5-ade84fa63be8");
+@font-face{
+font-family:"Futura W01 Book";
+src:url("57a6731b-fa5c-4c8a-bea8-e2f1a287f309.eot?#iefix");
+src:url("57a6731b-fa5c-4c8a-bea8-e2f1a287f309.eot?#iefix") format("eot"),url("4d0e252c-d811-4a5d-a7f3-6ad72c6b76f2.woff") format("woff"),url("54250d43-02be-4ff9-b802-a4ea104a0611.ttf") format("truetype"),url("15c556fc-4608-4b01-8a0d-9c8631c8bd74.svg#15c556fc-4608-4b01-8a0d-9c8631c8bd74") format("svg");
+}
+@font-face{
+font-family:"Futura W01 Bold";
+src:url("3b3d00eb-6d89-47ec-83ee-48276a47ad94.eot?#iefix");
+src:url("3b3d00eb-6d89-47ec-83ee-48276a47ad94.eot?#iefix") format("eot"),url("2a65cbfc-5071-4b4d-bfc2-e052bb091ee2.woff") format("woff"),url("812f781d-aa66-47a1-b6a2-7941effc1527.ttf") format("truetype"),url("2a371030-ff67-40ac-8307-082c1fccf151.svg#2a371030-ff67-40ac-8307-082c1fccf151") format("svg");
+}
+@font-face{
+font-family:"Copernicus Book";
+src:url("Copernicus-Book.eot?#iefix");
+src:url("Copernicus-Book.eot?#iefix") format("eot"),url("Copernicus-Book.woff") format("woff"),url("Copernicus-Book.ttf") format("truetype"),url("Copernicus-Book.svg#Copernicus-BookItalic") format("svg");
+}
+@font-face{
+font-family:"Copernicus BookItalic";
+src:url("Copernicus-BookItalic.eot?#iefix");
+src:url("Copernicus-BookItalic.eot?#iefix") format("eot"),url("Copernicus-BookItalic.woff") format("woff"),url("Copernicus-BookItalic.ttf") format("truetype"),url("Copernicus-BookItalic.svg#Copernicus-BookItalic") format("svg");
+}*/
+@import "https://www.projects.creativewiz.net/fonts/Futura/styles.css";
+@import "https://www.projects.creativewiz.net/fonts/Copernicus/styles.css";
+
+
+body {
+	font-family: Georgia, serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #5e5e5e;
+	letter-spacing: 0.05em;
+}
+a {
+	color: #000000;
+	text-decoration: none;
+}
+.clr, .clear-fix {
+	clear: both;
+}
+
+#wrapper {
+	position: relative;
+	width: 980px;
+	background-color: #ffffff;
+}
+
+#contents {
+	overflow: hidden;
+	position: relative;
+	height: 90px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #000000;
+}
+#contents .logo, #contents .contracted, #contents .expanded {
+	position: absolute;
+}
+
+#contents .logo {
+	top: 0;
+	left: 188px;
+}
+
+#contents .contracted {
+	width: 100%;
+	height: 90px;
+	background: url('img_banner_1.jpg') no-repeat;
+}
+#contents .contracted .btnExpand {
+	overflow: hidden;
+	height: 90px;
+	cursor: pointer;
+}
+#contents .contracted .btnExpand img {
+	position: absolute;
+}
+#contents .contracted .btnExpand img.bpic {
+	right: 0;
+}
+#contents .contracted .btnExpand img.lcopy {
+	top: 42px;
+	left: 146px;
+}
+#contents .contracted .btnExpand:hover {
+}
+#contents .contracted .btnExpand .text {
+}
+#contents .contracted .btnExpand:hover .text {
+}
+
+#contents .expanded {
+	width: 100%;
+	height: 610px;
+	background: url('img_banner_2.jpg') top center no-repeat;
+}
+#contents .expanded .col {
+	overflow: hidden;
+	position: absolute;
+	width: 450px;
+	height: 435px;
+	background: #000000;
+}
+#contents .expanded .colleft {
+	left: 0;
+}
+#contents .expanded .colright {
+	right: 0;
+}
+#contents .expanded .products .main, #contents .expanded .products img, #contents .expanded .products .copies, #contents .expanded .products .infos, #contents .expanded .products .infos .overlay, #contents .expanded .products .infos .text {
+	position: absolute;
+}
+
+#contents .expanded .vc-holder, #contents .expanded .landing {
+	overflow: hidden;
+	position: absolute;
+	top: 132px;
+	left: 0;
+	width: 980px;
+	height: 474px;
+	background-color: #ffffff;
+}
+#contents .expanded .vc-holder {
+	display: none;
+}
+#contents .expanded .vc-holder .vc-contents {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 948px;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder, #contents .expanded .vc-holder .vc-contents .carousel {
+	overflow: hidden;
+	position: relative;
+	width: 980px;
+	height: 474px;
+	top:13px;
+}
+
+#contents .expanded .landing {
+}
+#contents .expanded .landing .col {
+	background-color: #fff;
+	cursor: pointer;
+	padding: 0;
+	position: relative;
+	float: left;
+	margin: 15px 25px;
+}
+#contents .expanded .landing .col img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	border-bottom: 1px solid #fff;
+}
+#contents .expanded .landing .colleft {
+	padding: 0;
+	background: #000000;
+}
+#contents .expanded .landing .colright {
+	padding: 0;
+	margin: 15px 25px 0 0;
+	background: #000000;	
+}
+#contents .expanded .landing .colright img {
+	opacity:1;
+}
+#contents .expanded .landing .colleft .vicon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -59px 0 0 -59px;
+	width: 118px;
+	height: 118px;
+	background: url('img_landing_1_vicon.png') center center no-repeat;
+}
+#contents .expanded .landing .col .copies {
+	position: absolute;
+	top: 35%;
+	width: 450px;
+	text-align: center;
+}
+#contents .expanded .landing .col .copies h5 {
+	font-family:"Futura W01 Book";
+	font-size: 26px;
+	line-height: 44px;
+	color: #ffffff;
+	padding: 0 0 8px 0;
+	background: url('bg-text-hover.jpg') center bottom no-repeat;
+	text-transform: uppercase;
+}
+
+#contents .expanded .landing .colleft .copies h5 {
+}
+#contents .expanded .landing .colright .copies h5 {
+}
+#contents .expanded .landing .col .copies p {
+}
+#contents .expanded .landing .col .copies .box {
+	font-family:'Copernicus BookItalic';
+	font-size: 14px;
+	line-height: 17px;
+	width: 285px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+#contents .expanded .landing .colright .copies .box {
+	color: #ffffff;
+}
+#contents .expanded .landing .copies .box .text {
+	color: #ffffff;
+	font-style: italic;
+}
+#contents .expanded .landing .copies .box .active {
+	color: #ffffff;
+}
+
+#contents .expanded .buttons {
+	position: relative;
+	top: 90px;
+	font-family:"Futura W01 Book";
+	font-size: 15px;
+	color: #000000;
+	text-align: center;
+	height: 55px;
+	background-color: #ffffff;
+}
+#contents .expanded .buttons .navigation {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	width: 300px;
+	margin: 0 0 0 -150px;
+	padding: 0 0 0 14px;
+}
+#contents .expanded .buttons .navigation div {
+	float: left;
+	font-size:16px;
+	letter-spacing: 1.5px;
+}
+#contents .expanded .buttons .navigation div.spacer {
+	width: 33px;
+}
+#contents .expanded .buttons .navigation div.sect1, #contents .expanded .buttons .navigation div.sect2 {
+	width: 120px;
+}
+
+#contents .expanded .buttons .navigation div.sect1 {
+	text-align: right;
+}
+#contents .expanded .buttons .navigation div.sect2 {
+	text-align: left;
+}
+#contents .expanded .buttons .navigation a:hover, #contents .expanded .buttons .navigation a.active {
+	color: #7c734e;
+	text-decoration:underline;
+}
+#contents .expanded .buttons .navigation span {
+	margin: 0 6px;
+	color: #a18c7c;
+	font-size: 26px;
+	font-weight: 100;
+}
+#contents .expanded .btnClose {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 263px;
+	height: 89px;
+	background: url('img_btn_close.png') right 0 no-repeat;
+	cursor: pointer;
+}
+#contents .expanded .buttons .btnClose:hover {
+	font-family: "Proxima N W01 Reg";
+	color: #fff;
+}
+
+#contents .expanded .arrows {
+	display: none;
+	position: absolute;
+	top: 105px;
+	width: 25px;
+	z-index: 999;
+}
+#contents .expanded .aleft {
+	right: 90px;
+}
+#contents .expanded .aright {
+	right: 25px;
+}
+#contents .expanded .amiddle {
+	right: 50px;
+}
+#contents .expanded .aremovebg {
+	background: none;
+}
+#contents .expanded .arrows img {
+	cursor: pointer;
+}
+
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption, #contents .expanded .vc-holder .vc-contents .videoholder .video {
+	height: 436px;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .video span {
+	position: absolute;
+	left: 280px;
+	top: 200px;
+	font-family: "Futura W01 Book";
+	font-weight: normal;
+	color: #ffffff;
+	font-size: 7em;
+	cursor:pointer;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption {
+	float: right;
+	width: 235px;
+	padding: 0 0 0 20px;
+	background-color: #fff;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption h5 {
+	font-family:"Futura W01 Book";
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 28px;
+	letter-spacing: 2px;
+	color: #000000;
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption p {
+	font-size: 13.6px;
+	line-height: 20px;
+	padding: 0 24px 0 0;
+	font-family:"Copernicus Book";
+	
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .video {
+	float: left;
+	width: 700px;
+	height: 435px;
+	margin: 0 0 30px 25px;
+	background: #000000;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout {
+	font-family:'Copernicus BookItalic';
+	font-size: 13px;
+	line-height: 17px;
+	width: 130px;
+	margin: 60px 0 0 0;
+	cursor: pointer;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout a {
+	display: block;
+	color: #5e5e5e;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout a:hover {
+	color: #830327;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout div {
+	background: url('img_arrow_right.png') right center no-repeat;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout:hover div {
+	background: url('img_arrow_right_red.png') right center no-repeat;
+}
+
+#contents .expanded .vc-holder .vc-contents .carousel .products-container {
+	position: absolute;
+	left: 0;
+	width: 9999999px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products {
+	overflow: hidden;
+	position: relative;
+	float: left;
+	width: 980px;
+	height: 436px;
+	background-color: #fff;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products .main {
+	position: relative;
+	float: left;
+	width: 445px;
+	margin: 0 27px;
+	height: 100%;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main1 {
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main2 {
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main3 {
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main4 {
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main5 {
+}
+#contents .expanded .vc-holder .vc-contents .carousel .circle {
+	position: absolute;
+	top: 30px;
+	left: 86px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos, #contents .expanded .vc-holder .vc-contents .carousel .infos .overlay {
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos {
+	position: relative;
+	float: left;
+	margin: 0 25px 0 0;
+	width: 450px;
+	height: 100%;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .overlay {
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text {
+	width: 410px;
+	height: 12.5em;
+	padding: 10px 20px;
+	top: 367px;
+	background: rgba(255, 255, 255, 0.7);
+	z-index: 999;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header {
+	font-family:"Futura W01 Book";
+	font-size: 16px;
+	line-height: 31px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header span {
+	font-family:"Futura W01 Book";
+	font-size: 24px;
+	line-height: 27px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header .active {
+	background: url('img_arrow_info_up.png') right 3px no-repeat;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header .title {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 13px;
+	margin: 3px 0 30px 0;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header .title span {
+	font-family:"Futura W01 Bold";
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.6em;
+	letter-spacing: 1.5px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header .btnDetails {
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text p {
+	width: 87%;
+	margin: 15px 0 0 0;
+	font-family:"Futura W01 Book";
+	font-size: 12px;
+	font-weight: 100;
+	line-height: 1.3em;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow {
+	position: absolute;
+	right: 20px;
+	bottom: 5px;
+	width: 105px;
+	height: 30px;
+	background: url('./bg-shop-now.png') no-repeat;
+	cursor: pointer;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnDetails {
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	padding: 0 25px 0 0;
+	background: url('./img_arrow_up.png') no-repeat right center;
+	font-family:"Futura W01 Book";
+	font-size: 13px;
+	font-weight: 100;
+	line-height: 17px;
+	cursor: pointer;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .activeArrow {
+	background: url('./img_arrow_down.png') no-repeat right center !important;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow a {
+	display: block;
+	color: #5e5e5e;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow a:hover {
+	color: #830327;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow div {
+	background: url('img_arrow_right.png') right center no-repeat;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow:hover div {
+	background: url('img_arrow_right_red.png') right center no-repeat;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .thumbs {
+	position: relative;
+	left: 336px;
+	width: 154px;
+	height: 436px;
+	padding: 1px 0 0 0;
+	background-color: #fff;
+	border-left: 1px solid #d4d4d4;
+	border-right: 1px solid #d4d4d4;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .thumbs ul li {
+	width: 154px;
+	height: 144px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .thumbs ul li:nth-child(2) {
+	border-top: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .thumbs ul li img {
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .thumbs .apointer {
+	position: absolute;
+	top: 66px;
+	left: 162px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation {
+	position: absolute;
+	bottom: 0;
+	width: 980px;
+	height: 36px;
+	text-align: center;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation ul {
+	margin: 8px auto 0 auto;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation ul li {
+	float: left;
+	width: 24px;
+	height: 20px;
+	background: url('img_product_nav_n.png') center center no-repeat;
+	cursor: pointer;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation ul li.active {
+	background: url('img_product_nav_a.png') center center no-repeat;
+}
+

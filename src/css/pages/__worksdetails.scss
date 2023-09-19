@@ -1,0 +1,62 @@
+main.work {
+    .work-details {
+        .image, .noimage {
+            position: relative;
+            height: 460px;
+            transition: height 0.5s;
+            @include mediaQuery($pb-mdlg, max) {
+                height: 400px;
+            }
+            @include mediaQuery($pb-sm, max) {
+                height: 340px;
+            }
+        }
+
+        .image {
+            background-repeat: no-repeat;
+            background-size: cover;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: backdrop-filter 1s;
+                backdrop-filter: blur(8px);
+            }
+            &:hover {
+                &::before {
+                    backdrop-filter: blur(0);
+                }
+            }
+        }
+
+        .noimage {
+            opacity: 0.1;
+        }
+
+        .content {
+            z-index: 1;
+            position: relative;
+        }
+
+        .info {
+            margin-top: -80px;
+            padding: spacer();
+            background-color: $white;
+
+            .row {
+                display: flex;
+                row-gap: spacer();
+                column-gap: spacer(3);
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .description {
+                padding-top: spacer(2);
+            }
+        }
+    }
+}

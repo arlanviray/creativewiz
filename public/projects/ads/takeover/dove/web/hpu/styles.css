@@ -1,0 +1,52 @@
+body {}
+a {
+	color: #000;
+	text-decoration: none;
+}
+.clear-fix, .clr {
+	clear: both;
+}
+.absolute {
+	position: absolute;
+}
+
+#wrapper, #contents {
+	overflow: hidden;
+	position: relative;
+}
+
+#wrapper, #contents {
+	width: 300px;
+	height: 600px;
+}
+#contents {
+	background: url('img_bg.png') no-repeat;
+}
+
+.txt1 {
+	top: 143px;
+	left: 24px;
+}
+.txt2 {
+	top: 170px;
+	left: 24px;
+}
+.txt3 {
+	top: 190px;
+	left: 24px;
+}
+.txt4 {
+	top: 210px;
+	left: 24px;
+}
+.txt5 {
+	top: 230px;
+	left: 24px;
+}
+.cta {
+	top: 270px;
+	left: 21px;
+}
+
+.logo {}
+

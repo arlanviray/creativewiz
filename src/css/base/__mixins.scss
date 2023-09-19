@@ -1,0 +1,109 @@
+$base-font-size: 16px;
+
+@function calcRem($pxValue) {
+    @return calc($pxValue / $base-font-size) * 1rem;
+}
+
+@mixin fontSize($size: $base-font-size, $line: null) {
+    font-size: $size;
+    font-size: calcRem($size);
+
+    @if $line != null {
+        line-height: $line;
+    } @else {
+        line-height: 1.2;
+    }
+}
+
+@mixin mediaQuery($point, $type: min) {
+    $pointVal: $point;
+    @if $type == max {
+        $pointVal: $point - 1;
+    }
+
+    @media (#{$type}-width: $pointVal) {
+        @content;
+    }
+}
+
+@mixin mediaQueryRange($min, $max) {
+    @media (min-width: $min) and (max-width: ($max - 1)) {
+        @content;
+    }
+}
+
+@mixin centerElement($type: null) {
+    position: absolute;
+
+    @if $type == x {
+        left: 50%;
+        transform: translateX(-50%);
+    } @else if $type == y {
+        top: 50%;
+        transform: translateY(-50%);
+    } @else {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin scrollElement($type: null) {
+    @if $type == x {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        &::-webkit-scrollbar {
+            height: 1px;
+        }
+
+    } @else if $type == y {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 1px;
+        }
+
+    } @else {
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+    }
+
+    @if $type != null {
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 1px rgba($color: #000, $alpha:  0);
+            background-color: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            outline: 0;
+        }
+    }
+
+    -webkit-overflow-scrolling: touch;
+
+    // hide - Firefox
+    scrollbar-width: none;
+
+    // hide - Internet Explorer, Edge
+    -ms-overflow-style: none;
+}
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin animate($name, $duration: 0.5s, $method: linear, $delay: 0s, $iteration: 1, $direction: normal, $fillmode: forwards) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $method;
+    animation-delay: $delay;
+    animation-iteration-count: $iteration;
+    animation-direction: $direction;
+    animation-fill-mode: $fillmode;
+}

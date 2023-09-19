@@ -1,0 +1,5 @@
+/**
+ * @author: Arlan Viray
+ * @email: arlanv555@gmail.com
+ */
+!function(e,c,o){function s(){i(),n(1)}function i(){var c=700;TweenMax.to(e(".pics .pic1"),10,{css:{y:-c},ease:Linear.easeNone}),TweenMax.to(e(".pics .pic1"),2,{css:{opacity:0},delay:9.5}),TweenMax.to(e(".pics .pic2"),10,{css:{y:-c},delay:9.5,ease:Linear.easeNone}),TweenMax.to(e(".pics .pic2"),2,{css:{opacity:0},delay:19.5}),TweenMax.to(e(".pics .pic3"),10,{css:{y:-c},delay:19.5,ease:Linear.easeNone,onComplete:function(){TweenMax.to(e(".pics .pic1"),2,{css:{opacity:1}}),TweenMax.to(e(".pics .pic1"),0,{css:{y:0}}),i()}}),TweenMax.to(e(".pics .pic3"),2,{css:{opacity:0},delay:29.5,onComplete:function(){TweenMax.to(e(".pics .pic2"),0,{css:{opacity:1,y:0}}),TweenMax.to(e(".pics .pic3"),0,{css:{opacity:1,y:0}})}})}function n(c){TweenMax.to(e(".copies .copy"+c),p,{css:{opacity:1}}),TweenMax.to(e(".copies .copy"+c),p,{css:{opacity:0},delay:4,onComplete:n,onCompleteParams:[2==c?1:c+1]})}var a=!1,p=.5,t=.25,y=new TimelineMax({paused:!0,onReverseComplete:function(){},onComplete:function(){}});e(s)}(jQuery,window);

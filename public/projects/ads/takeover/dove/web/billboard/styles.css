@@ -1,0 +1,75 @@
+body {}
+a {
+	color: #000;
+	text-decoration: none;
+}
+.clear-fix, .clr {
+	clear: both;
+}
+.absolute {
+	position: absolute;
+}
+
+#wrapper, #contents {
+	overflow: hidden;
+	position: relative;
+}
+
+#wrapper, #contents {
+	width: 970px;
+	height: 250px;
+}
+#contents {
+	background: url('img_bg.png') no-repeat;
+}
+
+.videoholder {
+	overflow: hidden;
+	position: absolute;
+	top: 1px;
+	left: 112px;
+	width: 444px;
+	height: 248px;
+}
+.videoholder .video {
+	position: absolute;
+	top: -1px;
+	left: 0;
+}
+.videoholder .video.android {}
+
+.txt1 {
+	top: 37px;
+	left: 600px;
+}
+.txt2 {
+	top: 63px;
+	left: 600px;
+}
+.txt3 {
+	top: 89px;
+	left: 600px;
+}
+.txt4 {
+	top: 115px;
+	left: 600px;
+}
+.cta {
+	top: 162px;
+	left: 600px;
+}
+
+.volume {
+	top: 10px;
+	right: 12px;
+	width: 21px;
+	height: 19px;
+	background: url('img_volume_1.png') center center no-repeat;
+	cursor: pointer;
+}
+.volume.inactive {
+	background: url('img_volume_2.png') center center no-repeat;
+}
+
+.logo {}
+

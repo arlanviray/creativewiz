@@ -1,0 +1,134 @@
+main.home {
+    .hero {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 350px;
+        transition: height 0.5s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+
+        .logo {
+            overflow: hidden;
+            position: relative;
+            width: 518px;
+            height: 140px;
+            transition: 0.5s ease-in-out;
+
+            div, img {
+                position: absolute;
+            }
+
+            .creative {
+                top: -140px;
+                left: 0;
+                @include keyframes(_homeHeroLogoCreative) {
+                    0% {opacity: 0;}
+                    100% {opacity: 1; top: 18px;}
+                }
+                @include animate(_homeHeroLogoCreative);
+            }
+
+            .wiz {
+                top: 34px;
+                right: -180px;
+                @include keyframes(_homeHeroLogoWiz) {
+                    0% {opacity: 0;}
+                    100% {opacity: 1; right: 0;}
+                }
+                @include animate(_homeHeroLogoWiz);
+            }
+
+            .circle {
+                top: 80px;
+                left: 435px;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                opacity: 0;
+                transform: scale(2);
+                @include keyframes(_homeHeroLogoCircle) {
+                    0% {}
+                    100% {opacity: 1; top: 0; transform: scale(1);}
+                }
+                @include animate(_homeHeroLogoCircle, 0.5s, linear, 2s);
+            }
+
+            .rectangles {
+                overflow: hidden;
+                bottom: 0;
+                left: 0;
+                width: 186px;
+                height: 24px;
+
+                .item {
+                    top: 0;
+                    width: 54px;
+                    height: 24px;
+                    opacity: 0;
+
+                    &:nth-child(1) {
+                        left: 0;
+                        @include keyframes(_homeHeroLogoItem1) {
+                            0% {}
+                            100% {opacity: 1}
+                        }
+                        @include animate(_homeHeroLogoItem1, 0.5s, linear, 1s);
+                    }
+                    &:nth-child(2) {
+                        left: 0;
+                        @include keyframes(_homeHeroLogoItem2) {
+                            0% {}
+                            100% {opacity: 1; left: 62px;}
+                        }
+                        @include animate(_homeHeroLogoItem2, 0.5s, linear, 1.5s);
+                    }
+                    &:nth-child(3) {
+                        left: 62px;
+                        @include keyframes(_homeHeroLogoItem) {
+                            0% {}
+                            100% {opacity: 1; left: 124px;}
+                        }
+                        @include animate(_homeHeroLogoItem, 0.5s, linear, 2s);
+                    }
+                }
+            }
+
+            .strapline {
+                right: 0;
+                bottom: -30px;
+                @include keyframes(_homeHeroLogoStrapline) {
+                    0% {opacity: 0;}
+                    100% {opacity: 1; bottom: 0;}
+                }
+                @include animate(_homeHeroLogoStrapline, 0.5s, linear, 0.5s);
+            }
+        }
+
+        @include mediaQuery($pb-mdlg, max) {
+            height: 250px;
+            .logo {
+                transform: scale(0.7);
+            }
+        }
+
+        @include mediaQuery($pb-sm, max) {
+            height: 200px;
+            .logo {
+                transform: scale(0.5);
+            }
+        }
+    }
+}

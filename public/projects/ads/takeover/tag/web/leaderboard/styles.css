@@ -1,0 +1,72 @@
+body {}
+.clr {
+	clear:both;
+}
+
+#wrapper, #contents, #footer {
+	position:relative;
+}
+
+#wrapper {
+	width:970px;
+	height:258px;
+}
+
+#contents {
+	height:258px;
+	background:url('billboard_bg.jpg') repeat-x;
+}
+#contents .arrows {
+	position:absolute;
+	top:100px;
+	width:100%;
+}
+#contents .arrows img {
+	cursor:pointer;
+}
+#contents .arrows .btnArrowLeft {
+	float:left;
+	margin:0 0 0 20px;
+}
+#contents .arrows .btnArrowRight {
+	float:right;
+	margin:0 20px 0 0;
+}
+#contents .carousel {
+	overflow:hidden;
+	position:absolute;
+	left:70px;
+	width:830px;
+	height:258px;
+}
+#contents .carousel .carouselholder {
+	position:absolute;
+	width:99999px;
+	height:258px;
+}
+#contents .carousel .carouselholder .products {
+	position:relative;
+	float:left;
+	padding:8px 0 0 0;
+}
+#contents .carousel .carouselholder .products .product {
+	float:left;
+	text-align:center;
+	width:166px;
+	height:250px;
+}
+#contents .carousel .carouselholder .products .product img {
+	cursor:pointer;
+}
+
+#footer {
+	position:absolute;
+	bottom:0;
+	text-align:center;
+	width:100%;
+	height:36px;
+	background:url('billboard_footer_bg.jpg') repeat-y;
+}
+#footer img {
+	margin:7px 0 0 0;
+}

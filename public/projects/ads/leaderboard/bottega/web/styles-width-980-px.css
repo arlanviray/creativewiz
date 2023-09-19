@@ -1,0 +1,301 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=4d421369-9985-4f22-a417-a221cdee9977");
+@font-face{
+	font-family:"GeorgiaProW02-Light";
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/c1e3c479-2b5b-44c1-bdaa-21537cb97eb6_1382715311.eot?#iefix");
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/c1e3c479-2b5b-44c1-bdaa-21537cb97eb6_1382715311.eot?#iefix") format("eot"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/26478/a1511ca9-6b07-4f59-ae5e-8ac21bc4f7f2_1382715309.woff") format("woff"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/26478/2f29c594-ab53-4a64-b115-c576886856c1_1382715299.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/bottega_veneta/fonts/dbb35f99-ad0b-4a86-a38f-1fcdd53c9d79.svg#dbb35f99-ad0b-4a86-a38f-1fcdd53c9d79") format("svg");
+}
+@font-face{
+	font-family:"GeorgiaProW02-LightItal";
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/1628f776-e61b-4351-96ef-bac1e7a7c3f9_1382715305.eot?#iefix");
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/1628f776-e61b-4351-96ef-bac1e7a7c3f9_1382715305.eot?#iefix") format("eot"),
+	url("fonts/b4771eb9-1153-4b3f-a0a7-d441636d8cab.woff") format("woff"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/26478/639ca559-9976-41d9-bf31-9b5a44acaa0b_1382715304.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/bottega_veneta/fonts/1033bb63-dffc-43b5-8e26-b363494ba7a3.svg#1033bb63-dffc-43b5-8e26-b363494ba7a3") format("svg");
+}
+@font-face{
+	font-family:"Proxima N W01 Light";
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/93cc6d34-798e-42c8-87d2-fd6391801b63_1382715303.eot?#iefix");
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/93cc6d34-798e-42c8-87d2-fd6391801b63_1382715303.eot?#iefix") format("eot"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/26478/2fa30669-9bbd-4ced-912f-db94a367ed6c_1382715300.woff") format("woff"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/26478/c12b3ebb-3771-483f-a84a-ac63d615c28e_1382715312.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/bottega_veneta/fonts/2a961063-ea56-4a4b-8cea-bdae32edb0e2.svg#2a961063-ea56-4a4b-8cea-bdae32edb0e2") format("svg");
+}
+@font-face{
+	font-family:"Proxima N W01 Reg";
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/7e90123f-e4a7-4689-b41f-6bcfe331c00a_1382715302.eot?#iefix");
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/7e90123f-e4a7-4689-b41f-6bcfe331c00a_1382715302.eot?#iefix") format("eot"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/26478/e56ecb6d-da41-4bd9-982d-2d295bec9ab0_1382715315.woff") format("woff"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/26478/2aff4f81-3e97-4a83-9e6c-45e33c024796_1382715297.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/bottega_veneta/fonts/ab9cd062-380f-4b53-b1a7-c0bec7402235.svg#ab9cd062-380f-4b53-b1a7-c0bec7402235") format("svg");
+}
+@font-face{
+	font-family:"Proxima N W01 Thin Reg";
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/37994fca-b67e-41db-94b3-44077c62810a_1382715308.eot?#iefix");
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/37994fca-b67e-41db-94b3-44077c62810a_1382715308.eot?#iefix") format("eot"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/26478/da176885-bee9-49f7-88f0-d7ad9229ddd7_1382715314.woff") format("woff"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/26478/1861a7b7-09a5-4efd-b681-5214784ded39_1382715306.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/bottega_veneta/fonts/610147b3-ad15-4b4b-a0fb-25244238ab3d.svg#610147b3-ad15-4b4b-a0fb-25244238ab3d") format("svg");
+}
+@font-face{
+	font-family:"Proxima N W01 Bold";
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/fbc6b03a-b3a1-427c-a884-053deca3a53c_1382715316.eot?#iefix");
+	src:url("http://aka-cdn-ns.adtech.de/rm/ads/26478/fbc6b03a-b3a1-427c-a884-053deca3a53c_1382715316.eot?#iefix") format("eot"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/26478/d999c07b-a049-4eb5-b8a6-4f36ae25e67e_1382715313.woff") format("woff"),
+	url("http://aka-cdn-ns.adtech.de/rm/ads/26478/4d4a75f5-d32a-4a09-8665-133afd39cc37_1382715301.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/bottega_veneta/fonts/8152bc4e-d700-4c78-b6be-326893e6f53f.svg#8152bc4e-d700-4c78-b6be-326893e6f53f") format("svg");
+}
+
+body {
+	font-family:"Proxima N W01 Reg";
+	font-size:11px;
+	line-height:15px;
+	color:#fff;
+	letter-spacing:0.1em;
+}
+a {
+	color:#fff;
+	text-decoration:none;
+}
+.clr {
+	clear:both;
+}
+
+
+#wrapper {
+	position:relative;
+	width:980px;
+	background-color:#000;
+}
+
+
+#contents {
+	overflow:hidden;
+	position:relative;
+	height:90px;
+}
+#contents .logo,
+#contents .contracted, 
+#contents .expanded {
+	position:absolute;
+}
+
+
+#contents .logo {
+	font-size:15px;
+	margin:36px 0 0 64px;
+}
+#contents .logo img {
+	margin:0 34px 0 0;
+}
+
+
+#contents .contracted {
+	width:100%;
+	height:90px;
+	background-color:#000;
+}
+#contents .contracted .btnExpand {
+	float:right;
+	font-family:"GeorgiaProW02-LightItal";
+	font-size:14px;
+	color:#ceb88b;
+	margin:42px 64px 0 0;
+	padding:0 16px 0 0;
+	background:url('img_arrow_down.png') right center no-repeat;
+	cursor:pointer;
+}
+
+
+#contents .expanded {
+	width:100%;
+	height:600px;
+}
+#contents .expanded .col {
+	overflow:hidden;
+	position:absolute;
+	width:418px;
+	height:462px;
+}
+#contents .expanded .colleft {
+	left:0;
+}
+#contents .expanded .colright {
+	right:0;
+}
+#contents .expanded .col img, 
+#contents .expanded .col .copies,
+#contents .expanded .col .infos, 
+#contents .expanded .col .infos .overlay, 
+#contents .expanded .col .infos .text {
+	position:absolute;
+}
+
+#contents .expanded .vc-holder,
+#contents .expanded .landing {
+	overflow:hidden;
+	position:absolute;
+	top:90px;
+	left:64px;
+	width:852px;
+	height:462px;
+}
+#contents .expanded .vc-holder {
+	display:none;
+}
+#contents .expanded .vc-holder .vc-contents {
+	position:absolute;
+	top:0;
+	left:0;
+	height:924px;
+}
+#contents .expanded .vc-holder .vc-contents .video,
+#contents .expanded .vc-holder .vc-contents .carousel {
+	overflow:hidden;
+	position:relative;
+	width:852px;
+	height:462px;
+}
+
+
+#contents .expanded .landing {}
+#contents .expanded .landing .col {
+	background-color:#000;
+	cursor:pointer;
+}
+#contents .expanded .landing .col img {
+	filter:alpha(opacity=50);
+	opacity:0.50;
+}
+#contents .expanded .landing .colleft {
+	padding:0 8px 0 0;
+}
+#contents .expanded .landing .colright {
+	padding:0 0 0 8px;
+}
+#contents .expanded .landing .col .copies {
+	text-align:center;
+	margin:204px 0 0 0;
+	filter:alpha(opacity=0);
+}
+#contents .expanded .landing .col .copies h5 {
+	font-size:15px;
+}
+#contents .expanded .landing .col .copies div {
+	margin:14px 180px;
+	border-bottom:1px solid #fff;
+}
+#contents .expanded .landing .col .copies p {
+	font-family:"GeorgiaProW02-LightItal";
+	font-size:14px;
+	line-height:20px;
+	margin:0 110px;
+}
+
+
+#contents .expanded .buttons {
+	float:right;
+	width:482px;
+	height:90px;
+}
+#contents .expanded .buttons .navigation {
+	position:absolute;
+	top:44px;
+	right:64px;
+	font-size:14px;
+}
+#contents .expanded .buttons .navigation a.active {
+	color:#ceb88b;
+}
+#contents .expanded .buttons .navigation span {
+	font-family:"Proxima N W01 Thin Reg";
+	margin:0 6px;
+}
+#contents .expanded .buttons .btnClose {
+	position:absolute;
+	right:0;
+	cursor:pointer;
+}
+
+
+#contents .expanded .arrows {
+	display:none;
+	position:absolute;
+	top:294px;
+	width:100%;
+}
+#contents .expanded .arrows img {
+	cursor:pointer;
+}
+#contents .expanded .arrows .btnArrowLeft {
+	float:left;
+	margin:0 0 0 32px;
+}
+#contents .expanded .arrows .btnArrowRight {
+	float:right;
+	margin:0 32px 0 0;
+}
+
+
+#contents .expanded .vc-holder .vc-contents .carousel .products-container {
+	position:absolute;
+	left:0;
+	width:99999px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products {
+	position:relative;
+	float:left;
+	width:852px;
+	height:462px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .col .infos,
+#contents .expanded .vc-holder .vc-contents .carousel .col .infos .overlay {
+	width:100%;
+	height:160px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .col .infos {
+	bottom:-108px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .col .infos .overlay {
+	background-color:#000;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .col .infos .text {
+	width:394px;
+	height:136px;
+	padding:12px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .col .infos .text .header {
+	text-transform:uppercase;
+	font-size:13px;
+	height:40px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .col .infos .text .header .active {
+	background:url('img_arrow_info_up.png') right 3px no-repeat;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .col .infos .text .header .title {
+	float:left;
+	width:280px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .col .infos .text .header .btnDetails {
+	float:right;
+	font-size:10px;
+	margin:2px 0 0 0;
+	padding:0 14px 0 0;
+	background:url('img_arrow_info_down.png') right 3px no-repeat;
+	cursor:pointer;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .col .infos .text .btnShopnow {
+	position:absolute;
+	bottom:10px;
+	border:1px solid #fff;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .col .infos .text .btnShopnow a {
+	display:block;
+	padding:4px 12px 2px 12px;
+}
+
+

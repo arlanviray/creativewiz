@@ -1,0 +1,274 @@
+/*@font-face{
+	font-family:"TradeGothicW01-BoldCn20 675334";
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/trade_gothic/257c802f-349c-4b4d-aefa-546d5de15ec6.eot?#iefix");
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/trade_gothic/257c802f-349c-4b4d-aefa-546d5de15ec6.eot?#iefix") format("eot"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/trade_gothic/5fdc935e-9e30-442a-bbe9-8d887b858471.woff") format("woff"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/trade_gothic/616c4c87-a077-43f4-a9f4-f01267c13818.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/trade_gothic/c901ad5f-a842-4549-a1f4-583a97f7e169.svg#c901ad5f-a842-4549-a1f4-583a97f7e169") format("svg");
+}
+@font-face{
+	font-family:"Trade Gothic W01 Cn 18";
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/trade_gothic/087e5c21-3358-4cf3-9d2c-289a03a48292.eot?#iefix");
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/trade_gothic/087e5c21-3358-4cf3-9d2c-289a03a48292.eot?#iefix") format("eot"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/trade_gothic/fb754dec-aa8f-444c-be48-868464c47ab0.woff") format("woff"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/trade_gothic/295ff20c-2b48-4fa6-be92-a53bbf9bbbb4.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/trade_gothic/c573d9d0-0726-4b95-aeee-fb621a299563.svg#c573d9d0-0726-4b95-aeee-fb621a299563") format("svg");
+}*/
+@import "https://www.projects.creativewiz.net/fonts/TradeGothic/styles.css";
+
+body {
+	font-family:"TradeGothicW01-BoldCn20 675334";
+	font-size:16px;
+	line-height:20px;
+	color:#000;
+}
+a {
+	color:#000;
+	text-decoration:none;
+}
+.clear-fix, .clr {
+	clear:both;
+}
+#wrapper, #contents {
+	overflow:hidden;
+	width:970px;
+	height:250px;
+}
+#wrapper {
+	position:relative;
+}
+#contents, .col {
+	position:absolute;
+}
+
+.col, 
+.col1 .rcontents, 
+.col1 .rcontents .row, 
+.col1 .rcontents .carousel {
+	overflow:hidden;
+}
+.col1 .rcontents .row {
+	position:relative;
+}
+.col, 
+.col1 .rcontents, 
+.col1 .rcontents .rows, 
+.col1 .rcontents .row, 
+.col1 .rcontents .carousel, 
+.col1 .rcontents .carousel li {
+	width:526px;
+	height:250px;
+}
+.col .txt {
+	font-size:38px;
+	line-height:38px;
+}
+.col .large {
+	font-size:48px;
+	line-height:48px;
+}
+.col1 {
+	left:0;
+}
+.col1 .rcontents, 
+.col1 .rcontents .rows, 
+.col1 .rcontents .row2 .txt, 
+.col1 .rcontents .row2 .signature, 
+.col1 .rcontents .row2 .signature .owhite,  
+.col1 .rcontents .row2 .buynow, 
+.col1 .rcontents .row2 .bullets, 
+.col1 .rcontents .row2 .arrow, 
+.col1 .logo, 
+.col1 .logo img, 
+.col1 .footer {
+	position:absolute;
+}
+.col1 .rcontents .row1 {}
+.col1 .rcontents .carousel ul {
+	position:relative;
+	left:-526px;
+	width:99999px;
+}
+.col1 .rcontents .carousel ul li {
+	position:relative;
+	float:left;
+}
+.col1 .rcontents .carousel ul li.l1 {
+	background:url('img_carousel1.jpg') no-repeat;
+}
+.col1 .rcontents .carousel ul li.l2 {
+	background:url('img_carousel2.jpg') no-repeat;
+}
+.col1 .rcontents .carousel ul li.l3 {
+	background:url('img_carousel3.jpg') no-repeat;
+}
+.col1 .rcontents .carousel ul li.l4 {
+	background:url('img_carousel4.jpg') no-repeat;
+}
+.col1 .rcontents .carousel ul li .txt {
+	right:62px;
+}
+.col1 .rcontents .carousel ul li .txt1 {
+	top:54px;
+}
+.col1 .rcontents .carousel ul li .txt2 {
+	top:86px;
+}
+.col1 .rcontents .carousel ul li .txt3 {
+	top:128px;
+}
+.col1 .rcontents .carousel ul li .signature {
+	top:166px;
+	left:324px;
+	background:url('img_signature.png') no-repeat;
+}
+.col1 .rcontents .carousel ul li .signature, 
+.col1 .rcontents .carousel ul li .signature .owhite {
+	width:122px;
+	height:42px;
+}
+.col1 .rcontents .carousel ul li .signature .owhite {
+	background-color:#fff;
+}
+.col1 .rcontents .carousel ul li .buynow {
+	top:172px;
+	right:62px;
+	width:142px;
+	text-align:center;
+	background:url('img_cta_bg.jpg') no-repeat;
+}
+.col1 .rcontents .carousel ul li .buynow a {
+	display:block;
+	height:20px;
+	padding:4px 0 0 0;
+}
+.col1 .rcontents .row2 {}
+.col1 .rcontents .row2 .abullets {
+	display:none;
+	position:absolute;
+	left:210px;
+	bottom:56px;
+	text-align:center;
+}
+.col1 .rcontents .row2 .abullets ul {
+	margin:0 auto;
+}
+.col1 .rcontents .row2 .abullets ul li {
+	float:left;
+	width:24px;
+	height:20px;
+	background:url('img_bullet_n.png') center center no-repeat;
+	cursor:pointer;
+}
+.col1 .rcontents .row2 .abullets ul li.active {
+	background:url('img_bullet_a.png') center center no-repeat;
+}
+.col1 .rcontents .row2 .arrow {
+	display:none;
+	top:102px;
+	cursor:pointer;
+}
+.col1 .rcontents .row2 .aleft {
+	left:16px;
+}
+.col1 .rcontents .row2 .aright {
+	right:16px;
+}
+.col1 .logo {
+	width:526px;
+	height:62px;
+	background:url('img_logo_bg.png') no-repeat;
+}
+.col1 .logo img {
+	top:6px;
+	/*left:26px;*/
+	left:50%;
+	margin:0 0 0 -99px;
+}
+.col1 .footer {
+	bottom:0;
+	font-family:"Trade Gothic W01 Cn 18";
+	color:#fff;
+	width:526px;
+	height:42px;
+	background-color:#000;
+	text-align:center;
+}
+.col1 .footer p {
+	/*margin:10px 0 0 14px;*/
+	margin:10px 0 0 0;
+}
+
+
+.col2 {
+	right:0;
+	width:444px;
+}
+.col2 .box {
+	overflow:hidden;
+	position:absolute;
+	width:222px;
+	height:125px;
+}
+.col2 .box1 {
+	top:0;
+	left:0;
+}
+.col2 .box2 {
+	top:0;
+	right:0;
+}
+.col2 .box3 {
+	bottom:0;
+	left:0;
+}
+.col2 .box4 {
+	bottom:0;
+	right:0;
+}
+.col2 .box img, 
+.col2 .box div {
+	position:absolute;
+}
+.col2 .box img {
+	top:50%;
+	left:50%;
+	margin:-131px 0 0 -222px;
+	/* Firefox 10+, Firefox on Android */
+	filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    /* IE6-9 */
+    filter:gray;
+    -webkit-filter:grayscale(1);
+}
+.col2 .box img.active {
+    filter:none;
+    -webkit-filter:grayscale(0);
+}
+.col2 .box .icon {
+	bottom:10px;
+	right:10px;
+	width:46px;
+	height:46px;
+	background:url('img_videoplay_n.png') no-repeat;
+}
+.col2 .box .active {
+	background:url('img_videoplay_a.png') no-repeat;
+}
+.col2 .box .obtn {
+	width:222px;
+	height:125px;
+	cursor:pointer;
+	background-color:#fff;
+	filter:alpha(opacity=0);
+	opacity:0;
+}
+.col2 .video {
+	z-index:2;
+	position:absolute;
+	top:0;
+	left:0;
+	width:444px;
+	height:250px;
+	display:none;
+}
+

@@ -1,0 +1,6 @@
+/**
+ * @author: Arlan Viray
+ * @email: arlanv555@gmail.com
+ */
+!function(e,o,a){function n(){t(),c(),l();for(var o=1;10>=o;o++)s(e(".flash"+o));// mouse events
+e("#contents").click(function(){ADTECH.click("STYLE AWARDS 2014")})}function t(){d.add(TweenMax.to(".box2",u,{css:{height:600}})),d.add(TweenMax.from(".polaroids",u,{css:{left:-340,rotation:-45}})),d.add(TweenMax.from(".copy",u,{css:{top:-60},ease:Bounce.easeOut}))}function c(){2>p?p++:p=1,e(".polaroid").hide(),e(".polaroid"+p).show(),TweenMax.to(".photographers",2,{autoAlpha:1}),TweenMax.delayedCall(.5,function(){TweenMax.to(".photographers",4,{css:{left:1==p?0:-660},ease:Linear.easeNone,onComplete:function(){d.play(),l()}})})}function l(){TweenMax.to(".photographers",0,{autoAlpha:0})}function r(){TweenMax.delayedCall(4,function(){d.reverse()})}function s(e){TweenMax.from(e,f,{opacity:0,scaleX:.5,scaleY:.5,delay:i(.5,1.5),ease:Bounce.easeOut,onComplete:s,onCompleteParams:[e]})}function i(e,o){var a=Math.floor(Math.random()*(1+o-e)+e);return a}var p=1,u=.5,f=.25,d=new TimelineMax({paused:!0,onReverseComplete:c,onComplete:r}),h=!1;e(n)}(jQuery,window);

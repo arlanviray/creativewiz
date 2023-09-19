@@ -1,0 +1,53 @@
+body {}
+.clr {
+	clear:both;
+}
+
+#wrapper {
+	position:relative;
+	width:1920px;
+	height:1025px;
+}
+
+.wleft, .wright {
+	position:relative;
+	width:465px;
+	height:1025px;
+}
+
+
+.wleft {
+	float:left;
+	background:url('wallpaper_left_bg.jpg') no-repeat;
+}
+.wleft .watches {
+	overflow:hidden;
+	position:absolute;
+	top:60px;
+	right:0;
+	width:320px;
+	height:700px;
+}
+.wleft .watches .watch {
+	position:absolute;
+	top:0;
+	left:320px;
+}
+.wleft .shadow {
+	position:absolute;
+	right:0;
+	width:27px;
+	height:1025px;
+	background:url('wallpaper_left_shadow.png') no-repeat;
+}
+
+
+.wright {
+	float:right;
+	background:url('wallpaper_right_bg.jpg') no-repeat;
+}
+.wright .logo {
+	position:absolute;
+	top:228px;
+	left:48px;
+}

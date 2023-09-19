@@ -1,0 +1,115 @@
+body {}
+a {
+	text-decoration:none;
+}
+.clr {
+	clear:both;
+}
+#wrapper, #contents {
+	overflow:hidden;
+	position:relative;
+}
+#wrapper, #contents {
+	width:300px;
+	height:600px;
+}
+#contents {
+	cursor:pointer;
+}
+
+
+.box, 
+.box1 .photographers .flash, 
+.box2 img, 
+.polaroids, .polaroid, 
+.copy {
+	position:absolute;
+}
+.box {
+	width:100%;
+}
+
+
+.box1 {
+	overflow:hidden;
+	height:370px;
+	background-color:#000;
+}
+.box1 .photographers {
+	position:relative;
+	left:0;
+	width:960px;
+	height:370px;
+	background:url('img_photographers.jpg') no-repeat;
+}
+.box1 .photographers .flash1 {
+	top:20px;
+	left:10px;
+}
+.box1 .photographers .flash2 {
+	top:120px;
+	left:60px;
+}
+.box1 .photographers .flash3 {
+	top:86px;
+	left:250px;
+}
+.box1 .photographers .flash4 {
+	top:46px;
+	left:346px;
+}
+.box1 .photographers .flash5 {
+	top:6px;
+	left:422px;
+}
+.box1 .photographers .flash6 {
+	top:18px;
+	left:514px;
+}
+.box1 .photographers .flash7 {
+	top:130px;
+	left:568px;
+}
+.box1 .photographers .flash8 {
+	top:90px;
+	left:750px;
+}
+.box1 .photographers .flash9 {
+	top:-18px;
+	left:772px;
+}
+.box1 .photographers .flash10 {
+	top:46px;
+	left:846px;
+}
+
+.box2 {
+	bottom:0;
+	height:230px;
+	text-align:center;
+	background-color:#fbf1eb;
+}
+.box2 img {
+	bottom:46px;
+	left:50%;
+	margin:0 0 0 -79px;
+}
+
+
+.polaroids {
+	top:112px;
+	left:16px;
+	width:268px;
+	height:287px;
+}
+
+
+.copy {
+	top:34px;
+	left:50%;
+	margin:0 0 0 -102px;
+}
+
+
+
+

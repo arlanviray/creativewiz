@@ -1,0 +1,113 @@
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+#wrapper {
+	overflow:hidden;
+	position:relative;
+}
+#wrapper, .contents, #btnOverlay {
+	width:900px;
+	height:1200px;
+}
+.contents, .cutout, #btnOverlay, #btnClose {
+	position:absolute;
+}
+.contents {
+	overflow:hidden;
+}
+.cutout {
+	width:300px;
+	height:600px;
+}
+#btnOverlay {
+	display:none;
+	cursor:pointer;
+	z-index:10;
+}
+#btnClose {
+	display:none;
+	top:12px;
+	right:12px;
+	background-color:#fff;
+	border-radius:5px;
+	border:2px solid #c0a576;
+	padding:4px 10px;
+	cursor:pointer;
+	z-index:20;
+}
+
+.initial {
+	right:0;
+	background:url('fold_1.jpg') no-repeat;
+}
+
+.unfold1 {
+	right:0;
+}
+.unfold1 .back {
+	background:url('fold_2.jpg') no-repeat;
+}
+.unfold1 .front {
+	background:url('main.jpg') no-repeat;
+	cursor:pointer;
+}
+
+.unfold2 {
+	display:none;
+	left:300px;
+}
+.unfold2 .back {
+	background:url('fold_3.jpg') no-repeat;
+}
+.unfold2 .front {
+	background:url('fold_2.jpg') no-repeat;
+}
+
+.unfold3 {
+	display:none;
+	left:0;
+}
+.unfold3 .back {
+	background:url('fold_4.jpg') no-repeat;
+}
+.unfold3 .front {
+	background:url('fold_3.jpg') no-repeat;
+}
+
+.unfold4 {
+	display:none;
+	top:600px;
+	left:0;
+}
+.unfold4 .back {
+	background:url('fold_5.jpg') no-repeat;
+}
+.unfold4 .front {
+	background:url('fold_4.jpg') no-repeat;
+}
+
+.unfold5 {
+	display:none;
+	top:600px;
+	left:300px;
+}
+.unfold5 .back {
+	background:url('fold_6.jpg') no-repeat;
+}
+.unfold5 .front {
+	background:url('fold_5.jpg') no-repeat;
+}
+
+.unfold6 {
+	display:none;
+	top:600px;
+	left:600px;
+}
+.unfold6 .back {}
+.unfold6 .front {
+	background:url('fold_6.jpg') no-repeat;
+}
+
+
+

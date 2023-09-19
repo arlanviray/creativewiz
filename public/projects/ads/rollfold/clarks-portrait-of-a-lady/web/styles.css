@@ -1,0 +1,224 @@
+/*@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=95562e0d-22e5-4f03-8ad5-100e92ecc23f");
+@font-face{
+	font-family:"Trade Gothic W01 Cn 18";
+	src:url("http://ads.pictela.net/rm/ads/32324/087e5c21-3358-4cf3-9d2c-289a03a48292_1390823815.eot?#iefix");
+	src:url("http://ads.pictela.net/rm/ads/32324/087e5c21-3358-4cf3-9d2c-289a03a48292_1390823815.eot?#iefix") format("eot"),
+	url("http://ads.pictela.net/rm/ads/32324/fb754dec-aa8f-444c-be48-868464c47ab0_1390823816.woff") format("woff"),
+	url("http://ads.pictela.net/rm/ads/32324/295ff20c-2b48-4fa6-be92-a53bbf9bbbb4_1390823815.ttf") format("truetype"),
+	url("http://ads.pictela.net/rm/ads/32324/c573d9d0-0726-4b95-aeee-fb621a299563_1390823815.svg#c573d9d0-0726-4b95-aeee-fb621a299563_1390823815") format("svg");
+}
+@font-face{
+	font-family:"HelveNeuLig";
+	src:url("http://ads.pictela.net/rm/ads/32324/HelveNeuLig_1390823816.eot?#iefix");
+	src:url("http://ads.pictela.net/rm/ads/32324/HelveNeuLig_1390823816.eot?#iefix") format("eot"),
+	url("http://ads.pictela.net/rm/ads/32324/HelveNeuLig_1390823817.woff") format("woff"),
+	url("http://ads.pictela.net/rm/ads/32324/HelveNeuLig_1390823817.ttf") format("truetype"),
+	url("http://ads.pictela.net/rm/ads/32324/HelveNeuLig_1390823817.svg#HelveNeuLig_1390823817") format("svg");
+}
+@font-face{
+	font-family:"HelveNeuBolCon";
+	src:url("http://ads.pictela.net/rm/ads/32324/HelveNeuBolCon_1390823816.eot?#iefix");
+	src:url("http://ads.pictela.net/rm/ads/32324/HelveNeuBolCon_1390823816.eot?#iefix") format("eot"),
+	url("http://ads.pictela.net/rm/ads/32324/HelveNeuBolCon_1390823816.woff") format("woff"),
+	url("http://ads.pictela.net/rm/ads/32324/HelveNeuBolCon_1390823816.ttf") format("truetype"),
+	url("http://ads.pictela.net/rm/ads/32324/HelveNeuBolCon_1390823816.svg#HelveNeuBolCon_1390823816") format("svg");
+}*/
+@import "https://www.projects.creativewiz.net/fonts/TradeGothic/styles.css";
+@import "https://www.projects.creativewiz.net/fonts/HelveticaNeu/styles.css";
+
+body {
+	/*
+	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family:"HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	*/
+	font-family:"HelveNeuLig";
+	font-size:14px;
+	line-height:18px;
+	color:#2d313c;
+}
+a {
+	text-decoration:none;
+}
+#wrapper, #contents {
+	overflow:hidden;
+	position:relative;
+}
+#wrapper, #contents, .expanded {
+	width:900px;
+	height:1200px;
+}
+
+
+.contracted, 
+.contracted img, 
+.expanded, 
+.expanded .row, 
+.expanded .row .column, 
+.expanded .blockcopy, 
+.expanded .blockinfo, 
+.btnInfos, 
+.btnClose {
+	position:absolute;
+}
+
+
+.contracted {
+	top:0;
+	cursor:pointer;
+}
+
+.contracted, 
+.expanded .row .column {
+	right:0;
+}
+.contracted, 
+.expanded .row .column, 
+.expanded .row .column img {
+	width:300px;
+	height:600px;
+}
+
+.expanded {
+	display:none;
+	overflow:hidden;
+}
+.expanded .row {
+	width:900px;
+	height:600px;
+}
+.expanded .row1 .col1 {
+	background:url('img_block_top_1.jpg') no-repeat;
+}
+.expanded .row1 .col2 {
+	background:url('img_block_top_2.jpg') no-repeat;
+}
+.expanded .row1 .col3 {
+	background:url('img_block_top_3.jpg') no-repeat;
+}
+.expanded .row2 {
+	
+}
+.expanded .row2 .column {
+	bottom:0;
+	background-color:#fff;
+}
+.expanded .row2 .column img {
+	width:299px;
+	border-left:1px solid #fff;
+	cursor:pointer;
+}
+
+.expanded .blockcopy {
+	display:none;
+	opacity:0;
+	top:380px;
+	left:50%;
+	margin:0 0 0 -180px;
+	width:380px;
+	font-size:18px;
+	line-height:23px;
+	text-align:center;
+}
+.expanded .blockcopy .share {
+	margin:30px 0 0 0;
+}
+.expanded .blockcopy .share img {
+	margin:0 5px;
+}
+
+.expanded .blockinfo {
+	top:0;
+	left:-300px;
+	width:300px;
+	height:1200px;
+	background-color:#fff;
+}
+.expanded .blockinfo .blockitem {
+	overflow:hidden;
+	position:relative;
+	height:299px;
+	border-bottom:1px solid #fff;
+}
+.expanded .blockinfo .blockitem .blocktitle {
+	font-family:"HelveNeuBolCon";
+	position:absolute;
+	top:10px;
+	left:16px;
+	font-size:20px;
+	color:#fff;
+}
+.expanded .blockinfo .blockitem .carousel {
+	position:absolute;
+	width:99999px;
+}
+.expanded .blockinfo .blockitem .carousel .item {
+	position:relative;
+	float:left;
+	height:300px;
+}
+.expanded .blockinfo .blockitem .carousel .item .info {
+	display:none;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-70px 0 0 -110px;
+	width:220px;
+	height:140px;
+	text-align:center;
+}
+.expanded .blockinfo .blockitem .carousel .item .info .copy {
+	background-color:#fff;
+	padding:20px 10px 40px 10px;
+}
+.expanded .blockinfo .blockitem .carousel .item .info .copy h5 {
+	font-family:"Trade Gothic W01 Cn 18";
+	font-size:26px;
+	margin:0 0 10px 0;
+	text-transform:uppercase;
+}
+.expanded .blockinfo .blockitem .carousel .item .info .shopnow {
+	font-family:"HelveNeuBolCon";
+	background-color:#2d313c;
+	margin:-20px 40px 0 40px;
+}
+.expanded .blockinfo .blockitem .carousel .item .info .shopnow a {
+	display:block;
+	color:#fff;
+	padding:8px 0;
+}
+.expanded .blockinfo .blockitem1 {
+	height:599px;
+}
+.expanded .blockinfo .blockitem1 .carousel {
+	width:300px;
+	height:99999px;
+}
+.expanded .blockinfo .blockitem1 .carousel .item {
+	float:none;
+	height:600px;
+}
+
+
+.btnInfos {
+	top:12px;
+	left:316px;
+}
+.btnClose {
+	top:12px;
+	right:16px;
+}
+.btnInfos,
+.btnClose {
+	display:none;
+	z-index:10;
+}
+.btnInfos img, 
+.btnClose img {
+	cursor:pointer;
+}
+.btnInfos .prev,
+.btnInfos .next {
+	margin:0 0 0 8px;
+}
+
+

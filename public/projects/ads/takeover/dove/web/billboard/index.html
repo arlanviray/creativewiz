@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- canvasSize:970x250 -->
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">   <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">   <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">   <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">   <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link type="text/css" href="reset.css" rel="stylesheet" />
+	<link type="text/css" href="styles.css" rel="stylesheet" />
+	<!-- <script type="text/javascript" src="https://canvas.adtech.com/ads/jsapi/ADTECH.js"></script> -->
+  	<script type="text/javascript" src="https://www.projects.creativewiz.net/js/adtech.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="contents">
+			<div class="videoholder">
+				<div class="video">
+					<div style="display:none"></div>
+					<script language="JavaScript" type="text/javascript" src="https://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+					<script language="JavaScript" type="text/javascript" src="https://admin.brightcove.com/js/APIModules_all.js"></script>
+					<object id="myExperience" class="BrightcoveExperience">
+						<param name="bgcolor" value="#FFFFFF" />
+						<param name="width" value="444" />
+						<param name="height" value="250" />
+						<param name="playerID" value="3689307474001" />
+  						<param name="playerKey" value="AQ~~,AAAACUnXLEE~,CSRrSILcGTf-z4gr4QCSRxFV6ztL_0uj" />
+						<param name="isVid" value="true" />
+						<param name="isUI" value="true" />
+						<param name="dynamicStreaming" value="true" />
+						<param name="@videoPlayer" value="3702567916001" />
+					</object>
+					<script type="text/javascript">brightcove.createExperiences();</script>
+				</div>
+			</div>
+			<img src="img_txt_1.png" class="absolute txt1" />
+			<img src="img_txt_2.png" class="absolute txt2" />
+			<img src="img_txt_3.png" class="absolute txt3" />
+			<img src="img_txt_4.png" class="absolute txt4" />
+			<a href="#" onclick="ADTECH.click('Discover now')"><img src="img_cta.png" class="absolute cta" /></a>
+			<div class="volume absolute inactive"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var BCL = {};
+		function onTemplateLoaded(id) {
+			BCL.player = brightcove.getExperience(id);
+			BCL.experienceModule = BCL.player.getModule(APIModules.EXPERIENCE);
+			BCL.experienceModule.getElementByID("videoPlayer").getControls().setIncludeInLayout(false); 
+			BCL.experienceModule.addEventListener(BCExperienceEvent.TEMPLATE_READY, BCL.onTemplateReady);
+		}
+		BCL.onTemplateReady = function(event) {
+			BCL.experienceModule.removeEventListener(BCExperienceEvent.TEMPLATE_READY, BCL.onTemplateReady);
+			BCL.videoPlayer = BCL.player.getModule(APIModules.VIDEO_PLAYER);
+			BCL.videoPlayer.addEventListener(BCMediaEvent.PROGRESS, BCL.onMediaProgress);
+			BCL.videoPlayer.addEventListener(BCMediaEvent.COMPLETE, BCL.onMediaComplete);
+			BCL.videoPlayer.setVolume(0);
+			BCL.videoPlayer.play();
+		}
+		BCL.onMediaProgress = function(event) {
+			if (event.position > event.duration - .1) {
+				BCL.videoPlayer.seek(0);
+			}
+		}
+		BCL.onMediaComplete = function(event) {
+			BCL.videoPlayer.play();
+		}
+	</script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+

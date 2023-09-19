@@ -1,0 +1,503 @@
+/*@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=4d421369-9985-4f22-a417-a221cdee9977");
+@font-face{
+	font-family:"Proxima N W01 Light";
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_light/93cc6d34-798e-42c8-87d2-fd6391801b63.eot?#iefix");
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_light/93cc6d34-798e-42c8-87d2-fd6391801b63.eot?#iefix") format("eot"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_light/2fa30669-9bbd-4ced-912f-db94a367ed6c.woff") format("woff"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_light/c12b3ebb-3771-483f-a84a-ac63d615c28e.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_light/2a961063-ea56-4a4b-8cea-bdae32edb0e2.svg#2a961063-ea56-4a4b-8cea-bdae32edb0e2") format("svg");
+}
+@font-face{
+	font-family:"Proxima N W01 Reg";
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_regular/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix");
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_regular/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix") format("eot"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_regular/e56ecb6d-da41-4bd9-982d-2d295bec9ab0.woff") format("woff"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_regular/2aff4f81-3e97-4a83-9e6c-45e33c024796.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_regular/ab9cd062-380f-4b53-b1a7-c0bec7402235.svg#ab9cd062-380f-4b53-b1a7-c0bec7402235") format("svg");
+}
+@font-face{
+	font-family:"Proxima N W01 Thin Reg";
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_thin_regular/37994fca-b67e-41db-94b3-44077c62810a.eot?#iefix");
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_thin_regular/37994fca-b67e-41db-94b3-44077c62810a.eot?#iefix") format("eot"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_thin_regular/da176885-bee9-49f7-88f0-d7ad9229ddd7.woff") format("woff"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_thin_regular/1861a7b7-09a5-4efd-b681-5214784ded39.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_thin_regular/610147b3-ad15-4b4b-a0fb-25244238ab3d.svg#610147b3-ad15-4b4b-a0fb-25244238ab3d") format("svg");
+}
+@font-face{
+	font-family:"Proxima N W01 Bold";
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_bold/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix");
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_bold/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix") format("eot"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_bold/d999c07b-a049-4eb5-b8a6-4f36ae25e67e.woff") format("woff"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_bold/4d4a75f5-d32a-4a09-8665-133afd39cc37.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/proximanova_bold/8152bc4e-d700-4c78-b6be-326893e6f53f.svg#8152bc4e-d700-4c78-b6be-326893e6f53f") format("svg");
+}
+@font-face{
+	font-family:"Optima Roman";
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/optima/optimabq-roman-webfont.eot?#iefix");
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/optima/optimabq-roman-webfont.eot?#iefix") format("eot"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/optima/optimabq-roman-webfont.woff") format("woff"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/optima/optimabq-roman-webfont.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/optima/optimabq-roman-webfont.svg#optimabq-roman-webfont") format("svg");
+}
+@font-face{
+	font-family:"Optima Italic";
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/optima/optimabq-italic-webfont.eot?#iefix");
+	src:url("http://testftp.hearstdigital.co.uk/Fonts/optima/optimabq-italic-webfont.eot?#iefix") format("eot"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/optima/optimabq-italic-webfont.woff") format("woff"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/optima/optimabq-italic-webfont.ttf") format("truetype"),
+	url("http://testftp.hearstdigital.co.uk/Fonts/optima/optimabq-italic-webfont.svg#optimabq-italic-webfont") format("svg");
+}*/
+@import "https://www.projects.creativewiz.net/fonts/ProximaNova/styles.css";
+@import "https://www.projects.creativewiz.net/fonts/Optima/styles.css";
+
+body {
+	font-family:Georgia, serif;
+	font-size:13px;
+	line-height:18px;
+	color:#5e5e5e;
+	letter-spacing:0.05em;
+}
+a {
+	color:#fff;
+	text-decoration:none;
+}
+.clr, .clear-fix {
+	clear:both;
+}
+
+
+#wrapper {
+	position:relative;
+	width:980px;
+	background-color:#1a0011;
+}
+
+
+#contents {
+	overflow:hidden;
+	position:relative;
+	height:90px;
+}
+#contents .logo,
+#contents .contracted, 
+#contents .expanded {
+	position:absolute;
+}
+
+
+#contents .logo {
+	top:0;
+	left:188px;
+}
+
+
+#contents .contracted {
+	width:100%;
+	height:90px;
+	background:url('img_banner_1.jpg') no-repeat;
+}
+#contents .contracted .btnExpand {
+	overflow:hidden;
+	height:90px;
+	cursor:pointer;
+}
+#contents .contracted .btnExpand img {
+	position:absolute;
+}
+#contents .contracted .btnExpand img.bpic {
+	right:0;
+}
+#contents .contracted .btnExpand img.lcopy {
+	top:42px;
+	left:146px;
+}
+#contents .contracted .btnExpand:hover {}
+#contents .contracted .btnExpand .text {}
+#contents .contracted .btnExpand:hover .text {}
+
+
+#contents .expanded {
+	width:100%;
+	height:606px;
+	background:url('img_banner_2.jpg') top center no-repeat;
+}
+#contents .expanded .col {
+	overflow:hidden;
+	position:absolute;
+	width:490px;
+	height:436px;
+}
+#contents .expanded .colleft {
+	left:0;
+}
+#contents .expanded .colright {
+	right:0;
+}
+#contents .expanded .products .main, 
+#contents .expanded .products img, 
+#contents .expanded .products .copies, 
+#contents .expanded .products .infos, 
+#contents .expanded .products .infos .overlay, 
+#contents .expanded .products .infos .text {
+	position:absolute;
+}
+
+#contents .expanded .vc-holder,
+#contents .expanded .landing {
+	overflow:hidden;
+	position:absolute;
+	top:132px;
+	left:0;
+	width:980px;
+	height:474px;
+	background-color:#0e0208;
+}
+#contents .expanded .vc-holder {
+	display:none;
+}
+#contents .expanded .vc-holder .vc-contents {
+	position:absolute;
+	top:0;
+	left:0;
+	height:948px;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder,
+#contents .expanded .vc-holder .vc-contents .carousel {
+	overflow:hidden;
+	position:relative;
+	width:980px;
+	height:474px;
+}
+
+
+#contents .expanded .landing {}
+#contents .expanded .landing .col {
+	background-color:#fff;
+	cursor:pointer;
+}
+#contents .expanded .landing .col img {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-239px 0 0 -270px;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+	border-bottom:1px solid #fff;
+}
+#contents .expanded .landing .colleft {
+	padding:0;
+}
+#contents .expanded .landing .colright {
+	padding:0;
+}
+#contents .expanded .landing .colleft .vicon {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-59px 0 0 -59px;
+	width:118px;
+	height:118px;
+	background:url('img_landing_1_vicon.png') center center no-repeat;
+}
+#contents .expanded .landing .col .copies {
+	position:absolute;
+	bottom:24px;
+	width:490px;
+	text-align:center;
+}
+#contents .expanded .landing .col .copies h5 {
+	font-family:"Optima Roman";
+	font-size:44px;
+	line-height:44px;
+	color:#830327;
+	padding:0 0 8px 0;
+}
+#contents .expanded .landing .colleft .copies h5 {}
+#contents .expanded .landing .colright .copies h5 {}
+#contents .expanded .landing .col .copies p {}
+#contents .expanded .landing .col .copies .box {
+	font-family:"Proxima N W01 Bold";
+	font-size:13px;
+	line-height:17px;
+	width:160px;
+	margin:0 auto;
+}
+#contents .expanded .landing .colright .copies .box {
+	width:150px;
+}
+#contents .expanded .landing .copies .box .text {
+	background:url('img_arrow_right.png') right center no-repeat;
+}
+#contents .expanded .landing .copies .box .active {
+	color:#830327;
+	background:url('img_arrow_right_red.png') right center no-repeat;
+}
+
+
+#contents .expanded .buttons {
+	position:relative;
+	top:90px;
+	font-family:"Proxima N W01 Thin Reg";
+	font-size:15px;
+	color:#fff;
+	text-align:center;
+	height:42px;
+	background-color:#0e0208;
+}
+#contents .expanded .buttons .navigation {
+	position:absolute;
+	top:10px;
+	left:50%;
+	width:300px;
+	margin:0 0 0 -150px;
+	padding:0 0 0 14px;
+}
+#contents .expanded .buttons .navigation div {
+	float:left;
+}
+#contents .expanded .buttons .navigation div.sect1, 
+#contents .expanded .buttons .navigation div.sect2 {
+	width:130px;
+}
+#contents .expanded .buttons .navigation div.sect1 {
+	text-align:right;
+}
+#contents .expanded .buttons .navigation div.sect2 {
+	text-align:left;
+}
+#contents .expanded .buttons .navigation a:hover, 
+#contents .expanded .buttons .navigation a.active {
+	font-family:"Proxima N W01 Reg";
+	color:#fff;
+}
+#contents .expanded .buttons .navigation span {
+	margin:0 6px;
+	color:#fff;
+}
+#contents .expanded .buttons .btnClose {
+	position:absolute;
+	top:10px;
+	right:20px;
+	background:url('img_btn_close.png') right 0 no-repeat;
+	padding:0 20px 0 0;
+	cursor:pointer;
+}
+#contents .expanded .buttons .btnClose:hover {
+	font-family:"Proxima N W01 Reg";
+	color:#fff;
+}
+
+
+#contents .expanded .arrows {
+	display:none;
+	position:absolute;
+	top:132px;
+	width:50px;
+	height:436px;
+}
+#contents .expanded .aleft {
+	left:0;
+	background:url('img_btn_arrow_left_bg.png') no-repeat;
+}
+#contents .expanded .aright {
+	right:0;
+	background:url('img_btn_arrow_right_bg.png') no-repeat;
+}
+#contents .expanded .aremovebg {
+	background:none;
+}
+#contents .expanded .arrows img {
+	cursor:pointer;
+}
+#contents .expanded .arrows .btnArrowLeft {
+	float:right;
+	margin:170px 0 0 0;
+}
+#contents .expanded .arrows .btnArrowRight {
+	float:left;
+	margin:170px 0 0 0;
+}
+
+
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption,
+#contents .expanded .vc-holder .vc-contents .videoholder .video {
+	height:436px;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption {
+	float:right;
+	width:184px;
+	padding:0 0 0 24px;
+	background-color:#fff;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption h5 {
+	font-family:"Optima Roman";
+	font-size:28px;
+	line-height:28px;
+	color:#830327;
+	margin:60px 0 12px 0;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .videocaption p {
+	font-size:13px;
+	line-height:18px;
+	padding:0 24px 0 0;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .video {
+	float:left;
+	width:772px;
+	margin:0 0 0 -4px;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout {
+	font-family:"Proxima N W01 Bold";
+	font-size:13px;
+	line-height:17px;
+	width:130px;
+	margin:60px 0 0 0;
+	cursor:pointer;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout a {
+	display:block;
+	color:#5e5e5e;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout a:hover {
+	color:#830327;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout div {
+	background:url('img_arrow_right.png') right center no-repeat;
+}
+#contents .expanded .vc-holder .vc-contents .videoholder .btnFindout:hover div {
+	background:url('img_arrow_right_red.png') right center no-repeat;
+}
+
+
+#contents .expanded .vc-holder .vc-contents .carousel .products-container {
+	position:absolute;
+	left:0;
+	width:9999999px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products {
+	overflow:hidden;
+	position:relative;
+	float:left;
+	width:980px;
+	height:436px;
+	background-color:#fff;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products .main {
+	top:0;
+	left:490px;
+	width:490px;
+	height:100%;
+	background-color:#332b28;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main1 {}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main2 {}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main3 {}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main4 {}
+#contents .expanded .vc-holder .vc-contents .carousel .products-container .products img.main5 {}
+#contents .expanded .vc-holder .vc-contents .carousel .circle {
+	position:absolute;
+	top:30px;
+	left:86px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos,
+#contents .expanded .vc-holder .vc-contents .carousel .infos .overlay {}
+#contents .expanded .vc-holder .vc-contents .carousel .infos {
+	top:0;
+	left:0;
+	width:490px;
+	height:100%;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .overlay {}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text {
+	width:200px;
+	padding:74px 0 0 84px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header {
+	font-family:"Optima Roman";
+	font-size:31px;
+	line-height:31px;
+	color:#830327;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header span {
+	font-family:"Optima Italic";
+	font-size:24px;
+	line-height:27px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header .active {
+	background:url('img_arrow_info_up.png') right 3px no-repeat;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header .title {}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .header .btnDetails {}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text p {
+	margin:10px 0 0 0;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow {
+	font-family:"Proxima N W01 Bold";
+	font-size:13px;
+	line-height:17px;
+	width:130px;
+	margin:20px 0 0 0;
+	cursor:pointer;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow a {
+	display:block;
+	color:#5e5e5e;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow a:hover {
+	color:#830327;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow div {
+	background:url('img_arrow_right.png') right center no-repeat;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .text .btnShopnow:hover div {
+	background:url('img_arrow_right_red.png') right center no-repeat;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .thumbs {
+	position:relative;
+	left:336px;
+	width:154px;
+	height:436px;
+	padding:1px 0 0 0;
+	background-color:#fff;
+	border-left:1px solid #d4d4d4;
+	border-right:1px solid #d4d4d4;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .thumbs ul li {
+	width:154px;
+	height:144px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .thumbs ul li:nth-child(2) {
+	border-top:1px solid #d4d4d4;
+	border-bottom:1px solid #d4d4d4;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .thumbs ul li img {
+	cursor:pointer;
+	border-bottom:1px solid #fff;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .infos .thumbs .apointer {
+	position:absolute;
+	top:66px;
+	left:162px;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation {
+	position:absolute;
+	bottom:0;
+	width:980px;
+	height:36px;
+	text-align:center;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation ul {
+	margin:8px auto 0 auto;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation ul li {
+	float:left;
+	width:24px;
+	height:20px;
+	background:url('img_product_nav_n.png') center center no-repeat;
+	cursor:pointer;
+}
+#contents .expanded .vc-holder .vc-contents .carousel .products-navigation ul li.active {
+	background:url('img_product_nav_a.png') center center no-repeat;
+}
+
+

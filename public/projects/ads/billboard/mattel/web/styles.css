@@ -1,0 +1,136 @@
+body {}
+a {
+	text-decoration:none;
+}
+.clr {
+	clear:both;
+}
+#wrapper, #contents {
+	overflow:hidden;
+	position:relative;
+}
+#wrapper, #contents {
+	width:936px;
+	height:250px;
+	background-color:#4e1336;
+}
+#contents {
+	background:url('img_bg.jpg') no-repeat;
+}
+
+
+.box, 
+.blockcupid img, 
+.blockcopy img, 
+.blocklogo img, 
+.btnwatch, 
+.btnwatch .arrow, 
+.btnexit, 
+.videoContainer .btnvideo, 
+.videoContainer img {
+	position:absolute;
+}
+
+.blockcupid, 
+.blockcopy, 
+.blocklogo {
+	height:250px;
+}
+
+
+.blockcupid {
+	overflow:hidden;
+	left:0;
+	width:250px;
+}
+.blockcupid .cupid {
+	right:14px;
+}
+.blockcupid .overlay {
+	bottom:0;
+}
+
+
+.blockcopy {
+	left:250px;
+	width:276px;
+}
+.blockcopy .copy1 {
+	top:66px;
+	left:18px;
+}
+.blockcopy .copy2 {
+	top:104px;
+}
+.blockcopy .copy3 {
+	top:142px;
+	left:40px;
+}
+.blockcopy .copyright {
+	top:184px;
+	left:110px;
+}
+
+
+.blocklogo {
+	left:526px;
+	width:340px;
+}
+.blocklogo .logo {
+	top:40px;
+	left:36px;
+}
+
+
+.btnwatch {
+	top:148px;
+	left:576px;
+	width:221px;
+	height:60px;
+	background:url('img_btnwatch.png') no-repeat;
+	cursor:pointer;
+}
+.btnwatch .arrow {
+	top:50%;
+	right:30px;
+	margin:-5px 0 0 0;
+}
+
+
+.btnexit {
+	width:100%;
+	height:100%;
+	opacity:0.5;
+}
+.btnexit a {}
+
+
+.videoContainer,
+.videoContainer .video, 
+.videoContainer .btnvideo {
+	width:340px;
+	height:190px;
+}
+.videoContainer {
+	display:none;
+	top:28px;
+	left:526px;
+}
+.videoContainer .video {
+	background-color:#000;
+}
+.videoContainer .btnvideo {
+	display:none;
+	top:0;
+	left:0;
+	background:url('img_btnvideo.png') no-repeat;
+	cursor:pointer;
+}
+.videoContainer .btnvideo .arrow {
+	top:120px;
+	left:284px;
+}
+
+
+
+

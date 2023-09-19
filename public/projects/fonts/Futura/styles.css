@@ -1,0 +1,16 @@
+@font-face{
+	font-family:"Futura W01 Bold";
+	src:url("bold/futura_bold.eot?#iefix");
+	src:url("bold/futura_bold.eot?#iefix") format("eot"),
+	url("bold/futura_bold.woff") format("woff"),
+	url("bold/futura_bold.ttf") format("truetype"),
+	url("bold/futura_bold.svg#futura_bold") format("svg");
+}
+@font-face{
+	font-family:"Futura W01 Book";
+	src:url("book/futura_book.eot?#iefix");
+	src:url("book/futura_book.eot?#iefix") format("eot"),
+	url("book/futura_book.woff") format("woff"),
+	url("book/futura_book.ttf") format("truetype"),
+	url("book/futura_book.svg#futura_book") format("svg");
+}

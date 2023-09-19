@@ -1,0 +1,5 @@
+/**
+ * @author: Arlan Viray
+ * @email: arlanv555@gmail.com
+ */
+!function(e,o,c){function n(){e(".pics img").not(":eq(0)").css({opacity:0}),i()}function i(){s<=e(".pics .pic").length?TweenMax.to(e(".pics .pic"+s),0,{css:{opacity:1},delay:u,onComplete:function(){s++,y++,y==(p?6:5)?(p=!0,y=0,t()):i()}}):(e(".pics img").not(":eq(0)").not(":eq(10)").css({opacity:0}),TweenMax.to(e(".pics .pic12"),0,{css:{opacity:0},delay:u,onComplete:function(){p=!1,s=2,i()}}))}function t(){a=2==a?1:a+1,TweenMax.to(e(".overlay"),u,{css:{opacity:.8},delay:l}),TweenMax.to(e(".copies .copy"+a),l,{css:{opacity:1},delay:1}),TweenMax.to(e(".copies .copy"+a),l,{css:{opacity:0},delay:5,onComplete:function(){TweenMax.to(e(".overlay"),u,{css:{opacity:0}}),i()}})}var p=!1,s=2,a=0,y=0,l=.5,u=.25,f=new TimelineMax({paused:!0,onReverseComplete:function(){},onComplete:function(){}});e(n)}(jQuery,window);

@@ -1,0 +1,79 @@
+body {}
+.clr {
+	clear: both;
+}
+.absolute {
+	position: absolute;
+}
+
+#wrapper, #contents {
+	position: relative;
+}
+
+#wrapper, #contents, 
+.backgrounds, .backgrounds .color, 
+.products {
+	width: 980px;
+	height: 90px;
+}
+
+.backgrounds, .backgrounds .color {
+	position: absolute;
+}
+.backgrounds .color.color1 {
+	background-color: #034385;
+}
+.backgrounds .color.color2 {
+	background-color: #164d3c;
+}
+.backgrounds .color.color3 {
+	background-color: #a80e5b;
+}
+.backgrounds .color.color4 {
+	background-color: #bb0a22;
+}
+.backgrounds .color.color5 {
+	background-color: #740a14;
+}
+
+.products {
+	overflow: hidden;
+	position: absolute;
+}
+.products .prod.prod {
+	position: absolute;
+	top: -82px;
+	cursor: pointer;
+}
+.products .prod.prod1 {
+	left: 172px;
+}
+.products .prod.prod2 {
+	left: 280px;
+}
+.products .prod.prod3 {
+	left: 386px;
+}
+.products .prod.prod4 {
+	left: 494px;
+}
+.products .prod.prod5 {
+	left: 600px;
+}
+.products .prod.active {
+	pointer-events: none;
+	background: url('img_banner_prodglow.png') -5px center no-repeat;
+}
+.products .prod img {
+	padding: 0 14px;
+}
+.products .title {
+	top: 24px;
+	right: 2px;
+}
+.products .logo {
+	top: 9px;
+	left: 2px;
+}
+
+
