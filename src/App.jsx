@@ -1,5 +1,10 @@
 import { useEffect, useRef } from "react"
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom"
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom"
 // helpers
 import { getTypeMode, setLightMode } from "./helpers/Utils"
 // library
@@ -22,11 +27,24 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="work" element={<WorksLayout />} loader={worksLoader}>
-        <Route path=":category" element={<WorksCategory />} loader={worksLoader} />
-        <Route path=":category/:subcategory" element={<WorksAdvertCategory />} loader={worksLoader} />
+        <Route
+          path=":category"
+          element={<WorksCategory />}
+          loader={worksLoader}
+        />
+        <Route
+          path=":category/:subcategory"
+          element={<WorksAdvertCategory />}
+          loader={worksLoader}
+        />
       </Route>
       <Route path="work/detail/:id" element={<WorksDetail />} />
-      <Route path="contact" element={<Contact />} loader={contactLoader} action={contactAction} />
+      <Route
+        path="contact"
+        element={<Contact />}
+        loader={contactLoader}
+        action={contactAction}
+      />
       <Route path="*" element={<NotFound />} />
     </Route>
   )
@@ -40,7 +58,7 @@ function App() {
     // stop useEffect to trigger twice
     if (effectCalled.current) {
       effectCalled.current = false
-      
+
       // localStorage
       if (localStorage.length < 1) {
         setLightMode()
@@ -53,7 +71,9 @@ function App() {
       }
 
       const setRandFavicon = () => {
-        document.querySelector(`[data-image="favicon"]`).href = `/favicon${getRandInt}.png`
+        document.querySelector(
+          `[data-image="favicon"]`
+        ).href = `/favicon${getRandInt}.png`
       }
 
       setRandTheme()

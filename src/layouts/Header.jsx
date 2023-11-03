@@ -21,7 +21,9 @@ function Header() {
 
   useEffect(() => {
     // console.log("Location changed")
-    const headerHeight = document.querySelector("header").getBoundingClientRect().height
+    const headerHeight = document
+      .querySelector("header")
+      .getBoundingClientRect().height
     const currPage = _.split(window.location.pathname, "/")[1]
     setActiveNav(currPage)
 
@@ -48,7 +50,7 @@ function Header() {
     if (_.isEmpty(hamburgerMenu)) {
       sethamburgerMenu("is-active")
       document.querySelector("html").classList.add("no-scroll")
-    } else { 
+    } else {
       sethamburgerMenu("")
       document.querySelector("html").classList.remove("no-scroll")
     }
@@ -62,7 +64,7 @@ function Header() {
       setLightMode()
       setTypeMode("light")
     }
-    
+
     setTypeModeSwitcher(false)
   }
 
@@ -70,20 +72,51 @@ function Header() {
     <header className={scrollPos}>
       <div className="content">
         <div className="logo">
-          <a href="/"><img src={isLightMode ? cwizLogoDark : (_.isEmpty(typeMode) ? cwizLogoDark : cwizLogoLight)} width="156" height="30" className="noresp noselect" /></a>
+          <a href="/">
+            <img
+              src={
+                isLightMode
+                  ? cwizLogoDark
+                  : _.isEmpty(typeMode)
+                  ? cwizLogoDark
+                  : cwizLogoLight
+              }
+              width="156"
+              height="30"
+              className="noresp noselect"
+            />
+          </a>
           <div className="logo-circle theme-bg"></div>
         </div>
         <div className="navigation">
           <nav>
             {/* combine with router "Link" for active state on child pages */}
-            <NavLink onClick={handleHamburgerMenu} className="btn-nav" to="/">Home</NavLink>
-            <Link onClick={handleHamburgerMenu} className={"btn-nav"+ (activeNav === "work" ? " active" : "")} to="work/all">Work</Link>
-            <NavLink onClick={handleHamburgerMenu} className="btn-nav" to="contact">Contact</NavLink>
-            
+            <NavLink onClick={handleHamburgerMenu} className="btn-nav" to="/">
+              Home
+            </NavLink>
+            <Link
+              onClick={handleHamburgerMenu}
+              className={"btn-nav" + (activeNav === "work" ? " active" : "")}
+              to="work/all"
+            >
+              Work
+            </Link>
+            <NavLink
+              onClick={handleHamburgerMenu}
+              className="btn-nav"
+              to="contact"
+            >
+              Contact
+            </NavLink>
+
             {/* <div className="type-mode" onClick={handleTypeMode}>
               <img src={isLightMode ? iconDarkMode : iconLightMode} width={16} height={16} />
             </div> */}
-            <div className="type-mode-switcher" data-init={typeModeSwitcher} onClick={handleTypeMode}>
+            <div
+              className="type-mode-switcher"
+              data-init={typeModeSwitcher}
+              onClick={handleTypeMode}
+            >
               <div className="icon">
                 <img src={iconLightMode} width={16} height={16} />
               </div>
@@ -93,7 +126,10 @@ function Header() {
             </div>
           </nav>
         </div>
-        <div className={"hamburger hamburger--squeeze "+ hamburgerMenu} onClick={handleHamburgerMenu}>
+        <div
+          className={"hamburger hamburger--squeeze " + hamburgerMenu}
+          onClick={handleHamburgerMenu}
+        >
           <div className="hamburger-box">
             <div className="hamburger-inner"></div>
           </div>

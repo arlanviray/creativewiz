@@ -15,9 +15,11 @@ function WorksSubCategory() {
     const uniqAdType = _.uniq(_.map(data, (item) => item.fields.advertType))
 
     // set errors
-    const validAdType = _.findIndex(uniqAdType, (adType) => {return _.kebabCase(adType) === subcategory})
+    const validAdType = _.findIndex(uniqAdType, (adType) => {
+      return _.kebabCase(adType) === subcategory
+    })
     if (validAdType < 0 || category !== "advert") {
-      navigate("/error", {replace: true})
+      navigate("/error", { replace: true })
     }
   }, [])
 

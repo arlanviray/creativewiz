@@ -1,5 +1,3 @@
-
-
 function Footer() {
   const now = new Date()
 

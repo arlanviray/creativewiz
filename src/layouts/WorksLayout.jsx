@@ -1,9 +1,17 @@
 import { useEffect, useState } from "react"
-import { NavLink, Outlet, useLoaderData, useNavigate, useParams } from "react-router-dom"
+import { Helmet } from "react-helmet"
+import {
+  NavLink,
+  Outlet,
+  useLoaderData,
+  useNavigate,
+  useParams,
+} from "react-router-dom"
 // library
 import _ from "lodash"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 // helpers
+import { metaTitles } from "../helpers/MetaTitles"
 import { client } from "../helpers/Client"
 
 function WorksLayout() {
@@ -17,19 +25,18 @@ function WorksLayout() {
   useEffect(() => {
     // if category does not exist, redirect to WorksCategory
     if (_.isUndefined(category)) {
-      navigate("all", {replace: true})
+      navigate("all", { replace: true })
     }
 
     // Otherwise
     const getWorkIntro = async () => {
       try {
-        const response = await client.getEntries({ 
-          content_type: "workIntro", 
-          "sys.id": "1cGsjwEYNn7j4F1dNeiBYe"
+        const response = await client.getEntries({
+          content_type: "workIntro",
+          "sys.id": "1cGsjwEYNn7j4F1dNeiBYe",
         })
         setWorIntro(response.items[0].fields)
-
-      } catch(error) {
+      } catch (error) {
         console.warn(error)
       }
     }
@@ -47,10 +54,25 @@ function WorksLayout() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          {metaTitles.work +
+            _.toString(
+              _.map(workType, (type) =>
+                category === _.kebabCase(type) ? " | " + type : ""
+              )
+            ).replaceAll(",", "")}
+        </title>
+      </Helmet>
+
       <section className="work-intro">
         <div className="content max-width p-t-96">
-          <div className="h1 theme-color float-left m-r-16">{workIntro.header}</div>
-          <div className="description font-size-lg">{documentToReactComponents(workIntro.description)}</div>
+          <div className="h1 theme-color float-left m-r-16">
+            {workIntro.header}
+          </div>
+          <div className="description font-size-lg">
+            {documentToReactComponents(workIntro.description)}
+          </div>
         </div>
       </section>
 
@@ -58,22 +80,35 @@ function WorksLayout() {
         <div className="content max-width p-t-96">
           <div className="p-b-32">
             <div className="workscard-categories">
-              <NavLink className="btn" to="all">ALL</NavLink>
-              {_.map(workType, (type) => <NavLink className="btn" to={_.kebabCase(type)} key={type}>{type}</NavLink>)}
+              <NavLink className="btn" to="all">
+                ALL
+              </NavLink>
+              {_.map(workType, (type) => (
+                <NavLink className="btn" to={_.kebabCase(type)} key={type}>
+                  {type}
+                </NavLink>
+              ))}
             </div>
-            {
-              (() => {
-                if (category === "advert") {
-                  return (
-                    <div className="workscard-subcategories p-t-16">
-                      {_.map(workAdvertType, (adType) => {
-                        if (!_.isUndefined(adType)) return <NavLink className="btn-subcat" to={"advert/"+ _.kebabCase(adType)} key={adType}>{adType}</NavLink>
-                      })}
-                    </div>
-                  )
-                }
-              })()
-            }
+            {(() => {
+              if (category === "advert") {
+                return (
+                  <div className="workscard-subcategories p-t-16">
+                    {_.map(workAdvertType, (adType) => {
+                      if (!_.isUndefined(adType))
+                        return (
+                          <NavLink
+                            className="btn-subcat"
+                            to={"advert/" + _.kebabCase(adType)}
+                            key={adType}
+                          >
+                            {adType}
+                          </NavLink>
+                        )
+                    })}
+                  </div>
+                )
+              }
+            })()}
           </div>
 
           <Outlet />
@@ -87,12 +122,19 @@ function WorksLayout() {
 export const worksLoader = async () => {
   try {
     const response = await client.getEntries({
-      content_type: "work"
+      content_type: "work",
     })
     // get items order by year
-    return _.orderBy(response.items, [(obj) => {return obj.fields.year}], ["desc"])
-
-  } catch(error) {
+    return _.orderBy(
+      response.items,
+      [
+        (obj) => {
+          return obj.fields.year
+        },
+      ],
+      ["desc"]
+    )
+  } catch (error) {
     console.warn(error)
   }
 }
