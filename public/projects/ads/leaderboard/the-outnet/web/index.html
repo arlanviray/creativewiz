@@ -1,302 +1,413 @@
 <!DOCTYPE html>
 <!-- canvasSize:980x606 -->
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title></title>
-	<link type="text/css" href="reset.css" rel="stylesheet" />
-	<link type="text/css" href="styles.css" rel="stylesheet" />
-	<!-- <script type="text/javascript" src="https://canvas.adtech.com/ads/jsapi/ADTECH.js"></script> -->
-  	<script type="text/javascript" src="https://www.projects.creativewiz.net/js/adtech.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js"></script>
-	<script language="JavaScript" type="text/javascript" src="https://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="script.js"></script>
-</head>
-<body>
-<div id="wrapper">
-	<div id="contents">
-		<div class="expanded">
-			<div class="btnClose"></div>
-			<div class="vc-holder">
-				<div class="vc-contents">
-					<div class="videoholder">
-						<div class="video"></div>
-						<div class="videocaption">
-							<h5>Join the birthday party </h5>
-							<p>What better way for<br />THE OUTNET to celebrate its 5th birthday than by asking some of its favourite designers to reissue a favourite design? Here, seven fashion insiders – including Caroline Issa, Jessica Hart, Garance Doré and Leigh Lezark – reveal what makes them special.</p>
-						</div>
-						<div class="clr"></div>
-					</div>
-					<div class="carousel">
-						<div class="products-container">
-							<div class="products">
-								<div class="main">
-									<img src="img_product_01_1.jpg" class="prod1" />
-								</div>
-								<div class="infos">
-									<div class="text">
-										<div class="header">
-											<div class="title">
-												<span>Iris &amp; Ink,
-												<br />
-												</span>Silk blouse, £105</div>
-										</div>
-										<p>With its detachable pussy-bow, this number has fashion all-rounder written all over it. Essentially two shirts in one, your wardrobe will thank you for it. </p>
-										<div class="btnDetails">
-											Details
-										</div>
-										<div class="btnShopnow" onclick="ADTECH.click('Product 1')">
-										</div>
-									</div>
-									<img src="img_product_01_2.jpg"/>
-								</div>
-							</div>
-							<div class="products">
-								<div class="main">
-									<img src="img_product_02_1.jpg" class="prod2" />
-								</div>
-								<div class="infos">
-									<div class="text">
-										<div class="header">
-											<div class="title"><span>Nicholas Kirkwood,
-												<br />
-												</span>Suede and leather heels, £318</div>
-										</div>
-										<p>This cage sandal is classic Kirkwood – edgy enough to toughen up an urban look, elegant enough to see you through many stylish seasons to come.</p>
-										<div class="btnDetails">
-											Details
-										</div>
-										<div class="btnShopnow" onclick="ADTECH.click('Product 2')">
-										</div>
-									</div>
-									<img src="img_product_02_2.jpg"/>
-								</div>
-							</div>
-							<div class="products">
-								<div class="main">
-									<img src="img_product_03_1.jpg" class="prod3" />
-								</div>
-								<div class="infos">
-									<div class="text">
-										<div class="header">
-											<div class="title"><span>Joseph,<br /></span>Cotton jacket, £273</div>
-										</div>
-										<p>White may be having a fashion moment, but Joseph's bestselling 'Caban' jacket will serve your wardrobe long after this season's done.</p>
-										<div class="btnDetails">
-											Details
-										</div>
-										<div class="btnShopnow" onclick="ADTECH.click('Product 3')">
-										</div>
-									</div>
-									<img src="img_product_03_2.jpg"/>
-								</div>
-							</div>
-							<div class="products">
-								<div class="main">
-									<img src="img_product_04_1.jpg" class="prod4" />
-								</div>
-								<div class="infos">
-									<div class="text">
-										<div class="header">
-											<div class="title"><span>Jason Wu,<br /></span>Silk dress, £570</div>
-										</div>
-										<p>Featuring one of his favourite archival prints, Wu designed this dress to have 'a youthful and modern sophistication'. A perfect summer party dress.</p>
-										<div class="btnDetails">
-											Details
-										</div>
-										<div class="btnShopnow" onclick="ADTECH.click('Product 4')">
-										</div>
-									</div>
-									<img src="img_product_04_2.jpg"/>
-								</div>
-							</div>
-							<div class="products">
-								<div class="main">
-									<img src="img_product_05_1.jpg" class="prod5" />
-								</div>
-								<div class="infos">
-									<div class="text">
-										<div class="header">
-											<div class="title">
-												<span>Preen by Thornton Bregazzi,
-												<br />
-												</span>Silk and viscose skirt, £276</div>
-										</div>
-										<p>The classic pencil skirt gets a thoroughly modern makeover in the form of a statement print and layer of gauzy organza.</p>
-										<div class="btnDetails">
-											Details
-										</div>
-										<div class="btnShopnow" onclick="ADTECH.click('Product 5')">
-										</div>
-									</div>
-									<img src="img_product_05_2.jpg"/>
-								</div>
-							</div>
-							<div class="products">
-								<div class="main">
-									<img src="img_product_06_1.jpg" class="prod6" />
-								</div>
-								<div class="infos">
-									<div class="text">
-										<div class="header">
-											<div class="title">
-												<span>Issa,<br /></span>Silk kaftan, £377</div>
-										</div>
-										<p>Whether dressed up with statement jewellery or worn with sandals on the beach, this beautiful butterfly-print kaftan captures Issa's relaxed, feminine aesthetic perfectly.</p>
-										<div class="btnDetails">
-											Details
-										</div>
-										<div class="btnShopnow" onclick="ADTECH.click('Product 6')">
-										</div>
-									</div>
-									<img src="img_product_06_2.jpg"/>
-								</div>
-							</div>
-							<div class="products">
-								<div class="main">
-									<img src="img_product_07_1.jpg" class="prod7" />
-								</div>
-								<div class="infos">
-									<div class="text">
-										<div class="header">
-											<div class="title"><span>Equipment,<br /></span>Silk shirt, £107</div>
-										</div>
-										<p>Every wardrobe needs a great go-anywhere shirt and this collarless, slim-cut style in Equipment’s signature stripes is both timeless and versatile.</p>
-										<div class="btnDetails">
-											Details
-										</div>
-										<div class="btnShopnow" onclick="ADTECH.click('Product 7')">
-										</div>
-									</div>
-									<img src="img_product_07_2.jpg"/>
-								</div>
-							</div>
-							<div class="products">
-								<div class="main">
-									<img src="img_product_08_1.jpg" class="prod8" />
-								</div>
-								<div class="infos">
-									<div class="text">
-										<div class="header">
-											<div class="title"><span>Haizhen Wang,<br /></span>Leather jacket, £650</div>
-										</div>
-										<p>Chosen because Wang felt 'a leather garment would best represent my aesthetic', this piece is from the designer's award-winning Fashion Fringe collection.</p>
-										<div class="btnDetails">
-											Details
-										</div>
-										<div class="btnShopnow" onclick="ADTECH.click('Product 8')">
-										</div>
-									</div>
-									<img src="img_product_08_2.jpg"/>
-								</div>
-							</div>
-							<div class="products">
-								<div class="main">
-									<img src="img_product_09_1.jpg" class="prod9" />
-								</div>
-								<div class="infos">
-									<div class="text">
-										<div class="header">
-											<div class="title"><span>J.W. Anderson,<br /></span>Silk top, £341</div>
-										</div>
-										<p>One of the bestsellers from the designer's s/s 2012 collection, the paisley print on this back-buttoning top mimics molecular structures on a petri dish.</p>
-										<div class="btnDetails">
-											Details
-										</div>
-										<div class="btnShopnow" onclick="ADTECH.click('Product 9')">
-										</div>
-									</div>
-									<img src="img_product_09_2.jpg"/>
-								</div>
-							</div>
-							<div class="products">
-								<div class="main">
-									<img src="img_product_10_1.jpg" class="prod10" />
-								</div>
-								<div class="infos">
-									<div class="text">
-										<div class="header">
-											<div class="title"><span>Alexander McQueen,
-												<br />
-												</span>Patent leather clutch, £357</div>
-										</div>
-										<p>With its bow-tie shape and smart metallic clasp, this clutch was an instant hit upon release. Reissued in shiny leather, it looks better than ever</p>
-										<div class="btnDetails">
-											Details
-										</div>
-										<div class="btnShopnow" onclick="ADTECH.click('Product 10')">
-										</div>
-									</div>
-									<img src="img_product_10_2.jpg"/>
-								</div>
-							</div>
-							<div class="products">
-								<div class="main">
-									<img src="img_product_11_1.jpg" class="prod11" />
-								</div>
-								<div class="infos">
-									<div class="text">
-										<div class="header">
-											<div class="title"><span>Roland Mouret,
-												<br />
-												</span>Wool crepe dress, £598</div>
-										</div>
-										<p>Mouret wanted to bring back a bestseller for this collaboration. What better than the figure-flattering 'O'Hara' dress, worn by Naomie Harris in Skyfall?</p>
-										<div class="btnDetails">
-											Details
-										</div>
-										<div class="btnShopnow" onclick="ADTECH.click('Product 11')">
-										</div>
-									</div>
-									<img src="img_product_11_2.jpg"/>
-								</div>
-							</div>
-							
-						</div>
-						<!--<div class="products-navigation"></div>-->
-					</div>
-				</div>
-			</div>
-			<div class="arrows aleft"><img src="img_btn_arrow_left.png" class="btnArrowLeft" /></div>
-			<div class="arrows amiddle"><img src="img_btn_arrow_bg.jpg" class="btnArrowMiddle" /></div>
-			<div class="arrows aright"><img src="img_btn_arrow_right.png" class="btnArrowRight" /></div>
-			<div class="landing">
-				<div class="col colleft">
-					<img src="img_landing_1.jpg" />
-					<div class="copies">
-						<h5>Watch the video</h5>
-						<div class="box">
-							<div class="text">17 limited-edition designs;
-							<br />
-							7 fashion-fabulous women wearing them here</div>
-						</div>
-					</div>
-				</div>
-				<div class="col colright">
-					<img src="img_landing_2.jpg" />
-					<div class="copies">
-						<h5>ELLE edits The OutNet</h5>
-						<div class="box">
-							<div class="text">The Outnet is celebrating its 5th birthday – step inside…</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="buttons">
-				<div class="navigation">
-					<div class="sect1"><a href="#" class="btnVideo">VIDEO</a></div>
-					<div class="spacer"><span><img src="spacer.jpg" ></span></div>
-					<div class="sect2"><a href="#" class="btnProducts">COLLECTION</a></div>
-				</div>
-			</div>
-		</div>
-		<div class="contracted">
-			<div class="btnExpand"><img src="img_banner_p.png" class="bpic" /></div>
-		</div>
-	</div>
-</div>
-</body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link type="text/css" href="reset.css" rel="stylesheet" />
+    <link type="text/css" href="styles.css" rel="stylesheet" />
+    <!-- <script type="text/javascript" src="https://canvas.adtech.com/ads/jsapi/ADTECH.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://projects.creativewiz.uk/js/adtech.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js"
+    ></script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="https://admin.brightcove.com/js/BrightcoveExperiences.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="contents">
+        <div class="expanded">
+          <div class="btnClose"></div>
+          <div class="vc-holder">
+            <div class="vc-contents">
+              <div class="videoholder">
+                <div class="video"></div>
+                <div class="videocaption">
+                  <h5>Join the birthday party</h5>
+                  <p>
+                    What better way for<br />THE OUTNET to celebrate its 5th
+                    birthday than by asking some of its favourite designers to
+                    reissue a favourite design? Here, seven fashion insiders –
+                    including Caroline Issa, Jessica Hart, Garance Doré and
+                    Leigh Lezark – reveal what makes them special.
+                  </p>
+                </div>
+                <div class="clr"></div>
+              </div>
+              <div class="carousel">
+                <div class="products-container">
+                  <div class="products">
+                    <div class="main">
+                      <img src="img_product_01_1.jpg" class="prod1" />
+                    </div>
+                    <div class="infos">
+                      <div class="text">
+                        <div class="header">
+                          <div class="title">
+                            <span
+                              >Iris &amp; Ink,
+                              <br /> </span
+                            >Silk blouse, £105
+                          </div>
+                        </div>
+                        <p>
+                          With its detachable pussy-bow, this number has fashion
+                          all-rounder written all over it. Essentially two
+                          shirts in one, your wardrobe will thank you for it.
+                        </p>
+                        <div class="btnDetails">Details</div>
+                        <div
+                          class="btnShopnow"
+                          onclick="ADTECH.click('Product 1')"
+                        ></div>
+                      </div>
+                      <img src="img_product_01_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="products">
+                    <div class="main">
+                      <img src="img_product_02_1.jpg" class="prod2" />
+                    </div>
+                    <div class="infos">
+                      <div class="text">
+                        <div class="header">
+                          <div class="title">
+                            <span
+                              >Nicholas Kirkwood,
+                              <br /> </span
+                            >Suede and leather heels, £318
+                          </div>
+                        </div>
+                        <p>
+                          This cage sandal is classic Kirkwood – edgy enough to
+                          toughen up an urban look, elegant enough to see you
+                          through many stylish seasons to come.
+                        </p>
+                        <div class="btnDetails">Details</div>
+                        <div
+                          class="btnShopnow"
+                          onclick="ADTECH.click('Product 2')"
+                        ></div>
+                      </div>
+                      <img src="img_product_02_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="products">
+                    <div class="main">
+                      <img src="img_product_03_1.jpg" class="prod3" />
+                    </div>
+                    <div class="infos">
+                      <div class="text">
+                        <div class="header">
+                          <div class="title">
+                            <span>Joseph,<br /></span>Cotton jacket, £273
+                          </div>
+                        </div>
+                        <p>
+                          White may be having a fashion moment, but Joseph's
+                          bestselling 'Caban' jacket will serve your wardrobe
+                          long after this season's done.
+                        </p>
+                        <div class="btnDetails">Details</div>
+                        <div
+                          class="btnShopnow"
+                          onclick="ADTECH.click('Product 3')"
+                        ></div>
+                      </div>
+                      <img src="img_product_03_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="products">
+                    <div class="main">
+                      <img src="img_product_04_1.jpg" class="prod4" />
+                    </div>
+                    <div class="infos">
+                      <div class="text">
+                        <div class="header">
+                          <div class="title">
+                            <span>Jason Wu,<br /></span>Silk dress, £570
+                          </div>
+                        </div>
+                        <p>
+                          Featuring one of his favourite archival prints, Wu
+                          designed this dress to have 'a youthful and modern
+                          sophistication'. A perfect summer party dress.
+                        </p>
+                        <div class="btnDetails">Details</div>
+                        <div
+                          class="btnShopnow"
+                          onclick="ADTECH.click('Product 4')"
+                        ></div>
+                      </div>
+                      <img src="img_product_04_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="products">
+                    <div class="main">
+                      <img src="img_product_05_1.jpg" class="prod5" />
+                    </div>
+                    <div class="infos">
+                      <div class="text">
+                        <div class="header">
+                          <div class="title">
+                            <span
+                              >Preen by Thornton Bregazzi,
+                              <br /> </span
+                            >Silk and viscose skirt, £276
+                          </div>
+                        </div>
+                        <p>
+                          The classic pencil skirt gets a thoroughly modern
+                          makeover in the form of a statement print and layer of
+                          gauzy organza.
+                        </p>
+                        <div class="btnDetails">Details</div>
+                        <div
+                          class="btnShopnow"
+                          onclick="ADTECH.click('Product 5')"
+                        ></div>
+                      </div>
+                      <img src="img_product_05_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="products">
+                    <div class="main">
+                      <img src="img_product_06_1.jpg" class="prod6" />
+                    </div>
+                    <div class="infos">
+                      <div class="text">
+                        <div class="header">
+                          <div class="title">
+                            <span>Issa,<br /></span>Silk kaftan, £377
+                          </div>
+                        </div>
+                        <p>
+                          Whether dressed up with statement jewellery or worn
+                          with sandals on the beach, this beautiful
+                          butterfly-print kaftan captures Issa's relaxed,
+                          feminine aesthetic perfectly.
+                        </p>
+                        <div class="btnDetails">Details</div>
+                        <div
+                          class="btnShopnow"
+                          onclick="ADTECH.click('Product 6')"
+                        ></div>
+                      </div>
+                      <img src="img_product_06_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="products">
+                    <div class="main">
+                      <img src="img_product_07_1.jpg" class="prod7" />
+                    </div>
+                    <div class="infos">
+                      <div class="text">
+                        <div class="header">
+                          <div class="title">
+                            <span>Equipment,<br /></span>Silk shirt, £107
+                          </div>
+                        </div>
+                        <p>
+                          Every wardrobe needs a great go-anywhere shirt and
+                          this collarless, slim-cut style in Equipment’s
+                          signature stripes is both timeless and versatile.
+                        </p>
+                        <div class="btnDetails">Details</div>
+                        <div
+                          class="btnShopnow"
+                          onclick="ADTECH.click('Product 7')"
+                        ></div>
+                      </div>
+                      <img src="img_product_07_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="products">
+                    <div class="main">
+                      <img src="img_product_08_1.jpg" class="prod8" />
+                    </div>
+                    <div class="infos">
+                      <div class="text">
+                        <div class="header">
+                          <div class="title">
+                            <span>Haizhen Wang,<br /></span>Leather jacket, £650
+                          </div>
+                        </div>
+                        <p>
+                          Chosen because Wang felt 'a leather garment would best
+                          represent my aesthetic', this piece is from the
+                          designer's award-winning Fashion Fringe collection.
+                        </p>
+                        <div class="btnDetails">Details</div>
+                        <div
+                          class="btnShopnow"
+                          onclick="ADTECH.click('Product 8')"
+                        ></div>
+                      </div>
+                      <img src="img_product_08_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="products">
+                    <div class="main">
+                      <img src="img_product_09_1.jpg" class="prod9" />
+                    </div>
+                    <div class="infos">
+                      <div class="text">
+                        <div class="header">
+                          <div class="title">
+                            <span>J.W. Anderson,<br /></span>Silk top, £341
+                          </div>
+                        </div>
+                        <p>
+                          One of the bestsellers from the designer's s/s 2012
+                          collection, the paisley print on this back-buttoning
+                          top mimics molecular structures on a petri dish.
+                        </p>
+                        <div class="btnDetails">Details</div>
+                        <div
+                          class="btnShopnow"
+                          onclick="ADTECH.click('Product 9')"
+                        ></div>
+                      </div>
+                      <img src="img_product_09_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="products">
+                    <div class="main">
+                      <img src="img_product_10_1.jpg" class="prod10" />
+                    </div>
+                    <div class="infos">
+                      <div class="text">
+                        <div class="header">
+                          <div class="title">
+                            <span
+                              >Alexander McQueen,
+                              <br /> </span
+                            >Patent leather clutch, £357
+                          </div>
+                        </div>
+                        <p>
+                          With its bow-tie shape and smart metallic clasp, this
+                          clutch was an instant hit upon release. Reissued in
+                          shiny leather, it looks better than ever
+                        </p>
+                        <div class="btnDetails">Details</div>
+                        <div
+                          class="btnShopnow"
+                          onclick="ADTECH.click('Product 10')"
+                        ></div>
+                      </div>
+                      <img src="img_product_10_2.jpg" />
+                    </div>
+                  </div>
+                  <div class="products">
+                    <div class="main">
+                      <img src="img_product_11_1.jpg" class="prod11" />
+                    </div>
+                    <div class="infos">
+                      <div class="text">
+                        <div class="header">
+                          <div class="title">
+                            <span
+                              >Roland Mouret,
+                              <br /> </span
+                            >Wool crepe dress, £598
+                          </div>
+                        </div>
+                        <p>
+                          Mouret wanted to bring back a bestseller for this
+                          collaboration. What better than the figure-flattering
+                          'O'Hara' dress, worn by Naomie Harris in Skyfall?
+                        </p>
+                        <div class="btnDetails">Details</div>
+                        <div
+                          class="btnShopnow"
+                          onclick="ADTECH.click('Product 11')"
+                        ></div>
+                      </div>
+                      <img src="img_product_11_2.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <!--<div class="products-navigation"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="arrows aleft">
+            <img src="img_btn_arrow_left.png" class="btnArrowLeft" />
+          </div>
+          <div class="arrows amiddle">
+            <img src="img_btn_arrow_bg.jpg" class="btnArrowMiddle" />
+          </div>
+          <div class="arrows aright">
+            <img src="img_btn_arrow_right.png" class="btnArrowRight" />
+          </div>
+          <div class="landing">
+            <div class="col colleft">
+              <img src="img_landing_1.jpg" />
+              <div class="copies">
+                <h5>Watch the video</h5>
+                <div class="box">
+                  <div class="text">
+                    17 limited-edition designs;
+                    <br />
+                    7 fashion-fabulous women wearing them here
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col colright">
+              <img src="img_landing_2.jpg" />
+              <div class="copies">
+                <h5>ELLE edits The OutNet</h5>
+                <div class="box">
+                  <div class="text">
+                    The Outnet is celebrating its 5th birthday – step inside…
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <div class="navigation">
+              <div class="sect1"><a href="#" class="btnVideo">VIDEO</a></div>
+              <div class="spacer">
+                <span><img src="spacer.jpg" /></span>
+              </div>
+              <div class="sect2">
+                <a href="#" class="btnProducts">COLLECTION</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contracted">
+          <div class="btnExpand">
+            <img src="img_banner_p.png" class="bpic" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

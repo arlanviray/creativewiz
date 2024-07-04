@@ -1,158 +1,234 @@
 <!DOCTYPE html>
 <!-- canvasSize:900x800 -->
-<!--[if IE]><![endif]-->
-<!--[if lt IE 7 ]> <html lang="en" class="ie6">   <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="ie7">   <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="ie8">   <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="ie9">   <![endif]-->
+<!--[if IE]> <![endif]-->
+<!--[if lt IE 7]> <html lang="en" class="ie6">   <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="ie7">   <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="ie8">   <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="ie9">   <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title></title>
-	<link type="text/css" href="reset.css" rel="stylesheet" />
-	<link type="text/css" href="styles.css" rel="stylesheet" />
-	<!-- <script type="text/javascript" src="https://canvas.adtech.com/ads/jsapi/ADTECH.js"></script> -->
-  	<script type="text/javascript" src="https://www.projects.creativewiz.net/js/adtech.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-	<script type="text/javascript" src="https://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-</head>
-<body>
-	<div id="wrapper">
-		<div id="contents">
-			<div class="expand absolute">
-				<div class="row row1">
-					<div class="btnContract cursor left"><img src="img_x_white.png" class="left" />Close</div>
-					<img src="img_logo.png" class="logo right" />
-				</div>
-				<div class="row row2">
-					<div class="midcontents">
-						<div class="girls">
-							<img src="img_expand_girl0.jpg" class="girl girl0 absolute" />
-							<img src="img_expand_girl1.jpg" class="girl girl1 absolute" />
-							<img src="img_expand_girl2.jpg" class="girl girl2 absolute" />
-							<img src="img_expand_girl3.jpg" class="girl girl3 absolute" />
-						</div>
-						<div class="clocks">
-							<div class="ccontainer ccontainer1 absolute">
-								<div class="clock cursor black">
-									<div class="hand absolute"></div>
-									<div class="central absolute"></div>
-								</div>
-								<p class="black">5 MINUTES</p>
-							</div>
-							<div class="ccontainer ccontainer2 absolute">
-								<div class="clock cursor black">
-									<div class="hand absolute"></div>
-									<div class="central absolute"></div>
-								</div>
-								<p class="black">10 MINUTES</p>
-							</div>
-							<div class="ccontainer ccontainer3 absolute">
-								<div class="clock cursor black">
-									<div class="hand absolute"></div>
-									<div class="central absolute"></div>
-								</div>
-								<p class="black">15 MINUTES</p>
-							</div>
-							<div class="zeromin absolute"><img src="img_arrow_small_left.png" class="asleft" /><span>0 MINUTES</span><img src="img_arrow_small_right.png" class="asright" /></div>
-						</div>
-						<div class="infos absolute">
-							<div class="info info0">
-								<h3>You, only better. Instantly.</h3>
-								<p>Discover inspiring, easy-to-create beauty looks that can be applied in 5, 10 or 15 minutes. Each has been created using Clarins make-up products. Ready for a new era of beauty?</p>
-							</div>
-							<div class="info info1">
-								<h3>Ready in 5? Hello, low-maintenance beauty</h3>
-								<p>You love the off-duty model look and here's why: effortless beauty never goes out of style. Five minutes is all you need to achieve a natural, more beautiful look with these four everyday make-up essentials.</p>
-								<p><a href="#" onclick="ADTECH.click('Video 5 mins')"><img src="img_expand_left_video1.png" /></a></p>
-							</div>
-							<div class="info info2">
-								<h3>10 minutes to polished perfection</h3>
-								<p>You're running to a meeting and you have to look pulled together, fast. Newsflash: all you need to look the part is ten quick minutes (and a bit of Clarins know-how). Ready to see how it's done?</p>
-								<p><a href="#" onclick="ADTECH.click('Video 10 mins')"><img src="img_expand_left_video2.png" /></a></p>
-							</div>
-							<div class="info info3">
-								<h3>Flawless and fabulous in 15</h3>
-								<p>For those days when you want to spend a little more time on your make-up, let flawless beauty be your goal. Still natural, still wearable, still you - but with a hint of feel-good indulgence.</p>
-								<p><a href="#" onclick="ADTECH.click('Video 15 mins')"><img src="img_expand_left_video3.png" /></a></p>
-							</div>
-						</div>
-						<div class="products absolute">
-							<div class="product product0"><img src="img_expand_right.png" /></div>
-							<div class="product product1">
-								<div class="carousel">
-									<ul>
-										<li>
-											<div class="prod prod1"><div class="circle"></div></div>
-											<div class="prod prod2"><div class="circle"></div></div>
-											<div class="prod prod3"><div class="circle"></div></div>
-											<div class="prod prod4"><div class="circle"></div></div>
-										</li>
-										<li>
-											<div class="prod prod5"><div class="circle"></div></div>
-											<div class="prod prod6"><div class="circle"></div></div>
-											<div class="prod prod7"><div class="circle"></div></div>
-											<div class="prod prod8"><div class="circle"></div></div>
-										</li>
-										<li>
-											<div class="prod prod9"><div class="circle"></div></div>
-											<div class="prod prod10"><div class="circle"></div></div>
-											<div class="prod prod11"><div class="circle"></div></div>
-											<div class="prod prod12"><div class="circle"></div></div>
-										</li>
-										<li>
-											<div class="prod prod13"><div class="circle"></div></div>
-											<div class="prod prod14"><div class="circle"></div></div>
-										</li>
-									</ul>
-								</div>
-								<img src="img_arrow_up.png" class="arrow up" />
-								<img src="img_arrow_down.png" class="arrow down" />
-							</div>
-						</div>
-						<div class="slidercontainer absolute">
-							<div id="slider" class="absolute"></div>
-						</div>
-					</div>
-					<div class="midinfo absolute">
-						<div class="image"></div>
-						<div class="data">
-							<p class="title">Title</p>
-							<p class="bodycopy">Bodycopy</p>
-							<p class="price">&pound;<span>00.00</span></p>
-							<div class="btnShopthelook">Shop the Look</div>
-							<div class="icons">
-								<a href="#" onclick="ADTECH.click('facebook')"><img src="img_icon_facebook.png" class="facebook" /></a>
-								<a href="#" onclick="ADTECH.click('twitter')"><img src="img_icon_twitter.png" class="twitter" /></a>
-								<a href="#" onclick="ADTECH.click('pinterest')"><img src="img_icon_pinterest.png" class="pinterest" /></a>
-							</div>
-						</div>
-						<img src="img_close.png" class="btnClose cursor absolute" />
-					</div>
-				</div>
-				<div class="row row3"><p><a href="#" onclick="ADTECH.click('Clarins wesbite')">www.clarins.co.uk</a></p></div>
-			</div>
-			<div class="contract absolute">
-				<div class="row absolute">
-					<div class="copy absolute">
-						<h2 class="small">You, only better. Instantly.</h2>
-						<h3>Make-Up in 5,<br />10 and 15 minutes</h3>
-						<h4>Discover easy-to-create looks</h4>
-					</div>
-					<div class="clock absolute">
-						<div class="hand absolute"></div>
-						<div class="central absolute"></div>
-					</div>
-					<img src="img_contract_products1.png" class="prod prod1 absolute" />
-					<img src="img_contract_products2.png" class="prod prod2 absolute" />
-					<img src="img_contract_products3.png" class="prod prod3 absolute" />
-				</div>
-				<div class="btnExpand cursor absolute"></div>
-			</div>
-		</div>
-	</div>
-</body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link type="text/css" href="reset.css" rel="stylesheet" />
+    <link type="text/css" href="styles.css" rel="stylesheet" />
+    <!-- <script type="text/javascript" src="https://canvas.adtech.com/ads/jsapi/ADTECH.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://projects.creativewiz.uk/js/adtech.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-latest.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://admin.brightcove.com/js/BrightcoveExperiences.js"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="contents">
+        <div class="expand absolute">
+          <div class="row row1">
+            <div class="btnContract cursor left">
+              <img src="img_x_white.png" class="left" />Close
+            </div>
+            <img src="img_logo.png" class="logo right" />
+          </div>
+          <div class="row row2">
+            <div class="midcontents">
+              <div class="girls">
+                <img src="img_expand_girl0.jpg" class="girl girl0 absolute" />
+                <img src="img_expand_girl1.jpg" class="girl girl1 absolute" />
+                <img src="img_expand_girl2.jpg" class="girl girl2 absolute" />
+                <img src="img_expand_girl3.jpg" class="girl girl3 absolute" />
+              </div>
+              <div class="clocks">
+                <div class="ccontainer ccontainer1 absolute">
+                  <div class="clock cursor black">
+                    <div class="hand absolute"></div>
+                    <div class="central absolute"></div>
+                  </div>
+                  <p class="black">5 MINUTES</p>
+                </div>
+                <div class="ccontainer ccontainer2 absolute">
+                  <div class="clock cursor black">
+                    <div class="hand absolute"></div>
+                    <div class="central absolute"></div>
+                  </div>
+                  <p class="black">10 MINUTES</p>
+                </div>
+                <div class="ccontainer ccontainer3 absolute">
+                  <div class="clock cursor black">
+                    <div class="hand absolute"></div>
+                    <div class="central absolute"></div>
+                  </div>
+                  <p class="black">15 MINUTES</p>
+                </div>
+                <div class="zeromin absolute">
+                  <img src="img_arrow_small_left.png" class="asleft" /><span
+                    >0 MINUTES</span
+                  ><img src="img_arrow_small_right.png" class="asright" />
+                </div>
+              </div>
+              <div class="infos absolute">
+                <div class="info info0">
+                  <h3>You, only better. Instantly.</h3>
+                  <p>
+                    Discover inspiring, easy-to-create beauty looks that can be
+                    applied in 5, 10 or 15 minutes. Each has been created using
+                    Clarins make-up products. Ready for a new era of beauty?
+                  </p>
+                </div>
+                <div class="info info1">
+                  <h3>Ready in 5? Hello, low-maintenance beauty</h3>
+                  <p>
+                    You love the off-duty model look and here's why: effortless
+                    beauty never goes out of style. Five minutes is all you need
+                    to achieve a natural, more beautiful look with these four
+                    everyday make-up essentials.
+                  </p>
+                  <p>
+                    <a href="#" onclick="ADTECH.click('Video 5 mins')"
+                      ><img src="img_expand_left_video1.png"
+                    /></a>
+                  </p>
+                </div>
+                <div class="info info2">
+                  <h3>10 minutes to polished perfection</h3>
+                  <p>
+                    You're running to a meeting and you have to look pulled
+                    together, fast. Newsflash: all you need to look the part is
+                    ten quick minutes (and a bit of Clarins know-how). Ready to
+                    see how it's done?
+                  </p>
+                  <p>
+                    <a href="#" onclick="ADTECH.click('Video 10 mins')"
+                      ><img src="img_expand_left_video2.png"
+                    /></a>
+                  </p>
+                </div>
+                <div class="info info3">
+                  <h3>Flawless and fabulous in 15</h3>
+                  <p>
+                    For those days when you want to spend a little more time on
+                    your make-up, let flawless beauty be your goal. Still
+                    natural, still wearable, still you - but with a hint of
+                    feel-good indulgence.
+                  </p>
+                  <p>
+                    <a href="#" onclick="ADTECH.click('Video 15 mins')"
+                      ><img src="img_expand_left_video3.png"
+                    /></a>
+                  </p>
+                </div>
+              </div>
+              <div class="products absolute">
+                <div class="product product0">
+                  <img src="img_expand_right.png" />
+                </div>
+                <div class="product product1">
+                  <div class="carousel">
+                    <ul>
+                      <li>
+                        <div class="prod prod1"><div class="circle"></div></div>
+                        <div class="prod prod2"><div class="circle"></div></div>
+                        <div class="prod prod3"><div class="circle"></div></div>
+                        <div class="prod prod4"><div class="circle"></div></div>
+                      </li>
+                      <li>
+                        <div class="prod prod5"><div class="circle"></div></div>
+                        <div class="prod prod6"><div class="circle"></div></div>
+                        <div class="prod prod7"><div class="circle"></div></div>
+                        <div class="prod prod8"><div class="circle"></div></div>
+                      </li>
+                      <li>
+                        <div class="prod prod9"><div class="circle"></div></div>
+                        <div class="prod prod10">
+                          <div class="circle"></div>
+                        </div>
+                        <div class="prod prod11">
+                          <div class="circle"></div>
+                        </div>
+                        <div class="prod prod12">
+                          <div class="circle"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="prod prod13">
+                          <div class="circle"></div>
+                        </div>
+                        <div class="prod prod14">
+                          <div class="circle"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <img src="img_arrow_up.png" class="arrow up" />
+                  <img src="img_arrow_down.png" class="arrow down" />
+                </div>
+              </div>
+              <div class="slidercontainer absolute">
+                <div id="slider" class="absolute"></div>
+              </div>
+            </div>
+            <div class="midinfo absolute">
+              <div class="image"></div>
+              <div class="data">
+                <p class="title">Title</p>
+                <p class="bodycopy">Bodycopy</p>
+                <p class="price">&pound;<span>00.00</span></p>
+                <div class="btnShopthelook">Shop the Look</div>
+                <div class="icons">
+                  <a href="#" onclick="ADTECH.click('facebook')"
+                    ><img src="img_icon_facebook.png" class="facebook"
+                  /></a>
+                  <a href="#" onclick="ADTECH.click('twitter')"
+                    ><img src="img_icon_twitter.png" class="twitter"
+                  /></a>
+                  <a href="#" onclick="ADTECH.click('pinterest')"
+                    ><img src="img_icon_pinterest.png" class="pinterest"
+                  /></a>
+                </div>
+              </div>
+              <img src="img_close.png" class="btnClose cursor absolute" />
+            </div>
+          </div>
+          <div class="row row3">
+            <p>
+              <a href="#" onclick="ADTECH.click('Clarins wesbite')"
+                >www.clarins.co.uk</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="contract absolute">
+          <div class="row absolute">
+            <div class="copy absolute">
+              <h2 class="small">You, only better. Instantly.</h2>
+              <h3>Make-Up in 5,<br />10 and 15 minutes</h3>
+              <h4>Discover easy-to-create looks</h4>
+            </div>
+            <div class="clock absolute">
+              <div class="hand absolute"></div>
+              <div class="central absolute"></div>
+            </div>
+            <img src="img_contract_products1.png" class="prod prod1 absolute" />
+            <img src="img_contract_products2.png" class="prod prod2 absolute" />
+            <img src="img_contract_products3.png" class="prod prod3 absolute" />
+          </div>
+          <div class="btnExpand cursor absolute"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
