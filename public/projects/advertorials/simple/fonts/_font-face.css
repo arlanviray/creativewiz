@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'MyFont';
+	src:url('.eot?#iefix');
+	src:url('.eot?#iefix') format('eot'),
+		url('.woff2') format('woff2'),
+		url('.woff') format('woff'),
+		url('.ttf') format('truetype'),
+		url('.svg#') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova-Regular';
+	src:url('Proxima-Nova-W01-Regular.eot?#iefix');
+	src:url('Proxima-Nova-W01-Regular.eot?#iefix') format('eot'),
+		url('Proxima-Nova-W01-Regular.woff2') format('woff2'),
+		url('Proxima-Nova-W01-Regular.woff') format('woff'),
+		url('Proxima-Nova-W01-Regular.ttf') format('truetype'),
+		url('Proxima-Nova-W01-Regular.svg#Proxima-Nova-W01-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova-Semibold';
+	src:url('Proxima-Nova-W01-Semibold.eot?#iefix');
+	src:url('Proxima-Nova-W01-Semibold.eot?#iefix') format('eot'),
+		url('Proxima-Nova-W01-Semibold.woff2') format('woff2'),
+		url('Proxima-Nova-W01-Semibold.woff') format('woff'),
+		url('Proxima-Nova-W01-Semibold.ttf') format('truetype'),
+		url('Proxima-Nova-W01-Semibold.svg#Proxima-Nova-W01-Semibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova-CondLight';
+	src:url('Proxima-Nova-W01-CondLight.eot?#iefix');
+	src:url('Proxima-Nova-W01-CondLight.eot?#iefix') format('eot'),
+		url('Proxima-Nova-W01-CondLight.woff2') format('woff2'),
+		url('Proxima-Nova-W01-CondLight.woff') format('woff'),
+		url('Proxima-Nova-W01-CondLight.ttf') format('truetype'),
+		url('Proxima-Nova-W01-CondLight.svg#Proxima-Nova-W01-CondLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /
+
+#Prevent viewing of .htaccess | Gruntfile.js
+<FilesMatch .htaccess|Gruntfile.js>
+	Order Allow,Deny
+	Deny from All
+</FilesMatch>
+
+RewriteRule ^index\.php/?$ / [L,R=301,NC]
+RewriteRule ^([^/.]+)/?$ /?sec=$1 [L]
+RewriteRule ^([^/.]+)/([^/.]+)/?$ /?sec=$1&sub=$2 [L]
+RewriteRule ^([^/.]+)/([^/.]+)/([^/.]+)/?$ /?sec=$1&sub=$2&sid=$3 [L]
+RewriteRule ^([^/.]+)/([^/.]+)/([^/.]+)/([^/.]+)/?$ /?sec=$1&sub=$2&sid=$3&ind=$4 [L]
