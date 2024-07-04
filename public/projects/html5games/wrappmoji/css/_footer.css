@@ -1,0 +1,64 @@
+#sw-FOOTER {
+    position: relative;
+    color: #fff;
+    background-color: #2e2e2e;
+    padding: 16px 20px 20px;
+    text-align: center;
+    margin: 0;
+    font-family: "Mercury SSm A", "Mercury SSm B", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.22;
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 0.3px;
+    color: #fff;
+}
+
+#sw-FOOTER ul {
+    text-align: center;
+    padding: 20px 0;
+}
+#sw-FOOTER ul li {
+    padding: 2px 12px;
+}
+#sw-FOOTER ul li:last-child {
+    border-right: 0;
+}
+
+@media screen and (min-width: 991px) {
+    #sw-FOOTER ul li {
+        display: inline-block;
+        border-right: 1px solid #fff;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #sw-FOOTER ul li:first-child, #sw-FOOTER ul li:nth-child(4) {
+        border-right: 0;
+    }
+}
+
+#sw-FOOTER ul li .footer_emoji {
+    height: 25px;
+    padding: 0 5px;
+}
+
+#sw-FOOTER a  {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#sw-FOOTER a:hover {
+    color: #f1b039;
+    -webkit-transition: color 0.3s, background-color 0.3s;
+    -moz-transition: color 0.3s, background-color 0.3s;
+    -ms-transition: color 0.3s, background-color 0.3s;
+    -o-transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#sw-FOOTER .tcs {
+     font-size: 11px;
+}
+

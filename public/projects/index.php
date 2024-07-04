@@ -9,7 +9,8 @@
         "ads/mpu.php",
         "ads/rollfold.php",
         "ads/takeover.php",
-		"microsites/microsites.php"
+		"html5games/html5games.php",
+        "microsites/microsites.php"
 	]);
 ?>
 <!DOCTYPE html>
@@ -48,7 +49,8 @@
                     require_once("templates/tpl_ads.php");
                     break;
                 case "microsites":
-                    require_once("templates/tpl_microsites.php");
+                case "html5games":
+                    require_once("templates/tpl_micro.php");
                     break;
                 default:
             }

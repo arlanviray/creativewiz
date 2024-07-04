@@ -14,7 +14,7 @@
 			$this->_index   = $_GET["index"];
 		}
 
-        public function isList() {
+    public function isList() {
 			return $this->_type === "list";
 		}
 		

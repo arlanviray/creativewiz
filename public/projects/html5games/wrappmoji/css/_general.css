@@ -1,0 +1,200 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html.noscroll, 
+body.noscroll {
+	overflow: hidden;
+}
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+body {
+	font-family: "Gotham SSm B", "Gotham SSm A", sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+}
+
+img {
+	vertical-align: bottom;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+
+h1, h2, h3 {
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 20px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+p {
+	margin: 20px 0;
+}
+
+.hide {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+    font-size: 20px;
+    line-height: 26px;
+    border-radius: 64px;
+    padding: 20px 55px;
+    margin: 0 50px;
+    text-transform: uppercase;
+    border: none;
+}
+button:focus {
+    outline: none !important;   
+}
+button.btn-clear {
+    background-color: #d9dfe3;
+    color: #9da0a5;
+}
+button.btn-submit, 
+button.btn-saveshare,
+button.btn-copy {
+	background-color: #7ab51d;
+	color: #fff;
+}
+button.btn-back {
+	background-color: #dce1e4;
+	color: #585d63;
+	margin: 10px;
+}
+button.btn-print {
+	background-color: #7ab51d;
+	color: #fff;
+	margin: 10px;
+}
+button.btn-saveshare,
+button.btn-copy {
+	margin: 10px;
+}
+
+.fullwidth {
+	background-color: rgba(0, 0, 0, 0.8);
+	position: relative;
+	width:100%;
+	height:100%;
+	display: none;
+}
+
+.uniquelink {
+	text-align: center;
+	color: #fff;
+	padding-top: 40px;
+	display: none;
+}
+.uniquelink p{
+	font-family: "Gotham SSm B", "Gotham SSm A", sans-serif;
+	font-size: 15px;
+	color:#cccccc;
+	margin-bottom: 0;
+	line-height: 1.25;
+}
+
+.uniquelink p.bodycopy {
+	font-size: 20px;
+}
+.socailshares {
+	padding-top: 40px;
+	display: none;	
+}
+.socailshares .share {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 5px;
+}
+.socailshares .share.facebook {
+	background-image: url('../images/share_facebook.png');
+}
+.socailshares .share.instagram {
+	background-image: url('../images/share_instagram.png');
+}
+.socailshares .share.twitter {
+	background-image: url('../images/share_twitter.png');
+}
+.socailshares .share.pinterest {
+	background-image: url('../images/share_pinterest.png');
+}
+
+@media screen and (max-width: 749px) {
+	button {
+		padding: 10px 25px;
+		font-size: 15px;
+		margin: 10px 0;
+		margin: 0;
+	}
+
+	button.btn-print {
+		display: none;
+	}
+
+	.uniquelink {
+		padding-top: 0;
+	}
+
+	.uniquelink p.bodycopy {
+		font-size: 15px;
+		margin: 5px;
+	}
+
+	.uniquelink p {
+    	font-size: 10px;
+	}
+
+	.socailshares .share {
+		width: 35px;
+		height: 35px;
+		margin: 2px;
+	}
+	
+	p {
+    	margin: 8px 0;
+	}
+}
+
+.sw-contents {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.sw-events-disable {
+	pointer-events: none;
+}
+
+input {
+	background-color: transparent;
+	border: none;
+	color: #e7a60a;
+	font-family: "Gotham SSm B", "Gotham SSm A", sans-serif;
+	font-size: 20px;
+	text-transform: normal;
+	text-align: center;
+}
