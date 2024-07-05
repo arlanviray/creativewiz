@@ -14,3 +14,11 @@
 	Order allow,deny
     Deny from all
 </FilesMatch>
+
+# Rewrite everything to HTTPS
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+# Add WWW to any URLs that do not have them
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]

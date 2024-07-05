@@ -11,8 +11,13 @@
     require "vendor/Autoloader.php";
 
     $rest_json = file_get_contents("php://input");
-    $_POST = json_decode($rest_json, true);
-    $debug = false;
+    $_POST     = json_decode($rest_json, true);
+    $name      = $_POST["name"];
+	$email     = $_POST["email"];
+	$message   = $_POST["message"];
+    $debug     = false;
+
+    if (empty($name) && empty($email) && empty($message)) die();
 
     try {
         // Create instance of PHPMailer class
@@ -40,13 +45,13 @@
         $mail->Encoding = "base64";
         $mail->isHTML(true);
         $mail->Subject = "Contact Enquiry";
-        $mail->Body = "<b>Name:</b> ". $_POST["name"] ."<br><b>Email:</b> ". $_POST["email"] ."<br><b>Message:</b><br>". nl2br($_POST["message"]);
+        $mail->Body = "<b>Name:</b> ". $name ."<br><b>Email:</b> ". $email ."<br><b>Message:</b><br>". nl2br($message);
         // $mail->AltBody = "The text as a simple text element";
         $mail->send();
 
         echo json_encode([
             "sent" => true, 
-            "message" => "Thank you for contacting Creativewiz!<br>We'll get back to you shortly."
+            "message" => "Thank you [". $name ."] for contacting Creativewiz!<br>We'll get back to you shortly."
         ]);
 
     } catch (Exception $e) {
