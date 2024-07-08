@@ -12,13 +12,25 @@
 # Prevent viewing of .htaccess
 <FilesMatch .htaccess>
 	Order allow,deny
-    Deny from all
+	Deny from all
 </FilesMatch>
 
-# Rewrite everything to HTTPS
-# RewriteCond %{HTTPS} !=on
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+### Domain for .NET
+# Add WWW
+RewriteCond %{HTTP_HOST} ^creativewiz\.net [NC]
+RewriteRule ^(.*)$ http://www.creativewiz.net/$1 [R=301,L]
 
-# Add WWW to any URLs that do not have them
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+# Rewrite everything to HTTP
+RewriteCond %{HTTP_HOST} ^(www\.)?creativewiz.net$
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ http://www.creativewiz.net/$1 [L,R=301]
+
+### Domain for .UK
+# Add WWW
+RewriteCond %{HTTP_HOST} ^creativewiz\.uk [NC]
+RewriteRule ^(.*)$ https://www.creativewiz.uk/$1 [R=301,L]
+
+# Rewrite everything to HTTPS
+RewriteCond %{HTTP_HOST} ^(www\.)?creativewiz.uk$
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://www.creativewiz.uk/$1 [L,R=301]
