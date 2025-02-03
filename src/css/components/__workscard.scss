@@ -1,44 +1,45 @@
-.workscard-categories, .workscard-subcategories {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
+.workscard-categories,
+.workscard-subcategories {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .workscard-container {
-    display: flex;
-    row-gap: 20px;
-    flex-wrap: wrap;
-    margin-right: -10px;
-    margin-left: -10px;
+  display: flex;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
 
-    .workscard {
-        position: relative;
-        width: calc(25% - 20px);
-        @include mediaQuery($pb-mdlg, max) {
-            width: calc(50% - 20px);
-        }
-        @include mediaQuery($pb-sm, max) {
-            width: calc(100% - 20px);
-        }
-        
-        margin-right: 10px;
-        margin-left: 10px;
-        padding: 10px;
-        background-color: $light1;
-        border: 1px solid $light8;
-
-        .wc-info {
-            padding-top: spacer(0.5);
-            padding-bottom: spacer(2.5);
-            p {
-                padding-top: 4px;
-            }
-        }
-
-        .wc-btn {
-            position: absolute;
-            bottom: spacer(0.5);
-            width: calc(100% - 20px);
-        }
+  .workscard {
+    position: relative;
+    width: calc(25% - 20px);
+    @include mediaQuery($pb-mdlg, max) {
+      width: calc(50% - 20px);
     }
+    @include mediaQuery($pb-sm, max) {
+      width: calc(100% - 20px);
+    }
+
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: $light1;
+    border: 1px solid $light8;
+
+    .wc-info {
+      padding-top: spacer(0.5);
+      padding-bottom: spacer(2.5);
+      p {
+        padding-top: 4px;
+      }
+    }
+
+    .wc-btn {
+      position: absolute;
+      bottom: spacer(0.5);
+      width: calc(100% - 20px);
+    }
+  }
 }

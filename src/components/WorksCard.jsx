@@ -16,6 +16,7 @@ function WorksCard({ item }) {
     description,
     year,
     url,
+    newDeveloper,
   } = item.fields
   const useImage = thumbnail
     ? thumbnail.fields.file.url
@@ -29,11 +30,26 @@ function WorksCard({ item }) {
 
   return (
     <>
-      <div className="workscard animateOnView" data-anim="show">
+      <div
+        className="workscard animateOnView"
+        data-anim="show"
+        style={{ color: newDeveloper ? "#C8C8C8" : "inherit" }}
+      >
         <div className="wc-image">
-          <Link to={"/work/detail/" + item.sys.id}>
-            <img src={useImage} />
-          </Link>
+          {newDeveloper ? (
+            <img
+              src={useImage}
+              style={{
+                marginBottom: "4px",
+                filter: "grayscale(100%)",
+                opacity: 0.2,
+              }}
+            />
+          ) : (
+            <Link to={"/work/detail/" + item.sys.id}>
+              <img src={useImage} />
+            </Link>
+          )}
         </div>
         <div className="wc-info">
           <div className="h3">{title}</div>
@@ -43,9 +59,13 @@ function WorksCard({ item }) {
           </p>
         </div>
         <div className="wc-btn">
-          <Link className="btn-card" to={"/work/detail/" + item.sys.id}>
-            Learn more
-          </Link>
+          {newDeveloper ? (
+            <p className="newdev">New design. Built by another dev</p>
+          ) : (
+            <Link className="btn-card" to={"/work/detail/" + item.sys.id}>
+              Learn more
+            </Link>
+          )}
         </div>
       </div>
     </>
